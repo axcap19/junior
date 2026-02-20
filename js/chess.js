@@ -43,8 +43,10 @@ const ChessGame = (() => {
         bP: null, // Pawns use team badge SVG
     };
 
-    // Chess piece shape icons (unicode) for piece type indicator
+    // Chess piece unicode symbols - filled versions for display
     const PIECE_ICONS = { K: '\u265A', Q: '\u265B', R: '\u265C', B: '\u265D', N: '\u265E', P: '\u265F' };
+    // White (outline) piece symbols for white side
+    const PIECE_ICONS_WHITE = { K: '\u2654', Q: '\u2655', R: '\u2656', B: '\u2657', N: '\u2658', P: '\u2659' };
 
     // Generate fallback SVG badge for pieces without photos (pawns)
     function generatePawnSVG(color) {
@@ -483,31 +485,38 @@ const ChessGame = (() => {
                     const photoUrl = PLAYER_PHOTOS[piece];
 
                     const pieceEl = document.createElement('div');
-                    pieceEl.className = `piece photo-piece ${color === 'w' ? 'white-piece' : 'black-piece'}`;
+                    pieceEl.className = `piece piece-with-face ${color === 'w' ? 'white-piece' : 'black-piece'}`;
                     pieceEl.title = playerData ? `${playerData.fullName} (${playerData.role})` : piece;
 
+                    // Chess piece symbol as the main visible element
+                    const pieceSymbol = color === 'w' ? PIECE_ICONS_WHITE[type] : PIECE_ICONS[type];
+                    const pieceColor = color === 'w' ? tc.primary : tc.primary;
+                    const strokeColor = color === 'w' ? '#000' : '#000';
+
                     if (photoUrl) {
-                        // Photo-based piece with circular crop
                         pieceEl.innerHTML = `
-                            <div class="photo-badge" style="border-color:${tc.accent}; box-shadow: 0 2px 6px rgba(0,0,0,0.5);">
-                                <img src="${photoUrl}" alt="${playerData.fullName}" class="player-photo"
-                                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                                <div class="photo-fallback" style="display:none;background:${tc.primary};color:${tc.secondary || '#fff'};">
-                                    ${playerData.name.substring(0,3)}
+                            <div class="piece-base">
+                                <span class="piece-symbol" style="color:${pieceColor};-webkit-text-stroke:1px ${strokeColor};">${pieceSymbol}</span>
+                                <div class="face-overlay" style="border-color:${tc.accent};">
+                                    <img src="${photoUrl}" alt="${playerData.fullName}" class="face-photo"
+                                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                                    <div class="face-fallback" style="display:none;background:${tc.primary};color:#fff;">
+                                        ${playerData.name.substring(0,2)}
+                                    </div>
                                 </div>
-                                <div class="piece-type-icon" style="background:${tc.primary};border-color:${tc.accent};">${PIECE_ICONS[type]}</div>
                             </div>
                             <div class="player-label" style="background:${tc.primary};color:${tc.secondary || '#fff'};border:1px solid ${tc.accent};">${playerData.name}</div>
                         `;
                     } else {
-                        // Pawn - use SVG badge
-                        const img = document.createElement('img');
-                        img.src = PIECE_IMAGES[piece];
-                        img.alt = playerData ? playerData.fullName : piece;
-                        img.style.width = '100%';
-                        img.style.height = '100%';
-                        img.style.objectFit = 'contain';
-                        pieceEl.appendChild(img);
+                        // Pawn - piece symbol with team badge overlay
+                        pieceEl.innerHTML = `
+                            <div class="piece-base">
+                                <span class="piece-symbol" style="color:${pieceColor};-webkit-text-stroke:1px ${strokeColor};">${pieceSymbol}</span>
+                                <div class="face-overlay pawn-badge" style="border-color:${tc.accent};background:${tc.primary};">
+                                    <span style="color:${tc.secondary || '#fff'};font-weight:bold;font-size:inherit;">${color === 'w' ? 'INV' : 'LM'}</span>
+                                </div>
+                            </div>
+                        `;
                     }
                     cell.appendChild(pieceEl);
                 }
