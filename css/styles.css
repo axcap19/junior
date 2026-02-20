@@ -316,62 +316,70 @@ body {
     filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5));
 }
 
-/* Photo-based pieces */
-.photo-piece {
+/* Piece with face overlay on chess symbol */
+.piece-with-face {
     gap: 0;
+    justify-content: flex-end;
+    padding-bottom: 2px;
 }
-.photo-badge {
-    width: 70%;
-    height: 0;
-    padding-bottom: 70%;
-    border-radius: 50%;
-    border: 3px solid;
-    overflow: hidden;
+.piece-base {
     position: relative;
-    flex-shrink: 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-}
-.player-photo {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 50%;
-}
-.photo-fallback {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: min(0.8rem, 2vw);
-    border-radius: 50%;
-}
-.piece-type-icon {
-    position: absolute;
-    bottom: -2px;
-    right: -2px;
-    width: 35%;
-    height: 35%;
-    border-radius: 50%;
-    border: 2px solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: min(0.6rem, 1.5vw);
-    color: #fff;
-    z-index: 3;
+    width: 100%;
+    flex: 1;
+}
+.piece-symbol {
+    font-size: min(3.5rem, 9vw);
     line-height: 1;
+    filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.5));
+    display: block;
+    text-align: center;
+}
+.face-overlay {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(28px, 3.8vw);
+    height: min(28px, 3.8vw);
+    border-radius: 50%;
+    border: 2px solid;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none;
+}
+.face-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: min(0.5rem, 1.2vw);
+    border-radius: 50%;
+}
+.pawn-badge {
+    font-size: min(0.4rem, 1vw);
+    top: 5px;
 }
 .player-label {
     font-size: min(0.55rem, 1.4vw);
     font-weight: bold;
     padding: 1px 4px;
     border-radius: 3px;
-    margin-top: 1px;
+    margin-top: 0;
     white-space: nowrap;
     text-align: center;
     line-height: 1.2;
