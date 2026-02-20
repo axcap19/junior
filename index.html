@@ -42,8 +42,38 @@
                     <h2>vs Computer</h2>
                     <p>Challenge the AI opponent</p>
                 </div>
+                <div class="game-card" onclick="startGame('online')">
+                    <div class="card-icon">🌐</div>
+                    <h2>Play Online</h2>
+                    <p>Challenge a friend on another device</p>
+                </div>
             </div>
             <button class="back-btn" onclick="goBack()">← Back to Menu</button>
+        </div>
+    </div>
+
+    <!-- ONLINE ROOM -->
+    <div id="online-screen" class="screen">
+        <div class="menu-container">
+            <h1 class="title" id="online-title">Play Online</h1>
+            <div id="online-form" class="online-form">
+                <p class="subtitle">Enter a room code to create or join a game</p>
+                <div class="online-input-group">
+                    <input type="text" id="room-code-input" class="room-input" placeholder="e.g. AMIN123" maxlength="12" autocomplete="off" spellcheck="false">
+                </div>
+                <div class="online-buttons">
+                    <button class="btn-primary online-btn" onclick="createOnlineRoom()">Create Room</button>
+                    <button class="btn-secondary online-btn" onclick="joinOnlineRoom()">Join Room</button>
+                </div>
+                <p id="online-status-msg" class="online-status-msg"></p>
+            </div>
+            <div id="online-waiting" class="online-waiting hidden">
+                <div class="waiting-spinner"></div>
+                <p id="online-room-display" class="room-display"></p>
+                <p>Share this code with your opponent</p>
+                <p class="waiting-text">Waiting for opponent to join...</p>
+            </div>
+            <button class="back-btn" onclick="cancelOnline()">← Back</button>
         </div>
     </div>
 
@@ -71,10 +101,10 @@
                         <thead><tr><th>Piece</th><th>Player</th><th>Why</th></tr></thead>
                         <tbody>
                             <tr><td>King</td><td>Thierry Henry</td><td>"The King of Highbury" — needs no explanation</td></tr>
-                            <tr><td>Queen</td><td>Dennis Bergkamp</td><td>Most versatile &amp; gifted, capable of anything on the pitch</td></tr>
+                            <tr><td>Queen</td><td>Dennis Bergkamp</td><td>Most versatile & gifted, capable of anything on the pitch</td></tr>
                             <tr><td>Rook</td><td>Tony Adams</td><td>Defensive rock, straight-line captain</td></tr>
                             <tr><td>Bishop</td><td>Patrick Vieira</td><td>Commanding, controlled the angles of midfield</td></tr>
-                            <tr><td>Knight</td><td>Robert Pirès</td><td>Tricky, unpredictable movement</td></tr>
+                            <tr><td>Knight</td><td>Robert Pir&#232;s</td><td>Tricky, unpredictable movement</td></tr>
                             <tr><td>Pawn</td><td>The Invincibles</td><td>The foot soldiers</td></tr>
                         </tbody>
                     </table>
@@ -85,10 +115,10 @@
                         <thead><tr><th>Piece</th><th>Player</th><th>Why</th></tr></thead>
                         <tbody>
                             <tr><td>King</td><td>Lionel Messi</td><td>The GOAT, the one you must protect</td></tr>
-                            <tr><td>Queen</td><td>Ronaldinho</td><td>Most powerful &amp; magical, dominated everywhere</td></tr>
+                            <tr><td>Queen</td><td>Ronaldinho</td><td>Most powerful & magical, dominated everywhere</td></tr>
                             <tr><td>Rook</td><td>Carles Puyol</td><td>Defensive wall, no-nonsense straight-line warrior</td></tr>
                             <tr><td>Bishop</td><td>Xavi</td><td>The strategic diagonal-passing maestro</td></tr>
-                            <tr><td>Knight</td><td>Andrés Iniesta</td><td>Unpredictable dribbler, appeared out of nowhere</td></tr>
+                            <tr><td>Knight</td><td>Andr&#233;s Iniesta</td><td>Unpredictable dribbler, appeared out of nowhere</td></tr>
                             <tr><td>Pawn</td><td>La Masia crest</td><td>The academy foot soldiers</td></tr>
                         </tbody>
                     </table>
@@ -115,6 +145,7 @@
         </div>
     </div>
 
+    <script src="js/multiplayer.js"></script>
     <script src="js/chess.js"></script>
     <script src="js/checkers.js"></script>
     <script src="js/app.js"></script>
