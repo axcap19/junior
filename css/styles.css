@@ -545,3 +545,87 @@ body {
 .btn-secondary:hover {
     background: rgba(255,255,255,0.2);
 }
+
+/* ONLINE SCREEN */
+.online-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.online-input-group {
+    margin: 25px 0;
+}
+.room-input {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: bold;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.room-input::placeholder {
+    color: #556;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.room-input:focus {
+    border-color: #f5a623;
+}
+.online-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.online-btn {
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+.online-status-msg {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    min-height: 1.5em;
+}
+.online-status-msg.error {
+    color: #ff6b6b;
+}
+.online-status-msg.waiting {
+    color: #f5a623;
+}
+.online-waiting {
+    text-align: center;
+}
+.online-waiting.hidden {
+    display: none;
+}
+.room-display {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5a623;
+    letter-spacing: 4px;
+    margin: 20px 0 10px;
+}
+.waiting-text {
+    color: #f5a623;
+    margin-top: 15px;
+}
+.waiting-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255,255,255,0.1);
+    border-top-color: #f5a623;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
