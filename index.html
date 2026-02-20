@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amin's Football Games</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- MAIN MENU -->
+    <div id="menu-screen" class="screen active">
+        <div class="menu-container">
+            <h1 class="title">Amin's Football Games</h1>
+            <p class="subtitle">Choose your game</p>
+            <div class="game-cards">
+                <div class="game-card" onclick="showModeSelect('chess')">
+                    <div class="card-icon">♟️</div>
+                    <h2>Football Chess</h2>
+                    <p>Arsenal vs Barcelona legends battle it out</p>
+                </div>
+                <div class="game-card" onclick="showModeSelect('checkers')">
+                    <div class="card-icon">⬤</div>
+                    <h2>Football Checkers</h2>
+                    <p>Arsenal vs Barcelona — badge on badge</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODE SELECT -->
+    <div id="mode-screen" class="screen">
+        <div class="menu-container">
+            <h1 class="title" id="mode-title">Select Mode</h1>
+            <div class="game-cards">
+                <div class="game-card" onclick="startGame('pvp')">
+                    <div class="card-icon">👥</div>
+                    <h2>2 Players</h2>
+                    <p>Play against a friend on the same screen</p>
+                </div>
+                <div class="game-card" onclick="startGame('ai')">
+                    <div class="card-icon">🤖</div>
+                    <h2>vs Computer</h2>
+                    <p>Challenge the AI opponent</p>
+                </div>
+            </div>
+            <button class="back-btn" onclick="goBack()">← Back to Menu</button>
+        </div>
+    </div>
+
+    <!-- CHESS GAME -->
+    <div id="chess-screen" class="screen">
+        <div class="chess-layout">
+            <div class="chess-main">
+                <div class="game-header">
+                    <button class="back-btn" onclick="goToMenu()">← Menu</button>
+                    <h2 id="chess-status">White's Turn</h2>
+                    <button class="back-btn" onclick="resetChess()">New Game</button>
+                </div>
+                <div class="board-container">
+                    <div id="chess-board" class="board chess-board"></div>
+                </div>
+                <div id="chess-captured" class="captured-area">
+                    <div class="captured-row"><span>Arsenal captured:</span> <span id="white-captured"></span></div>
+                    <div class="captured-row"><span>Barcelona captured:</span> <span id="black-captured"></span></div>
+                </div>
+            </div>
+            <div class="chess-legend">
+                <div class="legend-section arsenal">
+                    <h3>Arsenal <span class="legend-side">(White)</span></h3>
+                    <table class="legend-table">
+                        <thead><tr><th>Piece</th><th>Player</th><th>Why</th></tr></thead>
+                        <tbody>
+                            <tr><td>King</td><td>Thierry Henry</td><td>"The King of Highbury" — needs no explanation</td></tr>
+                            <tr><td>Queen</td><td>Dennis Bergkamp</td><td>Most versatile &amp; gifted, capable of anything on the pitch</td></tr>
+                            <tr><td>Rook</td><td>Tony Adams</td><td>Defensive rock, straight-line captain</td></tr>
+                            <tr><td>Bishop</td><td>Patrick Vieira</td><td>Commanding, controlled the angles of midfield</td></tr>
+                            <tr><td>Knight</td><td>Robert Pirès</td><td>Tricky, unpredictable movement</td></tr>
+                            <tr><td>Pawn</td><td>The Invincibles</td><td>The foot soldiers</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="legend-section barcelona">
+                    <h3>Barcelona <span class="legend-side">(Black)</span></h3>
+                    <table class="legend-table">
+                        <thead><tr><th>Piece</th><th>Player</th><th>Why</th></tr></thead>
+                        <tbody>
+                            <tr><td>King</td><td>Lionel Messi</td><td>The GOAT, the one you must protect</td></tr>
+                            <tr><td>Queen</td><td>Ronaldinho</td><td>Most powerful &amp; magical, dominated everywhere</td></tr>
+                            <tr><td>Rook</td><td>Carles Puyol</td><td>Defensive wall, no-nonsense straight-line warrior</td></tr>
+                            <tr><td>Bishop</td><td>Xavi</td><td>The strategic diagonal-passing maestro</td></tr>
+                            <tr><td>Knight</td><td>Andrés Iniesta</td><td>Unpredictable dribbler, appeared out of nowhere</td></tr>
+                            <tr><td>Pawn</td><td>La Masia crest</td><td>The academy foot soldiers</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="chess-promotion-modal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Promote Pawn - Choose a Piece</h3>
+                <div id="promotion-choices" class="promotion-choices"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKERS GAME -->
+    <div id="checkers-screen" class="screen">
+        <div class="game-header">
+            <button class="back-btn" onclick="goToMenu()">← Menu</button>
+            <h2 id="checkers-status">Red's Turn</h2>
+            <button class="back-btn" onclick="resetCheckers()">New Game</button>
+        </div>
+        <div class="board-container">
+            <div id="checkers-board" class="board checkers-board"></div>
+        </div>
+    </div>
+
+    <script src="js/chess.js"></script>
+    <script src="js/checkers.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
