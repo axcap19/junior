@@ -23,9 +23,13 @@ const CheckersGame = (() => {
     let vsAI = false;
     let mustJump = false;
     let multiJumpPiece = null;
+    let onlineMode = false;
+    let myColor = null;
 
-    function init(ai) {
+    function init(ai, online, color) {
         vsAI = ai;
+        onlineMode = online || false;
+        myColor = color || null;
         board = [];
         currentTurn = 'red';
         selectedCell = null;
@@ -46,6 +50,19 @@ const CheckersGame = (() => {
                 }
             }
         }
+
+        if (onlineMode) {
+            Multiplayer.setOnMoveReceived((moveData) => {
+                const turnOver = makeMove(moveData.fromR, moveData.fromC, moveData.move);
+                if (turnOver) {
+                    switchTurn();
+                }
+                render();
+                updateStatus();
+                checkGameEnd();
+            });
+        }
+
         render();
         updateStatus();
     }
@@ -228,9 +245,13 @@ const CheckersGame = (() => {
     function onCellClick(r, c) {
         if (gameOver) return;
         if (vsAI && currentTurn === 'black') return;
+        if (onlineMode && currentTurn !== myColor) return;
         const piece = board[r][c];
         const moveTarget = validMoves.find(m => m.r === r && m.c === c);
         if (moveTarget && selectedCell) {
+            if (onlineMode) {
+                Multiplayer.sendMove({ fromR: selectedCell.r, fromC: selectedCell.c, move: moveTarget });
+            }
             const turnOver = makeMove(selectedCell.r, selectedCell.c, moveTarget);
             if (turnOver) {
                 selectedCell = null;

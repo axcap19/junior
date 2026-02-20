@@ -169,8 +169,13 @@ const ChessGame = (() => {
         ['wR','wN','wB','wQ','wK','wB','wN','wR'],
     ];
 
-    function init(ai) {
+    let onlineMode = false;
+    let myColor = null;
+
+    function init(ai, online, color) {
         vsAI = ai;
+        onlineMode = online || false;
+        myColor = color || null;
         board = INITIAL_BOARD.map(row => [...row]);
         currentTurn = 'w';
         selectedCell = null;
@@ -181,6 +186,18 @@ const ChessGame = (() => {
         capturedPieces = { w: [], b: [] };
         castlingRights = { wK: true, wQ: true, bK: true, bQ: true };
         enPassantTarget = null;
+
+        if (onlineMode) {
+            Multiplayer.setOnMoveReceived((moveData) => {
+                const move = moveData.move;
+                makeMove(moveData.fromR, moveData.fromC, move, moveData.promoType);
+                switchTurn();
+                render();
+                updateStatus();
+                checkGameEnd();
+            });
+        }
+
         render();
         updateStatus();
     }
@@ -503,12 +520,16 @@ const ChessGame = (() => {
     function onCellClick(r, c) {
         if (gameOver) return;
         if (vsAI && currentTurn === 'b') return;
+        if (onlineMode && currentTurn !== myColor) return;
         const piece = board[r][c];
         const moveTarget = validMoves.find(m => m.r === r && m.c === c);
         if (moveTarget && selectedCell) {
             if (moveTarget.type === 'promotion') {
                 showPromotionModal(selectedCell.r, selectedCell.c, moveTarget);
                 return;
+            }
+            if (onlineMode) {
+                Multiplayer.sendMove({ fromR: selectedCell.r, fromC: selectedCell.c, move: moveTarget });
             }
             makeMove(selectedCell.r, selectedCell.c, moveTarget);
             selectedCell = null;
@@ -568,6 +589,9 @@ const ChessGame = (() => {
             }
             opt.addEventListener('click', () => {
                 modal.classList.add('hidden');
+                if (onlineMode) {
+                    Multiplayer.sendMove({ fromR, fromC, move, promoType: type });
+                }
                 makeMove(fromR, fromC, move, type);
                 selectedCell = null;
                 validMoves = [];
