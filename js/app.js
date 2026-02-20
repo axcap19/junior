@@ -11,8 +11,8 @@ function showScreen(id) {
 
 function showModeSelect(game) {
     selectedGame = game;
-    const title = game === 'chess' ? '⚽ Football Chess' : '⚽ Football Checkers';
-    document.getElementById('mode-title').textContent = title;
+    const titles = { chess: '⚽ Football Chess', checkers: '⚽ Football Checkers', pong: '⚽ Football Pong' };
+    document.getElementById('mode-title').textContent = titles[game] || game;
     showScreen('mode-screen');
 }
 
@@ -26,6 +26,11 @@ function startGame(mode) {
         document.getElementById('chess-screen').dataset.ai = ai;
         showScreen('chess-screen');
         ChessGame.init(ai);
+    } else if (selectedGame === 'pong') {
+        document.getElementById('pong-screen').dataset.ai = ai;
+        showScreen('pong-screen');
+        PongGame.attachControls();
+        PongGame.init(ai);
     } else {
         document.getElementById('checkers-screen').dataset.ai = ai;
         showScreen('checkers-screen');
@@ -34,8 +39,8 @@ function startGame(mode) {
 }
 
 async function showOnlineScreen() {
-    document.getElementById('online-title').textContent =
-        selectedGame === 'chess' ? '⚽ Football Chess — Online' : '⚽ Football Checkers — Online';
+    const onlineTitles = { chess: '⚽ Football Chess — Online', checkers: '⚽ Football Checkers — Online', pong: '⚽ Football Pong — Online' };
+    document.getElementById('online-title').textContent = onlineTitles[selectedGame] || 'Play Online';
     document.getElementById('online-form').classList.remove('hidden');
     document.getElementById('online-waiting').classList.add('hidden');
     document.getElementById('online-status-msg').textContent = '';
@@ -80,8 +85,16 @@ function goBack() {
 function goToMenu() {
     const overlay = document.querySelector('.game-over-overlay');
     if (overlay) overlay.remove();
+    PongGame.stop();
+    PongGame.detachControls();
     Multiplayer.disconnect();
     showScreen('menu-screen');
+}
+
+function resetPong() {
+    const overlay = document.querySelector('.game-over-overlay');
+    if (overlay) overlay.remove();
+    PongGame.init(document.getElementById('pong-screen').dataset.ai === 'true');
 }
 
 function resetChess() {
@@ -114,7 +127,7 @@ function showGameOver(title, subtitle, game) {
         <div class="game-over-box">
             <h2>${title}</h2>
             <p>${subtitle}</p>
-            <button class="btn-primary" onclick="this.closest('.game-over-overlay').remove(); ${game === 'chess' ? 'resetChess()' : 'resetCheckers()'}">Play Again</button>
+            <button class="btn-primary" onclick="this.closest('.game-over-overlay').remove(); ${game === 'chess' ? 'resetChess()' : game === 'pong' ? 'resetPong()' : 'resetCheckers()'}">Play Again</button>
             <button class="btn-secondary" onclick="goToMenu()">Main Menu</button>
         </div>
     `;
