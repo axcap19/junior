@@ -17,14 +17,60 @@ function showModeSelect(game) {
 }
 
 function startGame(mode) {
+    if (mode === 'online') {
+        showOnlineScreen();
+        return;
+    }
     const ai = mode === 'ai';
     if (selectedGame === 'chess') {
+        document.getElementById('chess-screen').dataset.ai = ai;
         showScreen('chess-screen');
         ChessGame.init(ai);
     } else {
+        document.getElementById('checkers-screen').dataset.ai = ai;
         showScreen('checkers-screen');
         CheckersGame.init(ai);
     }
+}
+
+async function showOnlineScreen() {
+    document.getElementById('online-title').textContent =
+        selectedGame === 'chess' ? '⚽ Football Chess — Online' : '⚽ Football Checkers — Online';
+    document.getElementById('online-form').classList.remove('hidden');
+    document.getElementById('online-waiting').classList.add('hidden');
+    document.getElementById('online-status-msg').textContent = '';
+    document.getElementById('room-code-input').value = '';
+    showScreen('online-screen');
+
+    try {
+        await Multiplayer.connect();
+    } catch (e) {
+        document.getElementById('online-status-msg').textContent = 'Could not connect to server. Please try again.';
+        document.getElementById('online-status-msg').className = 'online-status-msg error';
+    }
+}
+
+function createOnlineRoom() {
+    const code = document.getElementById('room-code-input').value.trim();
+    if (!code) {
+        Multiplayer.updateOnlineStatus('Please enter a room code', 'error');
+        return;
+    }
+    Multiplayer.createRoom(code, selectedGame);
+}
+
+function joinOnlineRoom() {
+    const code = document.getElementById('room-code-input').value.trim();
+    if (!code) {
+        Multiplayer.updateOnlineStatus('Please enter a room code', 'error');
+        return;
+    }
+    Multiplayer.joinRoom(code);
+}
+
+function cancelOnline() {
+    Multiplayer.disconnect();
+    showScreen('mode-screen');
 }
 
 function goBack() {
@@ -34,43 +80,53 @@ function goBack() {
 function goToMenu() {
     const overlay = document.querySelector('.game-over-overlay');
     if (overlay) overlay.remove();
+    Multiplayer.disconnect();
     showScreen('menu-screen');
 }
 
 function resetChess() {
     const overlay = document.querySelector('.game-over-overlay');
     if (overlay) overlay.remove();
+    if (Multiplayer.isOnlineGame()) {
+        // Can't reset online game — go back to menu
+        Multiplayer.disconnect();
+        showScreen('menu-screen');
+        return;
+    }
     ChessGame.init(document.getElementById('chess-screen').dataset.ai === 'true');
 }
 
 function resetCheckers() {
     const overlay = document.querySelector('.game-over-overlay');
     if (overlay) overlay.remove();
+    if (Multiplayer.isOnlineGame()) {
+        Multiplayer.disconnect();
+        showScreen('menu-screen');
+        return;
+    }
     CheckersGame.init(document.getElementById('checkers-screen').dataset.ai === 'true');
 }
 
 function showGameOver(title, subtitle, game) {
     const overlay = document.createElement('div');
     overlay.className = 'game-over-overlay';
-    overlay.innerHTML = \`
+    overlay.innerHTML = `
         <div class="game-over-box">
-            <h2>\${title}</h2>
-            <p>\${subtitle}</p>
-            <button class="btn-primary" onclick="this.closest('.game-over-overlay').remove(); \${game === 'chess' ? 'resetChess()' : 'resetCheckers()'}">Play Again</button>
+            <h2>${title}</h2>
+            <p>${subtitle}</p>
+            <button class="btn-primary" onclick="this.closest('.game-over-overlay').remove(); ${game === 'chess' ? 'resetChess()' : 'resetCheckers()'}">Play Again</button>
             <button class="btn-secondary" onclick="goToMenu()">Main Menu</button>
         </div>
-    \`;
+    `;
     document.body.appendChild(overlay);
 }
 
-// Store AI mode when starting
-const origStartGame = startGame;
-startGame = function(mode) {
-    const ai = mode === 'ai';
-    if (selectedGame === 'chess') {
-        document.getElementById('chess-screen').dataset.ai = ai;
-    } else {
-        document.getElementById('checkers-screen').dataset.ai = ai;
+// Auto-capitalize room code input
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('room-code-input');
+    if (input) {
+        input.addEventListener('input', () => {
+            input.value = input.value.toUpperCase();
+        });
     }
-    origStartGame(mode);
-};
+});
