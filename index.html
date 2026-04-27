@@ -28,6 +28,11 @@
                     <h2>Football Pong</h2>
                     <p>Arsenal vs Barcelona — fast-paced rally</p>
                 </div>
+                <div class="game-card learning-card" onclick="LearningApp.showLearningHub()">
+                    <div class="card-icon">📚</div>
+                    <h2>Amin's Practice</h2>
+                    <p>Year 2 Maths, English, Science & French</p>
+                </div>
             </div>
         </div>
     </div>
@@ -105,10 +110,10 @@
                     <table class="legend-table">
                         <thead><tr><th>Piece</th><th>Player</th><th>Why</th></tr></thead>
                         <tbody>
-                            <tr><td>King</td><td>Thierry Henry</td><td>"The King of Highbury" — needs no explanation</td></tr>
-                            <tr><td>Queen</td><td>Dennis Bergkamp</td><td>Most versatile & gifted, capable of anything on the pitch</td></tr>
+                            <tr><td>King</td><td>Thierry Henry</td><td>"The King of Highbury"</td></tr>
+                            <tr><td>Queen</td><td>Dennis Bergkamp</td><td>Most versatile & gifted</td></tr>
                             <tr><td>Rook</td><td>Tony Adams</td><td>Defensive rock, straight-line captain</td></tr>
-                            <tr><td>Bishop</td><td>Patrick Vieira</td><td>Commanding, controlled the angles of midfield</td></tr>
+                            <tr><td>Bishop</td><td>Patrick Vieira</td><td>Commanding, controlled the angles</td></tr>
                             <tr><td>Knight</td><td>Robert Pir&#232;s</td><td>Tricky, unpredictable movement</td></tr>
                             <tr><td>Pawn</td><td>The Invincibles</td><td>The foot soldiers</td></tr>
                         </tbody>
@@ -120,10 +125,10 @@
                         <thead><tr><th>Piece</th><th>Player</th><th>Why</th></tr></thead>
                         <tbody>
                             <tr><td>King</td><td>Lionel Messi</td><td>The GOAT, the one you must protect</td></tr>
-                            <tr><td>Queen</td><td>Ronaldinho</td><td>Most powerful & magical, dominated everywhere</td></tr>
-                            <tr><td>Rook</td><td>Carles Puyol</td><td>Defensive wall, no-nonsense straight-line warrior</td></tr>
+                            <tr><td>Queen</td><td>Ronaldinho</td><td>Most powerful & magical</td></tr>
+                            <tr><td>Rook</td><td>Carles Puyol</td><td>Defensive wall, no-nonsense warrior</td></tr>
                             <tr><td>Bishop</td><td>Xavi</td><td>The strategic diagonal-passing maestro</td></tr>
-                            <tr><td>Knight</td><td>Andr&#233;s Iniesta</td><td>Unpredictable dribbler, appeared out of nowhere</td></tr>
+                            <tr><td>Knight</td><td>Andr&#233;s Iniesta</td><td>Unpredictable dribbler</td></tr>
                             <tr><td>Pawn</td><td>La Masia crest</td><td>The academy foot soldiers</td></tr>
                         </tbody>
                     </table>
@@ -180,10 +185,57 @@
         </div>
     </div>
 
+    <!-- LEARNING HUB -->
+    <div id="learning-screen" class="screen">
+        <div class="menu-container learning-container">
+            <div class="learning-header">
+                <h1 class="title learning-title">📚 Amin's Practice</h1>
+                <div class="learning-stats">
+                    <span id="learning-xp" class="xp-badge">0 XP</span>
+                    <span id="learning-streak" class="streak-badge">🔥 0</span>
+                </div>
+            </div>
+            <p class="subtitle">Choose a subject to practise</p>
+            <div id="learning-subjects" class="learning-subjects"></div>
+            <button class="back-btn" onclick="showScreen('menu-screen')">← Back to Menu</button>
+        </div>
+    </div>
+
+    <!-- LEARNING SUBJECT -->
+    <div id="learning-subject-screen" class="screen">
+        <div class="menu-container learning-container">
+            <div class="learning-header">
+                <h1 class="title" id="subject-title">Subject</h1>
+                <div class="learning-stats">
+                    <span id="learning-xp2" class="xp-badge">0 XP</span>
+                </div>
+            </div>
+            <div id="lesson-list" class="lesson-list"></div>
+            <button class="back-btn" onclick="LearningApp.backToHub()">← Back to Subjects</button>
+        </div>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="learning-quiz-screen" class="screen">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <button class="back-btn" onclick="LearningApp.backToSubject()">✕</button>
+                <span id="quiz-lesson-title" class="quiz-title">Lesson</span>
+                <span id="quiz-hearts" class="quiz-hearts">❤️❤️❤️❤️❤️</span>
+            </div>
+            <div class="quiz-progress-bar">
+                <div id="quiz-progress-fill" class="quiz-progress-fill"></div>
+            </div>
+            <span id="quiz-progress-text" class="quiz-progress-text">1 / 5</span>
+            <div id="quiz-content" class="quiz-content"></div>
+        </div>
+    </div>
+
     <script src="js/multiplayer.js"></script>
     <script src="js/chess.js"></script>
     <script src="js/checkers.js"></script>
     <script src="js/pong.js"></script>
+    <script src="js/learning.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
