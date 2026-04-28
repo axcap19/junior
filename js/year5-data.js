@@ -191,7 +191,7 @@ window.YEAR_5_DATA = {
           { type: 'fillBlank', q: 'A cuboid has dimensions 2 m × 3 m × 4 m. Volume = ___ m³', answer: '24', accept: ['24', '24 cubic metres'] },
           { type: 'trueFalse', q: '1 litre = 100 ml', answer: false },
           { type: 'fillBlank', q: '7.5 kg = ___ g', answer: '7500', accept: ['7500', '7,500'] },
-          { type: 'multiple', q: 'What is the perimeter of a square with side 6 m?', options: ['24 m', '36 m², '12 m', '18 m'], answer: '24 m' },
+          { type: 'multiple', q: 'What is the perimeter of a square with side 6 m?', options: ['24 m', '36 m²', '12 m', '18 m'], answer: '24 m' },
           { type: 'trueFalse', q: 'A rectangle with length 10 cm and width 5 cm has an area of 15 cm²', answer: false },
           { type: 'fillBlank', q: 'Convert 2,500 g to kg: ___ kg', answer: '2.5', accept: ['2.5', '2½'] },
           { type: 'multiple', q: 'A garden is 12 m long and 8 m wide. What is its perimeter?', options: ['40 m', '96 m', '20 m', '96 m²'], answer: '40 m' },

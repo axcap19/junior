@@ -761,7 +761,7 @@ window.YEAR_6_DATA = {
         questions: [
           { type: 'fillBlank', q: '"I ate" is: J\'ai ___', answer: 'mangé', accept: ['mangé'] },
           { type: 'multiple', q: 'What does "J\'ai joué au football" mean?', options: ['I played football', 'I am playing football', 'I will play football', 'I play football'], answer: 'I played football' },
-          { type: 'trueFalse', q: '"Je suis allé" means "I went" (masculine form)'", answer: true },
+          { type: 'trueFalse', q: '"Je suis allé" means "I went" (masculine form)', answer: true },
           { type: 'fillBlank', q: '"I went" (feminine) is: Je suis ___', answer: 'allée', accept: ['allée'] },
           { type: 'multiple', q: 'How do you say "Yesterday I watched TV"?', options: ['Hier, j\'ai regardé la télévision', 'Hier, je regarde la télévision', 'Hier, je regarderai la télévision', 'Hier, je regardais la télévision'], answer: 'Hier, j\'ai regardé la télévision' },
           { type: 'trueFalse', q: '"J\'ai lu un livre" means "I read a book"', answer: true },
@@ -770,7 +770,7 @@ window.YEAR_6_DATA = {
           { type: 'trueFalse', q: '"J\'ai écrit une lettre" means "I wrote a letter"', answer: true },
           { type: 'fillBlank', q: '"I did/made" (past) is: J\'ai ___', answer: 'fait', accept: ['fait'] },
           { type: 'multiple', q: 'How do you form the passé composé?', options: ['Avoir or être + past participle', 'Je + past tense', 'Verb ending in -ai', 'Verb ending in -ais'], answer: 'Avoir or être + past participle' },
-          { type: 'trueFalse', q: '"Je suis parti" means "I left" (masculine)'", answer: true },
+          { type: 'trueFalse', q: '"Je suis parti" means "I left" (masculine)', answer: true },
           { type: 'fillBlank', q: '"I saw" is: J\'ai ___', answer: 'vu', accept: ['vu'] },
           { type: 'multiple', q: 'What does "Hier, j\'ai mangé une pomme" mean?', options: ['Yesterday, I ate an apple', 'Yesterday, I am eating an apple', 'Yesterday, I will eat an apple', 'Yesterday, I was eating an apple'], answer: 'Yesterday, I ate an apple' },
           { type: 'trueFalse', q: '"Je suis entré dans la maison" means "I entered the house"', answer: true },

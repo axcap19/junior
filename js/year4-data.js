@@ -421,7 +421,7 @@ window.YEAR_4_DATA = {
           { id: 'q12', type: 'fillBlank', q: '___Wake up!___ she called. (Add speech marks)', answer: '"Wake up!"', accept: ['"Wake up!"'] },
           { id: 'q13', type: 'multiple', q: 'What follows a reporting clause before speech?', opts: ['period', 'comma', 'colon', 'semicolon'], ans: 'comma' },
           { id: 'q14', type: 'trueFalse', q: 'Exclamation marks can be inside speech marks.', ans: true },
-          { id: 'q15', type: 'fillBlank', q: 'The reporting clause can be: "said Tom." or "Tom said."' __blank__', answer: 'yes', accept: ['yes', 'correct'] },
+          { id: 'q15', type: 'trueFalse', q: 'The reporting clause can come before or after the speech.', ans: true },
           { id: 'q16', type: 'multiple', q: 'Which uses correct speech mark placement?', opts: ['He said, "Hello".', 'He said, "Hello."', '"He said hello."', 'He said "Hello"'], ans: 'He said, "Hello."' },
           { id: 'q17', type: 'trueFalse', q: 'Each new speaker should start a new paragraph.', ans: true },
           { id: 'q18', type: 'fillBlank', q: '"Please come here," ___ Ben. Fill with a reporting verb.', answer: 'said', accept: ['said', 'asked', 'whispered'] },
