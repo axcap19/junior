@@ -112,7 +112,7 @@
   // Normalize question format across different data files
   function normalizeQuestion(q) {
     const nq = { ...q };
-    // Handle opts/ans (year3/4 format) â options/answer
+    // Handle opts/ans (year3/4 format) → options/answer
     if (nq.opts && !nq.options) { nq.options = nq.opts; delete nq.opts; }
     if (nq.ans !== undefined && nq.answer === undefined) { nq.answer = nq.ans; delete nq.ans; }
     // For multiple choice: if answer is a string, convert to index
@@ -231,9 +231,9 @@
     return `
       <div class="learning-container">
         <div class="learning-header-bar">
-          <button class="btn-back" onclick="showScreen('menu-screen')">â Menu</button>
-          <h1>ð Amin's Practice</h1>
-          <button class="btn-admin" onclick="LearningApp.openAdmin()">ð Admin</button>
+          <button class="btn-back" onclick="showScreen('menu-screen')">← Menu</button>
+          <h1>📚 Amin's Practice</h1>
+          <button class="btn-admin" onclick="LearningApp.openAdmin()">🔒 Admin</button>
         </div>
         <p class="text-center subtitle">Choose Your Year</p>
         <div class="year-picker">
@@ -268,7 +268,7 @@
 
     return `
       <div class="learning-container">
-        <button class="btn-back" onclick="LearningApp.goBack()">â Back</button>
+        <button class="btn-back" onclick="LearningApp.goBack()">← Back</button>
         <h1 class="text-center">Year ${year} Subjects</h1>
         <div class="subject-grid">
           ${subjects}
@@ -293,10 +293,10 @@
       let statusText = '';
       if (locked) {
         statusClass = 'lesson-item--locked';
-        statusText = 'ð Locked';
+        statusText = '🔒 Locked';
       } else if (completed) {
         statusClass = 'lesson-item--completed';
-        statusText = 'â Completed';
+        statusText = '✓ Completed';
       } else {
         statusText = '';
       }
@@ -318,7 +318,7 @@
 
     return `
       <div class="learning-container">
-        <button class="btn-back" onclick="LearningApp.goBack()">â Back</button>
+        <button class="btn-back" onclick="LearningApp.goBack()">← Back</button>
         <h1 class="text-center">${data[subject].name}</h1>
         <div class="lesson-list">
           ${lessons}
@@ -359,7 +359,7 @@
     return `
       <div class="learning-container">
         <div class="quiz-header">
-          <button class="btn-back" onclick="LearningApp.abandonQuiz()">â Back</button>
+          <button class="btn-back" onclick="LearningApp.abandonQuiz()">← Back</button>
           <div class="progress-bar">
             <div class="progress-bar__fill" style="width: ${progressPercent}%"></div>
           </div>
@@ -500,7 +500,7 @@
       <div class="learning-container">
         <div class="quiz-results">
           <div class="results-header">
-            <h2>${passed ? 'ð You Passed!' : 'â Not Quite'}</h2>
+            <h2>${passed ? '🎉 You Passed!' : '❌ Not Quite'}</h2>
             <div class="results-score">${correct}/10 Correct</div>
           </div>
           ${!passed ? `<div class="results-message">You need 10/10 to pass. Keep trying!</div>` : ''}
@@ -586,7 +586,7 @@
 
     return `
       <div class="admin-dashboard">
-        <button class="btn-back" onclick="LearningApp.closeAdmin()">â Close</button>
+        <button class="btn-back" onclick="LearningApp.closeAdmin()">← Close</button>
 
         <div class="admin-summary">
           <h2>Admin Dashboard</h2>
@@ -653,7 +653,7 @@
       case 'fillBlank':
         return question.answer;
       case 'order':
-        return question.answer.join(' â ');
+        return question.answer.join(' → ');
       case 'match':
         return question.pairs.map(p => `${p[0]} = ${p[1]}`).join(', ');
       default:
@@ -670,7 +670,7 @@
       case 'fillBlank':
         return userAnswer || 'Not answered';
       case 'order':
-        return userAnswer ? userAnswer.join(' â ') : 'Not answered';
+        return userAnswer ? userAnswer.join(' → ') : 'Not answered';
       case 'match':
         return userAnswer ? Object.values(userAnswer).join(', ') : 'Not answered';
       default:
