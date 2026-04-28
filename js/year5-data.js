@@ -1,823 +1,5515 @@
 window.YEAR_5_DATA = {
   maths: {
-    name: 'Maths',
-    icon: '🔢',
-    color: '#4CAF50',
+    name: "Maths",
+    icon: "🔢",
+    color: "#4CAF50",
     lessons: [
       {
-        id: 'y5-maths-1',
-        name: 'Place Value',
-        description: 'Numbers to 1,000,000, negative numbers, rounding',
+        title: "Place Value",
         questions: [
-          { type: 'multiple', q: 'What is the value of the 7 in 375,482?', options: ['7,000', '70,000', '700,000', '700'], answer: '70,000' },
-          { type: 'multiple', q: 'Which number is larger: -5 or -12?', options: ['-5', '-12', 'They are equal', 'Cannot compare'], answer: '-5' },
-          { type: 'multiple', q: 'Round 47,638 to the nearest 10,000', options: ['50,000', '47,000', '48,000', '40,000'], answer: '50,000' },
-          { type: 'fillBlank', q: 'In the number 654,321, the digit 5 represents ___ thousands', answer: '5', accept: ['5', 'five'] },
-          { type: 'multiple', q: 'What is 6 hundred thousands + 3 ten thousands + 2 thousands + 5 ones?', options: ['632,005', '632,500', '635,205', '623,500'], answer: '632,005' },
-          { type: 'trueFalse', q: 'The number -8 is greater than -3', answer: false },
-          { type: 'multiple', q: 'Round 123,456 to the nearest 100,000', options: ['100,000', '120,000', '123,000', '123,500'], answer: '100,000' },
-          { type: 'fillBlank', q: 'The number 1,000,000 is one ___', answer: 'million', accept: ['million'] },
-          { type: 'multiple', q: 'What is the place value of 8 in 589,203?', options: ['80', '800', '8,000', '80,000'], answer: '80,000' },
-          { type: 'multiple', q: 'Order these from smallest to largest: -2, 5, -8, 0', options: ['-8, -2, 0, 5', '-2, -8, 0, 5', '0, -2, -8, 5', '5, 0, -2, -8'], answer: '-8, -2, 0, 5' },
-          { type: 'trueFalse', q: 'When rounding 456 to the nearest 100, the answer is 500', answer: true },
-          { type: 'fillBlank', q: 'Round 2,749 to the nearest 1,000. The answer is ___', answer: '3000', accept: ['3000', '3,000', 'three thousand'] },
-          { type: 'multiple', q: 'Which digit is in the hundred thousands place in 987,654?', options: ['9', '8', '7', '6'], answer: '9' },
-          { type: 'trueFalse', q: '-15 is colder than -5 degrees', answer: true },
-          { type: 'multiple', q: 'What is 42,735 rounded to the nearest 10?', options: ['42,730', '42,740', '42,700', '42,800'], answer: '42,740' },
-          { type: 'fillBlank', q: '5 million + 8 hundred thousands = ___', answer: '5800000', accept: ['5,800,000', '5800000', '5.8 million'] },
-          { type: 'multiple', q: 'Which number comes next in the sequence: -10, -5, 0, 5, ___', options: ['10', '0', '-10', '15'], answer: '10' },
-          { type: 'trueFalse', q: 'The number 999,999 rounded to the nearest 100,000 is 1,000,000', answer: true },
-          { type: 'multiple', q: 'What is the value of 3 in 234,567?', options: ['3', '30', '300', '30,000'], answer: '30,000' },
-          { type: 'fillBlank', q: 'The temperature is -3°C. If it gets 5 degrees warmer, it will be ___°C', answer: '2', accept: ['2', 'two'] },
-          { type: 'multiple', q: 'Round 555,555 to the nearest 1,000', options: ['555,000', '556,000', '560,000', '600,000'], answer: '556,000' }
-        ]
+          {
+            type: "multiple",
+            q: "What is the value of the digit 7 in 3,745,821?",
+            options: [
+              "7,000",
+              "70,000",
+              "700,000",
+              "7"
+            ],
+            answer: 1
+          },
+          {
+            type: "multiple",
+            q: "Which number is equivalent to 10^6?",
+            options: [
+              "10,000",
+              "100,000",
+              "1,000,000",
+              "10,000,000"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "The number -15 is greater than -8.",
+            answer: false
+          },
+          {
+            type: "multiple",
+            q: "What is 5 million in standard form?",
+            options: [
+              "5,000,000",
+              "500,000",
+              "50,000,000",
+              "5,000"
+            ],
+            answer: 0
+          },
+          {
+            type: "fillBlank",
+            q: "The Roman numeral for 847 is DCCC and _____.",
+            answer: "XLVII",
+            accept: [
+              "XLVII",
+              "xlvii"
+            ]
+          },
+          {
+            type: "trueFalse",
+            q: "MCMXC represents 1990 in Roman numerals.",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "Order these from smallest to largest: -12, 5, -3, 0, 8",
+            options: [
+              "-12, -3, 0, 5, 8",
+              "0, -3, -12, 5, 8",
+              "5, 8, 0, -3, -12",
+              "-3, -12, 0, 5, 8"
+            ],
+            answer: 0
+          },
+          {
+            type: "fillBlank",
+            q: "In the number 2,456,789, the digit in the hundred thousands place is _____.",
+            answer: "4",
+            accept: [
+              "4"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which digit is in the ten thousands place in 684,321?",
+            options: [
+              "6",
+              "8",
+              "4",
+              "3"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "10^4 = 40,000",
+            answer: false
+          },
+          {
+            type: "multiple",
+            q: "What is -25 + 15?",
+            options: [
+              "-40",
+              "-10",
+              "10",
+              "40"
+            ],
+            answer: 1
+          },
+          {
+            type: "fillBlank",
+            q: "The number 9,876,543 rounded to the nearest million is _____.",
+            answer: "10,000,000",
+            accept: [
+              "10,000,000",
+              "10000000"
+            ]
+          },
+          {
+            type: "trueFalse",
+            q: "The Roman numeral CD means 400.",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "Which place value comes after ten thousands?",
+            options: [
+              "hundred thousands",
+              "millions",
+              "hundreds",
+              "tens"
+            ],
+            answer: 0
+          },
+          {
+            type: "fillBlank",
+            q: "If you have 3 × 10^5, this equals _____.",
+            answer: "300,000",
+            accept: [
+              "300000",
+              "300,000"
+            ]
+          },
+          {
+            type: "trueFalse",
+            q: "-50 is less than -10.",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "What is the sum of the digits in the number 4,567,890?",
+            options: [
+              "39",
+              "40",
+              "41",
+              "42"
+            ],
+            answer: 0
+          },
+          {
+            type: "fillBlank",
+            q: "The Roman numeral for 999 is _____.",
+            answer: "CMXCIX",
+            accept: [
+              "CMXCIX",
+              "cmxcix"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which number has the digit 6 in the millions place?",
+            options: [
+              "6,432,100",
+              "4,623,100",
+              "2,346,100",
+              "1,234,600"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "5 million = 5,000,000",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "What is -7 - 5?",
+            options: [
+              "-12",
+              "-2",
+              "2",
+              "12"
+            ],
+            answer: 0
+          },
+          {
+            type: "fillBlank",
+            q: "The place value of 8 in 8,234,567 is _____.",
+            answer: "millions",
+            accept: [
+              "millions",
+              "million"
+            ]
+          }
+        ],
+        id: "y5-maths-1",
+        description: "Place Value"
       },
       {
-        id: 'y5-maths-2',
-        name: 'Addition & Subtraction',
-        description: 'Multi-step problems, mental strategies, estimation',
+        title: "Four Operations",
         questions: [
-          { type: 'multiple', q: 'What is 34,567 + 23,456?', options: ['58,023', '57,923', '58,123', '57,023'], answer: '58,023' },
-          { type: 'fillBlank', q: '567 + 234 + ___ = 1,000', answer: '199', accept: ['199'] },
-          { type: 'multiple', q: 'What is 50,000 - 17,893?', options: ['32,107', '32,117', '31,107', '32,207'], answer: '32,107' },
-          { type: 'trueFalse', q: 'Estimate: 2,456 + 3,678 ≈ 6,000', answer: true },
-          { type: 'multiple', q: 'Sarah has £45.67 and spends £12.34, then gains £8.50. How much does she have?', options: ['£41.83', '£42.83', '£41.93', '£42.93'], answer: '£41.83' },
-          { type: 'fillBlank', q: 'To add 267 + 498, I can do 267 + 500 - ___ = 765', answer: '2', accept: ['2'] },
-          { type: 'multiple', q: 'What is the missing number: 12,345 + ___ = 20,000?', options: ['7,655', '8,655', '7,745', '8,745'], answer: '7,655' },
-          { type: 'trueFalse', q: 'When estimating 4,821 + 2,156, rounding to the nearest 1,000 gives approximately 7,000', answer: true },
-          { type: 'multiple', q: 'Calculate: 23,456 - 8,234 + 5,678', options: ['20,900', '20,800', '21,900', '20,900'], answer: '20,900' },
-          { type: 'fillBlank', q: '100 - 27 - 15 = ___', answer: '58', accept: ['58'] },
-          { type: 'multiple', q: 'A shop has 15,000 apples. It sells 3,456 on Monday and 2,345 on Tuesday. How many remain?', options: ['9,199', '9,299', '9,099', '8,199'], answer: '9,199' },
-          { type: 'trueFalse', q: 'The sum of 1,234 + 2,345 + 3,456 is greater than 7,000', answer: true },
-          { type: 'multiple', q: 'What is 567,890 + 234,567?', options: ['802,457', '802,357', '801,457', '802,467'], answer: '802,457' },
-          { type: 'fillBlank', q: 'If you start with 1,000 and subtract 250 twice, you have ___', answer: '500', accept: ['500'] },
-          { type: 'trueFalse', q: 'Estimate: 78,456 - 21,345 ≈ 60,000', answer: true },
-          { type: 'multiple', q: 'What must be added to 34,567 to make 100,000?', options: ['65,433', '65,533', '66,433', '65,343'], answer: '65,433' },
-          { type: 'fillBlank', q: '456 + 234 + 310 = ___', answer: '1000', accept: ['1,000', '1000'] },
-          { type: 'multiple', q: 'A book has 345 pages. You read 123 on day 1 and 89 on day 2. How many remain?', options: ['133', '234', '234', '143'], answer: '133' },
-          { type: 'trueFalse', q: '5,678 + 4,322 = 10,000', answer: true },
-          { type: 'fillBlank', q: 'Estimate 19,876 + 30,245 to the nearest 1,000: approximately ___', answer: '50000', accept: ['50,000', '50000', 'fifty thousand'] },
-          { type: 'multiple', q: 'What is 3,456 - 1,234 - 567?', options: ['1,655', '1,555', '1,745', '1,645'], answer: '1,655' }
-        ]
+          {
+            type: "multiple",
+            q: "Calculate 3,456 × 23.",
+            options: [
+              "75,488",
+              "79,488",
+              "82,488",
+              "85,488"
+            ],
+            answer: 1
+          },
+          {
+            type: "multiple",
+            q: "What is 8,145 ÷ 6 with remainder?",
+            options: [
+              "1,357 r 3",
+              "1,357 r 2",
+              "1,358 r 3",
+              "1,356 r 9"
+            ],
+            answer: 0
+          },
+          {
+            type: "multiple",
+            q: "Solve: 20 - 8 ÷ 2 + 3",
+            options: [
+              "9",
+              "15",
+              "19",
+              "23"
+            ],
+            answer: 2
+          },
+          {
+            type: "fillBlank",
+            q: "2,456 × 15 = _____",
+            answer: "36,840",
+            accept: [
+              "36840",
+              "36,840"
+            ]
+          },
+          {
+            type: "trueFalse",
+            q: "4,200 ÷ 7 = 600",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "Which calculation follows the correct order of operations: (5 + 3) × 2 - 1?",
+            options: [
+              "15",
+              "16",
+              "17",
+              "18"
+            ],
+            answer: 1
+          },
+          {
+            type: "fillBlank",
+            q: "7,230 ÷ 9 = _____ (no remainder)",
+            answer: "803",
+            accept: [
+              "803"
+            ]
+          },
+          {
+            type: "trueFalse",
+            q: "12 × 12 = 144",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "What is the remainder when 5,678 is divided by 5?",
+            options: [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            answer: 1
+          },
+          {
+            type: "fillBlank",
+            q: "Calculate 4,567 + 3,456 - 2,123 = _____",
+            answer: "5,900",
+            accept: [
+              "5900",
+              "5,900"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Solve: 2 × 3 + 4 × 5 - 6",
+            options: [
+              "20",
+              "24",
+              "28",
+              "32"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "6,480 ÷ 12 = 540",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "Calculate 789 × 25.",
+            options: [
+              "19,725",
+              "20,125",
+              "21,245",
+              "22,125"
+            ],
+            answer: 0
+          },
+          {
+            type: "fillBlank",
+            q: "9,999 ÷ 3 = _____",
+            answer: "3,333",
+            accept: [
+              "3333",
+              "3,333"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 5 + 3 × 4 - 2?",
+            options: [
+              "15",
+              "19",
+              "23",
+              "27"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "8,456 - 3,789 = 4,667",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "Calculate 2,345 × 12.",
+            options: [
+              "27,740",
+              "28,140",
+              "29,240",
+              "30,540"
+            ],
+            answer: 1
+          },
+          {
+            type: "fillBlank",
+            q: "7,500 ÷ 25 = _____",
+            answer: "300",
+            accept: [
+              "300"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Solve: (10 + 5) × 2 ÷ 3",
+            options: [
+              "10",
+              "20",
+              "30",
+              "40"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "When dividing 4,567 by 8, the remainder is 7.",
+            answer: true
+          }
+        ],
+        id: "y5-maths-2",
+        description: "Four Operations"
       },
       {
-        id: 'y5-maths-3',
-        name: 'Multiplication',
-        description: 'Multiply up to 4-digit × 2-digit, factors, primes, square/cube numbers',
+        title: "Fractions",
         questions: [
-          { type: 'multiple', q: 'What is 23 × 45?', options: ['1,035', '1,025', '1,045', '1,015'], answer: '1,035' },
-          { type: 'multiple', q: 'Calculate: 234 × 12', options: ['2,808', '2,808', '2,818', '2,798'], answer: '2,808' },
-          { type: 'fillBlank', q: '15 × 8 = ___', answer: '120', accept: ['120'] },
-          { type: 'trueFalse', q: '7 is a prime number', answer: true },
-          { type: 'multiple', q: 'Which is NOT a factor of 24?', options: ['6', '8', '5', '4'], answer: '5' },
-          { type: 'fillBlank', q: '5 squared (5²) = ___', answer: '25', accept: ['25'] },
-          { type: 'multiple', q: 'What is 1,234 × 11?', options: ['13,574', '13,574', '13,464', '13,684'], answer: '13,574' },
-          { type: 'trueFalse', q: '12 is a prime number', answer: false },
-          { type: 'multiple', q: 'Which number is a perfect square?', options: ['10', '16', '15', '18'], answer: '16' },
-          { type: 'fillBlank', q: 'All factors of 12 are: 1, 2, 3, 4, 6, and ___', answer: '12', accept: ['12'] },
-          { type: 'multiple', q: 'What is 3 cubed (3³)?', options: ['9', '27', '81', '6'], answer: '27' },
-          { type: 'trueFalse', q: 'The first five prime numbers are 2, 3, 5, 7, 9', answer: false },
-          { type: 'multiple', q: 'Calculate: 456 × 23', options: ['10,488', '10,388', '10,588', '10,288'], answer: '10,488' },
-          { type: 'fillBlank', q: '6 squared (6²) = ___', answer: '36', accept: ['36'] },
-          { type: 'multiple', q: 'Which number is a multiple of both 4 and 6?', options: ['10', '12', '14', '18'], answer: '12' },
-          { type: 'trueFalse', q: 'The number 17 is prime', answer: true },
-          { type: 'fillBlank', q: '2 cubed (2³) = ___', answer: '8', accept: ['8'] },
-          { type: 'multiple', q: 'What are all the factors of 20?', options: ['1,2,4,5,10,20', '1,2,5,20', '1,2,4,10,20', '2,4,5,10,20'], answer: '1,2,4,5,10,20' },
-          { type: 'multiple', q: 'Calculate: 789 × 32', options: ['25,248', '25,148', '25,348', '24,248'], answer: '25,248' },
-          { type: 'trueFalse', q: '4² equals 4 × 4', answer: true },
-          { type: 'fillBlank', q: '10 squared (10²) = ___', answer: '100', accept: ['100'] }
-        ]
+          {
+            type: "multiple",
+            q: "Which fraction is equivalent to 3/4?",
+            options: [
+              "6/8",
+              "5/8",
+              "7/9",
+              "2/3"
+            ],
+            answer: 0
+          },
+          {
+            type: "multiple",
+            q: "Order these fractions from smallest to largest: 2/5, 3/8, 1/2",
+            options: [
+              "2/5, 3/8, 1/2",
+              "3/8, 2/5, 1/2",
+              "1/2, 2/5, 3/8",
+              "2/5, 1/2, 3/8"
+            ],
+            answer: 1
+          },
+          {
+            type: "fillBlank",
+            q: "Convert 13/4 to a mixed number: _____",
+            answer: "3 1/4",
+            accept: [
+              "3 1/4",
+              "3¼",
+              "3 and 1/4"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 3/5 + 2/5?",
+            options: [
+              "5/10",
+              "5/5",
+              "1",
+              "Both b and c"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "The fraction 5/6 is greater than 7/8.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "2/3 + 1/4 = _____",
+            answer: "11/12",
+            accept: [
+              "11/12"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 3/4 × 8?",
+            options: [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "7/8 = 14/16",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Convert 2 3/5 to an improper fraction: _____",
+            answer: "13/5",
+            accept: [
+              "13/5"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 5/6 - 1/3?",
+            options: [
+              "1/2",
+              "1/3",
+              "2/3",
+              "5/12"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "3/4 is less than 4/5.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "1/5 + 3/10 = _____",
+            answer: "1/2",
+            accept: [
+              "1/2",
+              "5/10"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which mixed number equals 17/6?",
+            options: [
+              "2 5/6",
+              "3 1/6",
+              "2 4/6",
+              "3 2/6"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "2/3 > 3/5",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "3/8 × 4 = _____",
+            answer: "3/2",
+            accept: [
+              "3/2",
+              "1 1/2"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 5/12 + 1/4?",
+            options: [
+              "2/3",
+              "5/16",
+              "1/2",
+              "7/12"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "An improper fraction always has a numerator smaller than the denominator.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "7/9 - 1/3 = _____",
+            answer: "4/9",
+            accept: [
+              "4/9"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which fraction is between 1/3 and 1/2?",
+            options: [
+              "2/5",
+              "1/4",
+              "1/6",
+              "3/4"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "6/10 = 3/5",
+            answer: true
+          }
+        ],
+        id: "y5-maths-3",
+        description: "Fractions"
       },
       {
-        id: 'y5-maths-4',
-        name: 'Division',
-        description: 'Short division, interpret remainders, divisibility rules',
+        title: "Decimals & Percentages",
         questions: [
-          { type: 'multiple', q: 'What is 456 ÷ 12?', options: ['38', '37', '39', '36'], answer: '38' },
-          { type: 'fillBlank', q: '144 ÷ 12 = ___', answer: '12', accept: ['12'] },
-          { type: 'multiple', q: 'Calculate: 567 ÷ 7', options: ['81', '80', '82', '79'], answer: '81' },
-          { type: 'trueFalse', q: 'A number is divisible by 2 if it ends in an odd number', answer: false },
-          { type: 'multiple', q: 'What is 1,234 ÷ 6? Give the remainder.', options: ['205 r 4', '206 r 4', '205 r 5', '204 r 4'], answer: '205 r 4' },
-          { type: 'fillBlank', q: '96 ÷ 8 = ___', answer: '12', accept: ['12'] },
-          { type: 'trueFalse', q: 'A number is divisible by 5 if it ends in 0 or 5', answer: true },
-          { type: 'multiple', q: 'Is 345 divisible by 3?', options: ['No', 'Yes', 'Cannot tell', 'Maybe'], answer: 'Yes' },
-          { type: 'multiple', q: 'What is 2,456 ÷ 8?', options: ['307', '306', '308', '305'], answer: '307' },
-          { type: 'fillBlank', q: '360 ÷ 9 = ___', answer: '40', accept: ['40'] },
-          { type: 'trueFalse', q: 'A number is divisible by 10 if it ends in 0', answer: true },
-          { type: 'multiple', q: 'Calculate: 789 ÷ 6', options: ['131 r 3', '130 r 9', '132 r 3', '131 r 5'], answer: '131 r 3' },
-          { type: 'multiple', q: 'Which number is divisible by 4?', options: ['23', '45', '48', '51'], answer: '48' },
-          { type: 'fillBlank', q: '100 ÷ 5 = ___', answer: '20', accept: ['20'] },
-          { type: 'trueFalse', q: '234 is divisible by 6', answer: true },
-          { type: 'multiple', q: 'What is 5,678 ÷ 4?', options: ['1,419 r 2', '1,419 r 1', '1,420 r 2', '1,418 r 2'], answer: '1,419 r 2' },
-          { type: 'fillBlank', q: '225 ÷ 15 = ___', answer: '15', accept: ['15'] },
-          { type: 'multiple', q: 'A baker has 240 buns to pack into boxes of 8. How many full boxes?', options: ['30', '29', '31', '32'], answer: '30' },
-          { type: 'trueFalse', q: '765 is divisible by 9', answer: true },
-          { type: 'multiple', q: 'Calculate: 3,456 ÷ 11', options: ['314 r 2', '313 r 2', '314 r 4', '315 r 2'], answer: '314 r 2' },
-          { type: 'fillBlank', q: 'A number is divisible by 2 if it ends in ___', answer: 'even', accept: ['even', 'an even number', '0,2,4,6,8'] }
-        ]
+          {
+            type: "multiple",
+            q: "What is 0.875 rounded to the nearest hundredth?",
+            options: [
+              "0.87",
+              "0.88",
+              "0.89",
+              "0.90"
+            ],
+            answer: 1
+          },
+          {
+            type: "fillBlank",
+            q: "25% of 80 = _____",
+            answer: "20",
+            accept: [
+              "20"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Order from smallest to largest: 0.5, 0.505, 0.05, 0.055",
+            options: [
+              "0.05, 0.055, 0.5, 0.505",
+              "0.05, 0.055, 0.505, 0.5",
+              "0.505, 0.5, 0.055, 0.05",
+              "0.5, 0.505, 0.055, 0.05"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "0.375 = 3/8",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "What is 50% of 240? _____",
+            answer: "120",
+            accept: [
+              "120"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which decimal is equivalent to 7/20?",
+            options: [
+              "0.35",
+              "0.45",
+              "0.55",
+              "0.65"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "0.6 < 0.66",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Convert 0.24 to a percentage: ____%",
+            answer: "24",
+            accept: [
+              "24",
+              "24%"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 10% of 560?",
+            options: [
+              "5.6",
+              "56",
+              "56.0",
+              "Both b and c"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "0.125 = 1/8",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Round 3.4562 to 3 decimal places: _____",
+            answer: "3.456",
+            accept: [
+              "3.456"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What percentage is 15 out of 60?",
+            options: [
+              "20%",
+              "25%",
+              "30%",
+              "35%"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "0.999 < 1",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "75% of 400 = _____",
+            answer: "300",
+            accept: [
+              "300"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is larger: 0.7 or 7/10?",
+            options: [
+              "0.7",
+              "7/10",
+              "They are equal",
+              "Cannot compare"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "The decimal 0.5 is the same as 50%.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Convert 3/5 to a decimal: _____",
+            answer: "0.6",
+            accept: [
+              "0.6"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 30% of 250?",
+            options: [
+              "65",
+              "70",
+              "75",
+              "80"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "0.333... is approximately 1/3.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The decimal for 9% is _____.",
+            answer: "0.09",
+            accept: [
+              "0.09"
+            ]
+          }
+        ],
+        id: "y5-maths-4",
+        description: "Decimals & Percentages"
       },
       {
-        id: 'y5-maths-5',
-        name: 'Fractions',
-        description: 'Equivalent fractions, improper/mixed numbers, add/subtract, multiply',
+        title: "Measurement",
         questions: [
-          { type: 'multiple', q: 'Which fraction is equivalent to 1/2?', options: ['2/4', '2/3', '2/5', '3/6'], answer: '2/4' },
-          { type: 'fillBlank', q: '3/4 + 1/4 = ___', answer: '1', accept: ['1', '4/4'] },
-          { type: 'multiple', q: 'What is 5/8 - 2/8?', options: ['3/8', '3/16', '2/8', '7/8'], answer: '3/8' },
-          { type: 'trueFalse', q: 'The improper fraction 7/4 is the same as 1 3/4', answer: true },
-          { type: 'multiple', q: 'What is 2/3 + 1/3?', options: ['3/3', '1', '3/6', 'Both A and B'], answer: 'Both A and B' },
-          { type: 'fillBlank', q: 'Convert 11/4 to a mixed number: ___ ___/___', answer: '2 3/4', accept: ['2 3/4', '2three-fourths'] },
-          { type: 'multiple', q: 'Which fraction is NOT equivalent to 2/5?', options: ['4/10', '6/15', '8/20', '5/10'], answer: '5/10' },
-          { type: 'trueFalse', q: '3/5 > 2/5', answer: true },
-          { type: 'multiple', q: 'What is 1/3 of 12?', options: ['4', '6', '3', '8'], answer: '4' },
-          { type: 'fillBlank', q: '1/2 × 8 = ___', answer: '4', accept: ['4'] },
-          { type: 'multiple', q: 'Add: 1/4 + 2/4 + 1/4', options: ['4/4', '1', '4/8', 'Both A and B'], answer: 'Both A and B' },
-          { type: 'trueFalse', q: 'The mixed number 2 1/2 equals the improper fraction 5/2', answer: true },
-          { type: 'multiple', q: 'What is 3/4 - 1/4?', options: ['2/4', '1/2', '2/8', 'Both A and B'], answer: 'Both A and B' },
-          { type: 'fillBlank', q: '5/6 - 2/6 = ___', answer: '3/6', accept: ['3/6', '1/2'] },
-          { type: 'multiple', q: 'Order from smallest to largest: 1/2, 3/4, 1/4', options: ['1/4, 1/2, 3/4', '1/2, 1/4, 3/4', '3/4, 1/2, 1/4', '1/4, 3/4, 1/2'], answer: '1/4, 1/2, 3/4' },
-          { type: 'trueFalse', q: '2/3 is greater than 3/5', answer: true },
-          { type: 'fillBlank', q: 'The numerator in the fraction 7/9 is ___', answer: '7', accept: ['7'] },
-          { type: 'multiple', q: 'What is 1/5 of 20?', options: ['4', '5', '3', '6'], answer: '4' },
-          { type: 'trueFalse', q: '4/5 and 8/10 are equivalent', answer: true },
-          { type: 'multiple', q: 'Which mixed number equals 9/4?', options: ['2 1/4', '2 2/4', '1 1/4', '3 1/4'], answer: '2 1/4' },
-          { type: 'fillBlank', q: '2/3 + 1/3 = ___', answer: '1', accept: ['1', '3/3'] }
-        ]
+          {
+            type: "fillBlank",
+            q: "3.5 km = _____ m",
+            answer: "3500",
+            accept: [
+              "3500"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the perimeter of a rectangle with length 8cm and width 5cm?",
+            options: [
+              "13cm",
+              "26cm",
+              "40cm",
+              "56cm"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "1 litre = 1000 ml",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The area of a rectangle measuring 7cm × 9cm is _____ cm²",
+            answer: "63",
+            accept: [
+              "63"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Convert 4500 grams to kilograms.",
+            options: [
+              "0.45 kg",
+              "4.5 kg",
+              "45 kg",
+              "450 kg"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The perimeter of a shape is the area inside it.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "The perimeter of a square with side 6cm is _____ cm",
+            answer: "24",
+            accept: [
+              "24"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the volume of a cube with side length 5cm?",
+            options: [
+              "15 cm³",
+              "25 cm³",
+              "125 cm³",
+              "500 cm³"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "2.5 metres = 250 centimetres.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A composite shape made of two rectangles: one 4×3 and one 2×5. Total area = _____ cm²",
+            answer: "22",
+            accept: [
+              "22"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What metric unit would you use to measure the distance between two cities?",
+            options: [
+              "centimetres",
+              "metres",
+              "kilometres",
+              "millimetres"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Volume is measured in square units.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "7200 seconds = _____ minutes",
+            answer: "120",
+            accept: [
+              "120"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "A rectangle has area 48 cm² and length 8cm. What is its width?",
+            options: [
+              "6 cm",
+              "8 cm",
+              "10 cm",
+              "12 cm"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "1 metre = 100 millimetres.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "5.2 litres = _____ ml",
+            answer: "5200",
+            accept: [
+              "5200"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the perimeter of a triangle with sides 5cm, 5cm, and 8cm?",
+            options: [
+              "13cm",
+              "18cm",
+              "20cm",
+              "25cm"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A kilogram is 1000 grams.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Area of a rectangle = length × _____",
+            answer: "width",
+            accept: [
+              "width"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Convert 2.3 km to metres.",
+            options: [
+              "23 m",
+              "230 m",
+              "2300 m",
+              "23000 m"
+            ],
+            answer: 2
+          }
+        ],
+        id: "y5-maths-5",
+        description: "Measurement"
       },
       {
-        id: 'y5-maths-6',
-        name: 'Decimals & Percentages',
-        description: '3 decimal places, ordering, converting fractions/decimals/percentages',
+        title: "Geometry",
         questions: [
-          { type: 'multiple', q: 'What is 0.5 as a percentage?', options: ['50%', '5%', '0.5%', '500%'], answer: '50%' },
-          { type: 'fillBlank', q: '1/4 as a decimal is ___', answer: '0.25', accept: ['0.25', '.25'] },
-          { type: 'multiple', q: 'Which decimal is the largest?', options: ['0.45', '0.54', '0.405', '0.504'], answer: '0.54' },
-          { type: 'trueFalse', q: '0.75 equals 75%', answer: true },
-          { type: 'fillBlank', q: '3/10 as a percentage is ___', answer: '30%', accept: ['30%', '30'] },
-          { type: 'multiple', q: 'Order these decimals from smallest to largest: 0.3, 0.03, 0.33', options: ['0.03, 0.3, 0.33', '0.03, 0.33, 0.3', '0.3, 0.33, 0.03', '0.33, 0.3, 0.03'], answer: '0.03, 0.3, 0.33' },
-          { type: 'trueFalse', q: '1/2 = 0.5 = 50%', answer: true },
-          { type: 'multiple', q: 'What is 25% as a decimal?', options: ['0.25', '2.5', '0.025', '25'], answer: '0.25' },
-          { type: 'fillBlank', q: '0.7 as a fraction is ___', answer: '7/10', accept: ['7/10', 'seven tenths'] },
-          { type: 'multiple', q: 'Which is NOT equivalent to 0.5?', options: ['1/2', '50%', '5/10', '0.50'], answer: 'None of these' },
-          { type: 'trueFalse', q: '0.123 has three decimal places', answer: true },
-          { type: 'fillBlank', q: '0.8 as a percentage is ___', answer: '80%', accept: ['80%', '80'] },
-          { type: 'multiple', q: 'What is 3/4 as a decimal?', options: ['0.75', '0.34', '0.7', '0.25'], answer: '0.75' },
-          { type: 'trueFalse', q: '0.456 is less than 0.465', answer: true },
-          { type: 'fillBlank', q: '10% as a decimal is ___', answer: '0.1', accept: ['0.1', '.1'] },
-          { type: 'multiple', q: 'Order from smallest to largest: 0.101, 0.11, 0.011', options: ['0.011, 0.101, 0.11', '0.11, 0.101, 0.011', '0.011, 0.11, 0.101', '0.101, 0.011, 0.11'], answer: '0.011, 0.101, 0.11' },
-          { type: 'trueFalse', q: '0.25 = 25% = 1/4', answer: true },
-          { type: 'fillBlank', q: 'As a percentage, 0.05 is ___', answer: '5%', accept: ['5%', '5'] },
-          { type: 'multiple', q: 'What is 2/5 as a decimal?', options: ['0.4', '0.25', '0.2', '0.45'], answer: '0.4' },
-          { type: 'trueFalse', q: '0.9 is greater than 0.99', answer: false },
-          { type: 'fillBlank', q: '20% as a decimal is ___', answer: '0.2', accept: ['0.2', '.2'] }
-        ]
+          {
+            type: "multiple",
+            q: "What is the sum of angles in a triangle?",
+            options: [
+              "90°",
+              "180°",
+              "270°",
+              "360°"
+            ],
+            answer: 1
+          },
+          {
+            type: "fillBlank",
+            q: "If one angle in a triangle is 60° and another is 70°, the third angle is _____°",
+            answer: "50",
+            accept: [
+              "50"
+            ]
+          },
+          {
+            type: "trueFalse",
+            q: "A regular pentagon has all sides and angles equal.",
+            answer: true
+          },
+          {
+            type: "multiple",
+            q: "What is the sum of interior angles in a quadrilateral?",
+            options: [
+              "180°",
+              "270°",
+              "360°",
+              "450°"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "An obtuse angle is greater than 90° but less than 180°.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A shape reflected in a mirror line is called a _____ image.",
+            answer: "mirror",
+            accept: [
+              "mirror"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which of these is a regular polygon?",
+            options: [
+              "a rectangle",
+              "an equilateral triangle",
+              "a trapezium",
+              "a scalene triangle"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A right angle measures exactly 90°.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "When a shape moves without rotating, this is called a _____",
+            answer: "translation",
+            accept: [
+              "translation"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How many lines of symmetry does a square have?",
+            options: [
+              "2",
+              "4",
+              "6",
+              "8"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "An equilateral triangle has three equal sides and three equal angles.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A polygon with 6 sides is called a _____",
+            answer: "hexagon",
+            accept: [
+              "hexagon"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which angle is acute?",
+            options: [
+              "91°",
+              "90°",
+              "45°",
+              "180°"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A reflex angle is less than 180°.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "A shape rotated 90° clockwise around a point has been _____",
+            answer: "rotated",
+            accept: [
+              "rotated"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How many sides does a regular octagon have?",
+            options: [
+              "6",
+              "8",
+              "10",
+              "12"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Vertically opposite angles are equal.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The point where two sides of a triangle meet is called a _____",
+            answer: "vertex",
+            accept: [
+              "vertex",
+              "vertices"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What type of triangle has two equal sides?",
+            options: [
+              "isosceles",
+              "equilateral",
+              "scalene",
+              "right-angled"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "An irregular polygon has sides and angles that are not all equal.",
+            answer: true
+          }
+        ],
+        id: "y5-maths-6",
+        description: "Geometry"
       },
       {
-        id: 'y5-maths-7',
-        name: 'Measurement',
-        description: 'Convert metric units, area/perimeter, volume of cuboids',
+        title: "Prime Numbers & Factors",
         questions: [
-          { type: 'fillBlank', q: '5 km = ___ m', answer: '5000', accept: ['5000', '5,000'] },
-          { type: 'multiple', q: 'What is the perimeter of a rectangle with length 8 cm and width 5 cm?', options: ['26 cm', '40 cm', '13 cm', '24 cm'], answer: '26 cm' },
-          { type: 'multiple', q: 'Calculate the area of a rectangle: length 7 cm, width 4 cm', options: ['28 cm²', '22 cm²', '11 cm²', '56 cm²'], answer: '28 cm²' },
-          { type: 'trueFalse', q: '1 kg = 1,000 g', answer: true },
-          { type: 'fillBlank', q: '3,500 ml = ___ litres', answer: '3.5', accept: ['3.5', '3½'] },
-          { type: 'multiple', q: 'What is the volume of a cuboid with length 3 cm, width 4 cm, height 5 cm?', options: ['60 cm³', '50 cm³', '12 cm³', '40 cm³'], answer: '60 cm³' },
-          { type: 'trueFalse', q: '2.5 metres equals 250 cm', answer: true },
-          { type: 'fillBlank', q: '8 metres = ___ cm', answer: '800', accept: ['800'] },
-          { type: 'multiple', q: 'A square has a perimeter of 20 cm. What is the length of each side?', options: ['5 cm', '10 cm', '4 cm', '20 cm'], answer: '5 cm' },
-          { type: 'trueFalse', q: 'Area is measured in cubic units', answer: false },
-          { type: 'multiple', q: 'Convert 4,200 ml to litres', options: ['4.2 L', '0.42 L', '42 L', '420 L'], answer: '4.2 L' },
-          { type: 'fillBlank', q: 'A cuboid has dimensions 2 m × 3 m × 4 m. Volume = ___ m³', answer: '24', accept: ['24', '24 cubic metres'] },
-          { type: 'trueFalse', q: '1 litre = 100 ml', answer: false },
-          { type: 'fillBlank', q: '7.5 kg = ___ g', answer: '7500', accept: ['7500', '7,500'] },
-          { type: 'multiple', q: 'What is the perimeter of a square with side 6 m?', options: ['24 m', '36 m²', '12 m', '18 m'], answer: '24 m' },
-          { type: 'trueFalse', q: 'A rectangle with length 10 cm and width 5 cm has an area of 15 cm²', answer: false },
-          { type: 'fillBlank', q: 'Convert 2,500 g to kg: ___ kg', answer: '2.5', accept: ['2.5', '2½'] },
-          { type: 'multiple', q: 'A garden is 12 m long and 8 m wide. What is its perimeter?', options: ['40 m', '96 m', '20 m', '96 m²'], answer: '40 m' },
-          { type: 'trueFalse', q: '3 cm = 30 mm', answer: true },
-          { type: 'fillBlank', q: '6.5 L = ___ ml', answer: '6500', accept: ['6500', '6,500'] },
-          { type: 'multiple', q: 'A cuboid has length 5 m, width 2 m, height 3 m. Volume = ___', options: ['30 m³', '10 m³', '15 m³', '60 m³'], answer: '30 m³' }
-        ]
+          {
+            type: "multiple",
+            q: "Which of these is a prime number?",
+            options: [
+              "4",
+              "9",
+              "13",
+              "15"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "2 is the only even prime number.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "What are the prime numbers less than 20? List them: _____.",
+            answer: "2, 3, 5, 7, 11, 13, 17, 19",
+            accept: [
+              "2, 3, 5, 7, 11, 13, 17, 19",
+              "2,3,5,7,11,13,17,19"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 5²?",
+            options: [
+              "10",
+              "25",
+              "32",
+              "52"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "1 is considered a prime number.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "3³ = _____",
+            answer: "27",
+            accept: [
+              "27"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What are the factors of 24?",
+            options: [
+              "1,2,3,4,6,8,12,24",
+              "1,2,3,4,5,6,24",
+              "2,4,6,12,24",
+              "1,3,8,24"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "7 is a factor of 49.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The factor pairs of 36 include 4 and _____",
+            answer: "9",
+            accept: [
+              "9"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which number is NOT prime?",
+            options: [
+              "11",
+              "13",
+              "17",
+              "19"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "6² = 36",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The common factors of 12 and 18 are 1, 2, 3, and _____",
+            answer: "6",
+            accept: [
+              "6"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is 4³?",
+            options: [
+              "12",
+              "43",
+              "64",
+              "81"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "20 is a factor of 5.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "2⁵ = _____",
+            answer: "32",
+            accept: [
+              "32"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How many factor pairs does 16 have?",
+            options: [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Prime numbers have exactly two factors: 1 and itself.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The greatest common factor of 15 and 25 is _____",
+            answer: "5",
+            accept: [
+              "5"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is a square number?",
+            options: [
+              "21",
+              "35",
+              "49",
+              "57"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "11 is a prime number.",
+            answer: true
+          }
+        ],
+        id: "y5-maths-7",
+        description: "Prime Numbers & Factors"
       },
       {
-        id: 'y5-maths-8',
-        name: 'Geometry',
-        description: 'Angles, polygons, reflection, translation',
+        title: "Statistics",
         questions: [
-          { type: 'multiple', q: 'What is the sum of angles on a straight line?', options: ['180°', '90°', '360°', '45°'], answer: '180°' },
-          { type: 'fillBlank', q: 'A right angle measures ___°', answer: '90', accept: ['90'] },
-          { type: 'multiple', q: 'How many sides does a pentagon have?', options: ['5', '6', '4', '8'], answer: '5' },
-          { type: 'trueFalse', q: 'The sum of angles around a point is 360°', answer: true },
-          { type: 'multiple', q: 'What are vertically opposite angles?', options: ['Equal', 'Different', 'Always 90°', 'Always 180°'], answer: 'Equal' },
-          { type: 'fillBlank', q: 'An octagon has ___ sides', answer: '8', accept: ['8'] },
-          { type: 'trueFalse', q: 'A regular polygon has all sides and angles equal', answer: true },
-          { type: 'multiple', q: 'How many lines of symmetry does a square have?', options: ['4', '2', '1', '0'], answer: '4' },
-          { type: 'fillBlank', q: 'The interior angles of a triangle sum to ___°', answer: '180', accept: ['180'] },
-          { type: 'multiple', q: 'Which shape is NOT a regular polygon?', options: ['Regular pentagon', 'Square', 'Scalene triangle', 'Equilateral triangle'], answer: 'Scalene triangle' },
-          { type: 'trueFalse', q: 'A circle has infinite lines of symmetry', answer: true },
-          { type: 'fillBlank', q: 'A hexagon has ___ sides', answer: '6', accept: ['6'] },
-          { type: 'multiple', q: 'If one angle on a straight line is 60°, the other is ___', options: ['120°', '60°', '90°', '30°'], answer: '120°' },
-          { type: 'trueFalse', q: 'Translation means sliding a shape without rotating', answer: true },
-          { type: 'multiple', q: 'A reflection creates a mirror image. True or False?', options: ['True', 'False', 'Sometimes', 'Only for some shapes'], answer: 'True' },
-          { type: 'fillBlank', q: 'A quadrilateral has ___ sides', answer: '4', accept: ['4'] },
-          { type: 'trueFalse', q: 'A rectangle has 2 lines of symmetry', answer: true },
-          { type: 'multiple', q: 'What happens to an angle when a shape is reflected?', options: ['Stays the same', 'Doubles', 'Halves', 'Becomes 90°'], answer: 'Stays the same' },
-          { type: 'fillBlank', q: 'A decagon has ___ sides', answer: '10', accept: ['10'] },
-          { type: 'trueFalse', q: 'An isosceles triangle has two equal sides', answer: true },
-          { type: 'multiple', q: 'How many lines of symmetry does an equilateral triangle have?', options: ['3', '1', '0', '2'], answer: '3' }
-        ]
-      },
-      {
-        id: 'y5-maths-9',
-        name: 'Statistics',
-        description: 'Tables, timetables, line graphs, solving problems',
-        questions: [
-          { type: 'multiple', q: 'What does the mode represent in statistics?', options: ['The most frequent value', 'The middle value', 'The average value', 'The spread'], answer: 'The most frequent value' },
-          { type: 'fillBlank', q: 'The range is found by subtracting the ___ number from the ___ number', answer: 'smallest/highest', accept: ['smallest, highest', 'lowest, highest', 'minimum, maximum'] },
-          { type: 'trueFalse', q: 'A bar chart uses bars to represent data', answer: true },
-          { type: 'multiple', q: 'A train leaves at 14:30 and travels for 2 hours 15 minutes. When does it arrive?', options: ['16:45', '16:15', '17:00', '16:30'], answer: '16:45' },
-          { type: 'multiple', q: 'The set of numbers is: 2, 3, 5, 3, 8, 3. What is the mode?', options: ['3', '2', '5', '8'], answer: '3' },
-          { type: 'trueFalse', q: 'A line graph shows continuous data over time', answer: true },
-          { type: 'fillBlank', q: 'The ___ is the middle value when data is ordered', answer: 'median', accept: ['median'] },
-          { type: 'multiple', q: 'Data: 4, 7, 2, 9, 3. What is the median?', options: ['4', '7', '5', '2'], answer: '4' },
-          { type: 'multiple', q: 'A bus timetable shows departure times at: 09:00, 09:30, 10:00, 10:30. The interval is ___', options: ['30 minutes', '1 hour', '15 minutes', '45 minutes'], answer: '30 minutes' },
-          { type: 'trueFalse', q: 'The mean is calculated by adding all values and dividing by how many there are', answer: true },
-          { type: 'fillBlank', q: 'Range of 2, 5, 8, 12 is ___', answer: '10', accept: ['10'] },
-          { type: 'multiple', q: 'Numbers: 10, 15, 12, 18, 20. What is the mean?', options: ['15', '12', '18', '20'], answer: '15' },
-          { type: 'trueFalse', q: 'A pictogram uses symbols to represent data', answer: true },
-          { type: 'fillBlank', q: 'A school day starts at 08:45 and ends at 15:15. Duration = ___ hours ___ minutes', answer: '6 hours 30 minutes', accept: ['6 hours 30 minutes', '6:30', '6 1/2'] },
-          { type: 'multiple', q: 'Which data is best shown in a pie chart?', options: ['Parts of a whole', 'Trends over time', 'Specific values', 'Frequencies'], answer: 'Parts of a whole' },
-          { type: 'trueFalse', q: 'A scatter graph shows the relationship between two sets of data', answer: true },
-          { type: 'fillBlank', q: 'If a timetable shows times at 07:00 and 07:45, the interval is ___ minutes', answer: '45', accept: ['45'] },
-          { type: 'multiple', q: 'Data set: 5, 5, 6, 7, 8, 9, 10. Mode = ___', options: ['5', '7', '10', '8'], answer: '5' },
-          { type: 'trueFalse', q: 'A frequency table shows how often values occur', answer: true },
-          { type: 'multiple', q: 'A film starts at 19:30 and lasts 2 hours 10 minutes. End time = ___', options: ['21:40', '21:30', '21:50', '20:40'], answer: '21:40' },
-          { type: 'fillBlank', q: 'Numbers: 2, 4, 6, 8, 10. Mean = ___', answer: '6', accept: ['6'] }
-        ]
-      },
-      {
-        id: 'y5-maths-10',
-        name: 'Roman Numerals & Sequences',
-        description: 'Roman numerals to 1000, patterns in sequences',
-        questions: [
-          { type: 'fillBlank', q: 'The Roman numeral for 5 is ___', answer: 'V', accept: ['V'] },
-          { type: 'multiple', q: 'What does X represent in Roman numerals?', options: ['10', '100', '5', '1'], answer: '10' },
-          { type: 'fillBlank', q: 'Roman numeral for 50 is ___', answer: 'L', accept: ['L'] },
-          { type: 'multiple', q: 'Convert 27 to Roman numerals', options: ['XXVII', 'XVII', 'XXII', 'XXXVII'], answer: 'XXVII' },
-          { type: 'trueFalse', q: 'IV represents 4', answer: true },
-          { type: 'fillBlank', q: 'The Roman numeral for 100 is ___', answer: 'C', accept: ['C'] },
-          { type: 'multiple', q: 'Convert VI to numbers', options: ['6', '4', '5', '7'], answer: '6' },
-          { type: 'trueFalse', q: 'XL represents 40', answer: true },
-          { type: 'fillBlank', q: 'M represents ___ in Roman numerals', answer: '1000', accept: ['1000', 'one thousand'] },
-          { type: 'multiple', q: 'Convert 49 to Roman numerals', options: ['XLIX', 'IL', 'XLVIII', 'XLIX'], answer: 'XLIX' },
-          { type: 'trueFalse', q: 'CD represents 400', answer: true },
-          { type: 'fillBlank', q: 'The next number in the sequence 2, 4, 6, 8 is ___', answer: '10', accept: ['10'] },
-          { type: 'multiple', q: 'What is the pattern: 3, 6, 9, 12?', options: ['Add 3', 'Add 2', 'Multiply by 2', 'Add 4'], answer: 'Add 3' },
-          { type: 'fillBlank', q: 'Next in sequence: 5, 10, 15, 20, ___', answer: '25', accept: ['25'] },
-          { type: 'trueFalse', q: 'The sequence 1, 4, 9, 16, 25 is the square numbers', answer: true },
-          { type: 'multiple', q: 'What comes next: 100, 90, 80, 70, ___?', options: ['60', '50', '40', '30'], answer: '60' },
-          { type: 'fillBlank', q: 'The next number in 2, 4, 8, 16 is ___', answer: '32', accept: ['32'] },
-          { type: 'trueFalse', q: 'The sequence 1, 1, 2, 3, 5, 8 is a Fibonacci sequence', answer: true },
-          { type: 'multiple', q: 'Convert XLII to numbers', options: ['42', '52', '32', '41'], answer: '42' },
-          { type: 'fillBlank', q: 'In the sequence 1, 8, 27, 64, each number is a ___', answer: 'cube', accept: ['cube number', 'cube'] },
-          { type: 'multiple', q: 'What is the rule for this sequence: 7, 14, 21, 28?', options: ['Add 7 each time', 'Double each time', 'Add 8 each time', 'Multiply by 2'], answer: 'Add 7 each time' }
-        ]
+          {
+            type: "multiple",
+            q: "What is the mean of 4, 8, 6, 10, 12?",
+            options: [
+              "6",
+              "8",
+              "10",
+              "12"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A line graph is used to show changes over time.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "If a timetable shows a train departs at 14:25 and the journey takes 45 minutes, it arrives at _____ (24-hour format)",
+            answer: "15:10",
+            accept: [
+              "15:10",
+              "1510",
+              "3:10 pm"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "In a two-way table, what does the intersection of a row and column show?",
+            options: [
+              "frequency",
+              "total",
+              "both data values",
+              "none of these"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "The mode is the middle value when data is arranged in order.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "The median of 2, 5, 7, 9, 11 is _____",
+            answer: "7",
+            accept: [
+              "7"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is the most frequently occurring value in a dataset?",
+            options: [
+              "mean",
+              "median",
+              "mode",
+              "range"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A bar chart is suitable for comparing categories.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The range of 3, 8, 12, 5, 15 is _____",
+            answer: "12",
+            accept: [
+              "12"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "The mean of five numbers is 6. What is their total?",
+            options: [
+              "1",
+              "6",
+              "30",
+              "36"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A timetable shows departure and arrival times for vehicles.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "If the mean is 10 and there are 4 values, the sum is _____",
+            answer: "40",
+            accept: [
+              "40"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which statistic is NOT affected by outliers?",
+            options: [
+              "mean",
+              "median",
+              "mode",
+              "range"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A line graph connects points with straight lines to show trends.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The median of 1, 3, 4, 8, 10, 12 is _____ (find the middle pair)",
+            answer: "6",
+            accept: [
+              "6"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "In a two-way table with 50 items total, if one cell shows 12, what percentage is this?",
+            options: [
+              "12%",
+              "24%",
+              "38%",
+              "50%"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The mode must be a whole number.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "The mean of 5, 10, 15, 20 is _____",
+            answer: "12.5",
+            accept: [
+              "12.5"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "A line graph rising from left to right indicates what trend?",
+            options: [
+              "decrease",
+              "increase",
+              "no change",
+              "fluctuation"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "To find the median of an even set of numbers, you average the two middle values.",
+            answer: true
+          }
+        ],
+        id: "y5-maths-8",
+        description: "Statistics"
       }
     ]
   },
   english: {
-    name: 'English',
-    icon: '📖',
-    color: '#2196F3',
+    name: "English",
+    icon: "📚",
+    color: "#2196F3",
     lessons: [
       {
-        id: 'y5-english-1',
-        name: 'Modal Verbs',
-        description: 'might, should, will, must, could, would, may, shall',
+        title: "Relative Clauses",
         questions: [
-          { type: 'multiple', q: 'Which modal verb shows obligation or necessity?', options: ['must', 'might', 'could', 'would'], answer: 'must' },
-          { type: 'fillBlank', q: 'I ___ go to school today (expressing permission)', answer: 'may', accept: ['may', 'can'] },
-          { type: 'multiple', q: 'Complete: You ___ arrive on time if you leave early.', options: ['should', 'must', 'will', 'might'], answer: 'should' },
-          { type: 'trueFalse', q: '"I might go to the park" shows a definite plan', answer: false },
-          { type: 'fillBlank', q: 'She ___ be at home (showing possibility)', answer: 'might', accept: ['might', 'could'] },
-          { type: 'multiple', q: 'Which sentence uses a modal verb correctly?', options: ['He can swim very well', 'She must to study', 'They will goes tomorrow', 'I could goes there'], answer: 'He can swim very well' },
-          { type: 'trueFalse', q: '"Would you like tea?" - Would is a modal verb', answer: true },
-          { type: 'fillBlank', q: 'The student ___ complete their homework (showing need)', answer: 'must', accept: ['must'] },
-          { type: 'multiple', q: 'What does "should" typically express?', options: ['Advice or recommendation', 'Certainty', 'Permission', 'Past action'], answer: 'Advice or recommendation' },
-          { type: 'trueFalse', q: 'All modal verbs are followed by the base form of the verb', answer: true },
-          { type: 'fillBlank', q: '___ I help you? (offering help)', answer: 'Shall', accept: ['Shall', 'Can'] },
-          { type: 'multiple', q: 'Choose the correct sentence:', options: ['They could go to the cinema', 'They could goes to the cinema', 'They could to go to the cinema', 'They cans go to the cinema'], answer: 'They could go to the cinema' },
-          { type: 'trueFalse', q: '"I will definitely pass the test" shows certainty', answer: true },
-          { type: 'fillBlank', q: 'You ___ not park here (showing prohibition)', answer: 'must', accept: ['must'] },
-          { type: 'multiple', q: 'Which modal verb is used for polite requests?', options: ['Could', 'must', 'will', 'might'], answer: 'Could' },
-          { type: 'trueFalse', q: '"Would" can be used to talk about habits in the past', answer: true },
-          { type: 'fillBlank', q: 'The weather ___ be sunny tomorrow (showing possibility)', answer: 'might', accept: ['might', 'may', 'could'] },
-          { type: 'multiple', q: 'Correct the modal verb: "She may not to come"', options: ['She may not come', 'She not may come', 'She may come not', 'She mays not come'], answer: 'She may not come' },
-          { type: 'trueFalse', q: '"Must" and "have to" always mean exactly the same thing', answer: false },
-          { type: 'fillBlank', q: '___ you pass me the salt, please? (polite request)', answer: 'Could', accept: ['Could', 'Would', 'Can'] }
-        ]
+          {
+            type: "multiple",
+            q: "Which relative clause is correct? \"The book _____ I borrowed is fascinating.\"",
+            options: [
+              "who",
+              "which",
+              "whose",
+              "where"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A relative clause must contain a verb.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The person _____ helped me is my best friend.\"",
+            answer: "who",
+            accept: [
+              "who"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which sentence uses a relative clause correctly?",
+            options: [
+              "The girl where she loves reading.",
+              "The girl which loves reading.",
+              "The girl who loves reading.",
+              "The girl whose loves reading."
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"The house whose roof is blue\" uses \"whose\" to show possession.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Fill in the blank: \"The town _____ I grew up is beautiful.\"",
+            answer: "where",
+            accept: [
+              "where"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is a relative clause?",
+            options: [
+              "A type of question",
+              "A clause that describes a noun",
+              "A main clause",
+              "A series of facts"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Relative clauses can add information about people, places, or things.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The teacher _____ teaches me is very kind.\"",
+            answer: "who",
+            accept: [
+              "who"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which relative pronoun refers to things?",
+            options: [
+              "who",
+              "whom",
+              "which",
+              "whose"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"The film which I watched\" is an example of a relative clause.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "\"The table _____ surface is wooden.\" Complete this.",
+            answer: "whose",
+            accept: [
+              "whose"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Choose the sentence with a correct relative clause: \"The boy that owns the dog\" or \"The boy whose owns the dog\"?",
+            options: [
+              "First",
+              "Second",
+              "Both",
+              "Neither"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "The relative pronoun \"whom\" refers to the object of a clause.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The place _____ I found the keys was unexpected.\"",
+            answer: "where",
+            accept: [
+              "where"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What function does a relative clause serve in a sentence?",
+            options: [
+              "describing a noun",
+              "connecting two sentences",
+              "replacing a noun",
+              "showing emphasis"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"The athletes who trained hard won the race\" correctly uses a relative clause.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Fill: \"The reason _____ I left early was important.\"",
+            answer: "why",
+            accept: [
+              "why"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Identify the relative clause: \"The cake that I baked yesterday tastes delicious.\"",
+            options: [
+              "that I baked yesterday",
+              "The cake",
+              "tastes delicious",
+              "baked"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "Relative clauses always begin with a relative pronoun.",
+            answer: true
+          }
+        ],
+        id: "y5-english-1",
+        description: "Relative Clauses"
       },
       {
-        id: 'y5-english-2',
-        name: 'Relative Clauses',
-        description: 'who, which, where, when, whose, that',
+        title: "Modal Verbs",
         questions: [
-          { type: 'multiple', q: 'Which relative pronoun is used for people?', options: ['who', 'which', 'where', 'whose'], answer: 'who' },
-          { type: 'fillBlank', q: 'The book ___ I read was interesting (relative pronoun)', answer: 'which', accept: ['which', 'that'] },
-          { type: 'multiple', q: 'Complete: The girl who ___ my friend is called Sarah.', options: ['is', 'are', 'am', 'be'], answer: 'is' },
-          { type: 'trueFalse', q: '"Where" is a relative pronoun used for places', answer: true },
-          { type: 'fillBlank', q: 'The building ___ they work is very tall', answer: 'where', accept: ['where'] },
-          { type: 'multiple', q: 'Which sentence correctly uses a relative clause?', options: ['The teacher who taught us was kind', 'The teacher who taught us was being kind', 'The teacher which taught us was kind', 'The teacher when taught us was kind'], answer: 'The teacher who taught us was kind' },
-          { type: 'trueFalse', q: '"Whose" shows possession in a relative clause', answer: true },
-          { type: 'fillBlank', q: 'The student ___ pencil I borrowed passed the exam', answer: 'whose', accept: ['whose'] },
-          { type: 'multiple', q: 'Choose the correct sentence:', options: ['The dog which barked was mine', 'The dog who barked was mine', 'The dog that barking was mine', 'The dog who was barked was mine'], answer: 'The dog which barked was mine' },
-          { type: 'trueFalse', q: 'Relative clauses always come after the noun they describe', answer: true },
-          { type: 'fillBlank', q: 'The time ___ we met was noon', answer: 'when', accept: ['when'] },
-          { type: 'multiple', q: 'What does a relative clause do in a sentence?', options: ['Provides extra information about a noun', 'Shows the main action', 'Expresses emotion', 'Gives a command'], answer: 'Provides extra information about a noun' },
-          { type: 'trueFalse', q: '"That" can be used as a relative pronoun', answer: true },
-          { type: 'fillBlank', q: 'The place ___ we went was beautiful', answer: 'where', accept: ['where'] },
-          { type: 'multiple', q: 'Correct: The person __ helped me was kind.', options: ['who', 'which', 'where', 'whose'], answer: 'who' },
-          { type: 'trueFalse', q: 'You cannot remove a relative clause from a sentence', answer: false },
-          { type: 'fillBlank', q: 'The book ___ is on the table belongs to me', answer: 'which', accept: ['which', 'that'] },
-          { type: 'multiple', q: 'Choose the sentence with a correct relative clause:', options: ['The girl whose mother is a doctor is smart', 'The girl which mother is a doctor is smart', 'The girl who mother is a doctor is smart', 'The girl where mother is a doctor is smart'], answer: 'The girl whose mother is a doctor is smart' },
-          { type: 'trueFalse', q: '"Which" is used for both people and things', answer: false },
-          { type: 'fillBlank', q: 'The reason ___ she left was unknown', answer: 'why', accept: ['why'] }
-        ]
+          {
+            type: "fillBlank",
+            q: "Complete: \"You _____ obey the rules.\" (obligation)",
+            answer: "must",
+            accept: [
+              "must"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which modal verb expresses possibility?",
+            options: [
+              "must",
+              "might",
+              "shall",
+              "will"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Should\" is a modal verb that gives advice.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"I _____ help you if you need me.\" (willingness)",
+            answer: "can",
+            accept: [
+              "can",
+              "could"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"would\" express in \"I would like some tea\"?",
+            options: [
+              "past",
+              "future",
+              "polite request",
+              "duty"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"Might\" is more certain than \"may\".",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"He _____ be late for the meeting.\" (uncertainty)",
+            answer: "might",
+            accept: [
+              "might",
+              "may",
+              "could"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which sentence is correct? \"She can to swim\" or \"She can swim\"?",
+            options: [
+              "First",
+              "Second",
+              "Both",
+              "Neither"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Will\" is used to express plans or promises.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"You _____ be quiet in the library.\" (requirement)",
+            answer: "must",
+            accept: [
+              "must"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the difference between \"can\" and \"could\"?",
+            options: [
+              "\"could\" is past tense of \"can\"",
+              "\"could\" is more polite",
+              "They mean the same",
+              "Both a and b"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "\"Shall\" can be used to make suggestions.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"I _____ eat the last biscuit if nobody wants it.\" (permission)",
+            answer: "may",
+            accept: [
+              "may",
+              "can"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which modal verb is strongest for showing obligation?",
+            options: [
+              "should",
+              "could",
+              "must",
+              "would"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"May I leave early?\" is a polite way to request permission.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"If I had studied, I _____ have passed.\" (missed opportunity)",
+            answer: "could",
+            accept: [
+              "could"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"should\" typically express?",
+            options: [
+              "ability",
+              "advice",
+              "requirement",
+              "future"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Modal verbs are followed by the base form of a verb.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"You _____ see this film; it's wonderful.\" (recommendation)",
+            answer: "should",
+            accept: [
+              "should"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Choose: \"He will can do it\" or \"He can do it\"?",
+            options: [
+              "First",
+              "Second",
+              "Both",
+              "Neither"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-english-2",
+        description: "Modal Verbs"
       },
       {
-        id: 'y5-english-3',
-        name: 'Parenthesis',
-        description: 'Brackets, dashes, commas to mark parenthesis',
+        title: "Parenthesis",
         questions: [
-          { type: 'multiple', q: 'What does parenthesis mean?', options: ['Extra information inserted into a sentence', 'A type of word', 'A grammatical tense', 'A punctuation mark'], answer: 'Extra information inserted into a sentence' },
-          { type: 'fillBlank', q: 'The swimmer (___) trained hard for the Olympics.', answer: 'optional insertion', accept: ['optional', 'extra information', 'a detail'] },
-          { type: 'trueFalse', q: 'Dashes can be used to mark parenthetical information', answer: true },
-          { type: 'multiple', q: 'Which sentence uses parenthesis correctly?', options: ['She went to the park (which is near her house)', 'She went (to) the park', 'She (went to) the park very quickly', '(She went) to the park'], answer: 'She went to the park (which is near her house)' },
-          { type: 'fillBlank', q: 'Commas, dashes, and ___ can all mark parenthesis', answer: 'brackets', accept: ['brackets', 'parentheses'] },
-          { type: 'trueFalse', q: 'A parenthetical phrase must be essential to the sentence', answer: false },
-          { type: 'multiple', q: 'Complete: The book – my favourite – is on the shelf.', options: ['is', 'are', 'was', 'were'], answer: 'is' },
-          { type: 'trueFalse', q: 'If you remove parenthetical information, the sentence should still make sense', answer: true },
-          { type: 'fillBlank', q: 'She wore (a bright red dress) to the party.', answer: 'optional detail', accept: ['a detail', 'extra', 'parenthetical information'] },
-          { type: 'multiple', q: 'What is the function of brackets in this sentence: "The museum (which opened last year) is impressive"?', options: ['To add extra information', 'To show multiplication', 'To indicate emphasis', 'To show alternatives'], answer: 'To add extra information' },
-          { type: 'trueFalse', q: 'Dashes – like these – are used instead of commas for emphasis', answer: true },
-          { type: 'fillBlank', q: 'The footballer, who is only seventeen, ___ already professional.', answer: 'is', accept: ['is'] },
-          { type: 'multiple', q: 'Which correctly uses parenthesis with commas?', options: ['The café, next to the shop, is lovely', 'The café next to the shop is lovely', 'The, café next to the shop is lovely', 'The café, next to the, shop is lovely'], answer: 'The café, next to the shop, is lovely' },
-          { type: 'trueFalse', q: 'Parenthetical information is always in commas', answer: false },
-          { type: 'fillBlank', q: 'My sister (who lives in Paris) ___ me last week.', answer: 'visited', accept: ['visited', 'rings'] },
-          { type: 'multiple', q: 'Choose the correct use of dashes:', options: ['The car – an old model – still runs well', 'The car – an old model still runs well', 'The car an old model – still runs well', '– The car an old model – still runs well'], answer: 'The car – an old model – still runs well' },
-          { type: 'trueFalse', q: 'Brackets [like these] are more formal than dashes', answer: true },
-          { type: 'fillBlank', q: 'The recipe (from her grandmother) was ___', answer: 'delicious', accept: ['delicious', 'excellent', 'wonderful'] },
-          { type: 'multiple', q: 'What punctuation marks this parenthetical phrase? "The film which was long was interesting"', options: ['Commas around "which was long"', 'Dashes', 'Brackets', 'No punctuation needed'], answer: 'Commas around "which was long"' },
-          { type: 'trueFalse', q: 'You can use commas, dashes, OR brackets – they are interchangeable', answer: false },
-          { type: 'fillBlank', q: 'The teacher – Mr Smith – gave us ___', answer: 'homework', accept: ['homework', 'a lot'] }
-        ]
+          {
+            type: "multiple",
+            q: "Which punctuation pair is used for parenthesis?",
+            options: [
+              "commas only",
+              "brackets only",
+              "dashes only",
+              "all of these"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "Information in parenthesis is essential to the sentence's meaning.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The teacher — very experienced — explained the lesson well.\"",
+            answer: "very experienced",
+            accept: [
+              "very experienced"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which sentence uses parenthesis correctly?",
+            options: [
+              "My sister, a doctor works in London.",
+              "My sister, a doctor, works in London.",
+              "My sister a doctor works in London.",
+              "My sister — a doctor works in London."
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Brackets can contain extra information that could be removed.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Rewrite with parenthesis using commas: \"The book which was published last year was popular.\"",
+            answer: "published last year",
+            accept: [
+              "published last year"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the effect of using dashes for parenthesis?",
+            options: [
+              "formal",
+              "casual",
+              "emphasizing",
+              "clarifying"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A sentence using parenthesis with commas should make sense if the information is removed.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The recipe (which my grandmother created) is delicious.\"",
+            answer: "which my grandmother created",
+            accept: [
+              "which my grandmother created"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which type of parenthesis is most formal?",
+            options: [
+              "commas",
+              "dashes",
+              "brackets",
+              "all equal"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Brackets are often used in academic or formal writing.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The film, _____, was nominated for an award.\"",
+            answer: "a thrilling masterpiece",
+            accept: [
+              "a thrilling masterpiece"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What should come after parenthetical information if the sentence continues?",
+            options: [
+              "nothing",
+              "a comma",
+              "a full stop",
+              "punctuation mark if required"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "Parenthetical information must come in the middle of a sentence.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Rewrite using dashes: \"The mayor, an important figure, cut the ribbon.\"",
+            answer: "an important figure",
+            accept: [
+              "an important figure"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which sentence uses parenthesis most effectively?",
+            options: [
+              "The cat, sleepy, yawned.",
+              "The cat, which was sleepy, yawned.",
+              "The cat, very sleepy, yawned.",
+              "All are equal"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Using brackets for parenthesis is rare in creative writing.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The athlete — despite his injury — performed brilliantly.\"",
+            answer: "despite his injury",
+            accept: [
+              "despite his injury"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the punctuation before and after parenthetical information with commas?",
+            options: [
+              "colon",
+              "full stop",
+              "comma",
+              "hyphen"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Parenthetical information adds depth without changing core meaning.",
+            answer: true
+          }
+        ],
+        id: "y5-english-3",
+        description: "Parenthesis"
       },
       {
-        id: 'y5-english-4',
-        name: 'Cohesive Devices',
-        description: 'Adverbials, pronouns, conjunctions, synonyms for cohesion',
+        title: "Cohesive Devices",
         questions: [
-          { type: 'multiple', q: 'What are cohesive devices?', options: ['Words/phrases that link ideas together', 'Types of verbs', 'Adjectives', 'Punctuation marks'], answer: 'Words/phrases that link ideas together' },
-          { type: 'fillBlank', q: '_____, she decided to go outside. (adverbial cohesive device)', answer: 'Eventually', accept: ['Eventually', 'Finally', 'Later', 'Then'] },
-          { type: 'multiple', q: 'Which is a cohesive device?', options: ['However', 'Beautiful', 'Quickly', 'Run'], answer: 'However' },
-          { type: 'trueFalse', q: 'Pronouns like "he", "she", "it" link ideas by referring back to previous nouns', answer: true },
-          { type: 'fillBlank', q: 'The boy played football. _____ was very tired afterwards.', answer: 'He', accept: ['He'] },
-          { type: 'multiple', q: 'What is a synonym used for in writing?', options: ['To avoid repetition and maintain interest', 'To make sentences longer', 'To confuse the reader', 'To change the meaning'], answer: 'To avoid repetition and maintain interest' },
-          { type: 'trueFalse', q: '"Moreover" is a cohesive device that adds information', answer: true },
-          { type: 'fillBlank', q: 'The cat was hungry. It ___ its food immediately. (pronoun link)', answer: 'ate', accept: ['ate', 'had', 'devoured'] },
-          { type: 'multiple', q: 'Which conjunction shows contrast?', options: ['However', 'Because', 'And', 'Also'], answer: 'However' },
-          { type: 'trueFalse', q: 'Conjunctions like "and", "but", "because" are cohesive devices', answer: true },
-          { type: 'fillBlank', q: 'She studied hard. ___, she failed the exam.', answer: 'However', accept: ['However', 'Nevertheless', 'Yet'] },
-          { type: 'multiple', q: 'Instead of repeating "the shop", what cohesive device could you use?', options: ['A pronoun like "it"', 'The same noun', 'An exclamation', 'A comma'], answer: 'A pronoun like "it"' },
-          { type: 'trueFalse', q: '"Finally" and "eventually" are adverbial cohesive devices', answer: true },
-          { type: 'fillBlank', q: 'The dog ran away. The girl chased the dog. The girl ___ it to the park.', answer: 'followed', accept: ['followed', 'chased'] },
-          { type: 'multiple', q: 'Which would best replace "car" in: "The car was fast. The __ was red."?', options: ['vehicle', 'automobile', 'machine', 'transport'], answer: 'vehicle' },
-          { type: 'trueFalse', q: 'Adverbials like "meanwhile", "afterwards", "previously" connect time sequences', answer: true },
-          { type: 'fillBlank', q: 'He liked pizza. _____, he enjoyed pasta. (cohesive device)', answer: 'Similarly', accept: ['Similarly', 'Also', 'Moreover'] },
-          { type: 'multiple', q: 'Choose the most cohesive paragraph:', options: ['The boy played. He was happy. It was fun.', 'The boy played. Therefore, he was happy.', 'The boy played. The boy was happy. The play was fun.', 'The boy was playing. He played. Playing was happy.'], answer: 'The boy played. Therefore, he was happy.' },
-          { type: 'trueFalse', q: 'Substituting "hospital" for "building" changes meaning if used cohesively', answer: false },
-          { type: 'fillBlank', q: 'The team lost. ___, they congratulated their opponents. (showing contrast)', answer: 'Nevertheless', accept: ['Nevertheless', 'However', 'Yet'] }
-        ]
+          {
+            type: "multiple",
+            q: "What is a cohesive device?",
+            options: [
+              "a word that starts sentences",
+              "a word that links ideas",
+              "a punctuation mark",
+              "a type of noun"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Connectives help link sentences and paragraphs together.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"First, I prepared. _____, I cooked.\"",
+            answer: "Then",
+            accept: [
+              "Then",
+              "Next"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is a temporal (time) cohesive device?",
+            options: [
+              "because",
+              "meanwhile",
+              "therefore",
+              "however"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Pronouns like \"it\" and \"she\" can create cohesion by referring back.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"I failed the test _____ I hadn't studied.\"",
+            answer: "because",
+            accept: [
+              "because"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"however\" show in a text?",
+            options: [
+              "addition",
+              "contrast",
+              "cause",
+              "time"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Therefore\" is used to show consequence or result.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"She missed the bus. _____, she arrived late.\"",
+            answer: "Consequently",
+            accept: [
+              "Consequently",
+              "Therefore"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which adverbial provides contrast?",
+            options: [
+              "next",
+              "furthermore",
+              "on the other hand",
+              "finally"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Using the same word repeatedly is a form of cohesion.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"He was tired. _____, he continued working.\"",
+            answer: "However",
+            accept: [
+              "However",
+              "Nevertheless"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is a pronoun reference as cohesion?",
+            options: [
+              "repeating words",
+              "referring back with pronouns",
+              "using contrasts",
+              "listing ideas"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Moreover\" and \"furthermore\" both show addition.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The team played well. _____, they lost the match.\"",
+            answer: "However",
+            accept: [
+              "However",
+              "Nevertheless"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which sentence shows good cohesion using a pronoun?",
+            options: [
+              "The boy ran. The dog ran.",
+              "The boy ran. He was fast.",
+              "The boy ran quickly.",
+              "The running boy was fast."
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Cohesive devices should be used at the start of paragraphs.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"They studied hard. _____, they achieved excellent results.\"",
+            answer: "Consequently",
+            accept: [
+              "Consequently",
+              "Therefore"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"also\" show in writing?",
+            options: [
+              "time",
+              "addition",
+              "contrast",
+              "result"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Cohesive devices make writing more connected and easier to follow.",
+            answer: true
+          }
+        ],
+        id: "y5-english-4",
+        description: "Cohesive Devices"
       },
       {
-        id: 'y5-english-5',
-        name: 'Verb Prefixes',
-        description: 'de-, dis-, mis-, over-, re-, pre-',
+        title: "Verb Forms",
         questions: [
-          { type: 'fillBlank', q: 'The prefix dis- means ___', answer: 'opposite', accept: ['opposite', 'not', 'away'] },
-          { type: 'multiple', q: 'What does "misunderstand" mean?', options: ['To understand wrongly', 'To understand again', 'To not understand', 'To understand over'], answer: 'To understand wrongly' },
-          { type: 'trueFalse', q: 'The prefix "re-" means to do something again', answer: true },
-          { type: 'fillBlank', q: 'To ___ frost (remove frost) - de+ frost', answer: 'defrost', accept: ['defrost'] },
-          { type: 'multiple', q: 'What does "overcook" mean?', options: ['To cook too much', 'To cook again', 'To cook wrong', 'To cook before'], answer: 'To cook too much' },
-          { type: 'trueFalse', q: '"Prewrite" means to write before something else', answer: true },
-          { type: 'fillBlank', q: 'To ___ a button (fasten again)', answer: 'rebutton', accept: ['rebutton', 'button'] },
-          { type: 'multiple', q: 'Which word uses the prefix "dis-"?', options: ['Disappear', 'Reorganise', 'Overheat', 'Redo'], answer: 'Disappear' },
-          { type: 'trueFalse', q: '"Deactivate" means to make something inactive', answer: true },
-          { type: 'fillBlank', q: 'To mis___ (say something wrongly) - mis + speak', answer: 'speak', accept: ['speak'] },
-          { type: 'multiple', q: 'What does "overslept" mean?', options: ['Slept too long', 'Slept before', 'Slept wrongly', 'Slept again'], answer: 'Slept too long' },
-          { type: 'trueFalse', q: '"Preview" means to see before', answer: true },
-          { type: 'fillBlank', q: 'To pre___ (arrange beforehand)', answer: 'arrange', accept: ['arrange', 'plan', 'order'] },
-          { type: 'multiple', q: 'Which prefix means "opposite"?', options: ['dis-', 're-', 'over-', 'pre-'], answer: 'dis-' },
-          { type: 'trueFalse', q: '"Miscalculate" means to calculate wrongly', answer: true },
-          { type: 'fillBlank', q: 'To de___ (frost) - remove frost', answer: 'frost', accept: ['frost'] },
-          { type: 'multiple', q: 'What does "reorganise" mean?', options: ['To organise again', 'To not organise', 'To organise too much', 'To organise before'], answer: 'To organise again' },
-          { type: 'trueFalse', q: '"Overestimate" means to estimate too high', answer: true },
-          { type: 'fillBlank', q: 'The prefix "mis-" means ___', answer: 'wrongly', accept: ['wrongly', 'incorrectly', 'badly'] },
-          { type: 'multiple', q: 'Which word uses the prefix "re-"?', options: ['Rewrite', 'Dislike', 'Overheat', 'Preview'], answer: 'Rewrite' }
-        ]
+          {
+            type: "multiple",
+            q: "What tense is \"I am playing\"?",
+            options: [
+              "simple present",
+              "present progressive",
+              "simple past",
+              "past progressive"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The perfect tense shows an action completed in the past.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"They _____ reading all afternoon.\"",
+            answer: "are",
+            accept: [
+              "are"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is the past perfect form? \"I had _____ the book.\"",
+            options: [
+              "read",
+              "reads",
+              "reading",
+              "was reading"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"She will have finished\" is future perfect tense.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"He _____ walked to school.\"",
+            answer: "walked",
+            accept: [
+              "walked"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does the progressive aspect show?",
+            options: [
+              "completion",
+              "ongoing action",
+              "repeated action",
+              "past action"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"I eat breakfast\" is an example of simple present.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"By tomorrow, she _____ finished the project.\"",
+            answer: "will have",
+            accept: [
+              "will have"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which sentence uses present perfect correctly?",
+            options: [
+              "I have went to school.",
+              "I have gone to school.",
+              "I am gone to school.",
+              "I had gone to school."
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The simple past tense uses the -ed form for regular verbs.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"We _____ been waiting for an hour.\"",
+            answer: "have",
+            accept: [
+              "have"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the difference between \"I walked\" and \"I was walking\"?",
+            options: [
+              "no difference",
+              "one is ongoing, one is completed",
+              "one is future",
+              "one is perfect"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"They will play\" is simple future tense.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"She _____ cooking dinner when I arrived.\"",
+            answer: "was",
+            accept: [
+              "was"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Identify the verb form: \"He had been working all day.\"",
+            options: [
+              "present perfect",
+              "past perfect progressive",
+              "simple past",
+              "future perfect"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The progressive tense uses the present participle (-ing form).",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"I _____ been to France three times.\"",
+            answer: "have",
+            accept: [
+              "have"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which shows an action before another past action?",
+            options: [
+              "simple past",
+              "past perfect",
+              "past progressive",
+              "future perfect"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"She has finished her homework\" uses the present perfect tense.",
+            answer: true
+          }
+        ],
+        id: "y5-english-5",
+        description: "Verb Forms"
       },
       {
-        id: 'y5-english-6',
-        name: 'Converting Parts of Speech',
-        description: 'Noun/adjective to verb with suffixes -ate, -ise, -ify, -en',
+        title: "Prefixes & Suffixes Advanced",
         questions: [
-          { type: 'multiple', q: 'What suffix can convert a noun to a verb?', options: ['-ate, -ise, -ify, -en', '-able, -ment, -ous', '-ing, -ed, -ly', '-ness, -less, -ful'], answer: '-ate, -ise, -ify, -en' },
-          { type: 'fillBlank', q: 'Adjective: active. Verb: ___ (add -ate)', answer: 'activate', accept: ['activate'] },
-          { type: 'trueFalse', q: 'The suffix "-ify" means to make', answer: true },
-          { type: 'fillBlank', q: 'Noun: dark. Verb: ___ (add -en)', answer: 'darken', accept: ['darken'] },
-          { type: 'multiple', q: 'What verb is created from the adjective "private"?', options: ['Privatise', 'Priven', 'Privateate', 'Privatify'], answer: 'Privatise' },
-          { type: 'trueFalse', q: '"Beautify" means to make beautiful', answer: true },
-          { type: 'fillBlank', q: 'Adjective: cruel. Verb: ___ (add -ty to make noun, then -ise to make verb)', answer: 'cruelty', accept: ['cruelty', 'cruelise'] },
-          { type: 'multiple', q: 'Which verb is formed correctly from an adjective?', options: ['Popular → popularise', 'Quick → quickate', 'Soft → softify', 'Slow → slowen'], answer: 'Popular → popularise' },
-          { type: 'trueFalse', q: 'The suffix "-ise" is used in British English', answer: true },
-          { type: 'fillBlank', q: 'Noun: legal. Verb: ___ (add -ise)', answer: 'legalise', accept: ['legalise'] },
-          { type: 'multiple', q: 'What does "terrify" mean?', options: ['To make terrified', 'To become terrified', 'To show terror', 'To reduce terror'], answer: 'To make terrified' },
-          { type: 'trueFalse', q: '"Strengthen" is formed by adding -en to the adjective "strong"', answer: true },
-          { type: 'fillBlank', q: 'Adjective: deaf. Verb: ___ (add -en)', answer: 'deafen', accept: ['deafen'] },
-          { type: 'multiple', q: 'Which word is formed by converting a noun to a verb?', options: ['Popularise', 'Beautiful', 'Hopefully', 'Kindness'], answer: 'Popularise' },
-          { type: 'trueFalse', q: '"Classify" means to place into classes', answer: true },
-          { type: 'fillBlank', q: 'Adjective: white. Verb: ___ (add -en)', answer: 'whiten', accept: ['whiten'] },
-          { type: 'multiple', q: 'What verb is created from "equal"?', options: ['Equalise', 'Equaten', 'Equalify', 'Equalen'], answer: 'Equalise' },
-          { type: 'trueFalse', q: '"Identify" means to make an identity', answer: true },
-          { type: 'fillBlank', q: 'Adjective: pale. Verb: ___ (add -en)', answer: 'palen', accept: ['pale'] },
-          { type: 'multiple', q: 'Which conversion is correct?', options: ['Noun "organ" → verb "organise"', 'Adjective "sharp" → verb "sharpise"', 'Noun "legal" → verb "legalify"', 'Adjective "clear" → verb "clearate"'], answer: 'Noun "organ" → verb "organise"' }
-        ]
+          {
+            type: "fillBlank",
+            q: "Add a prefix to \"possible\" to make it mean the opposite: _____",
+            answer: "impossible",
+            accept: [
+              "impossible"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does the suffix \"-ible\" mean?",
+            options: [
+              "able to be",
+              "in a certain way",
+              "without",
+              "again"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"Visible\" contains the suffix \"-ible\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Her behaviour was un_____ in class.\"",
+            answer: "acceptable",
+            accept: [
+              "acceptable"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which word contains \"-ably\"?",
+            options: [
+              "probably",
+              "possible",
+              "presentation",
+              "particular"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "The suffix \"-cious\" often means \"full of\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The meal was deli_____.\"",
+            answer: "cious",
+            accept: [
+              "cious",
+              "delicious"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"-tious\" mean in \"ambitious\"?",
+            options: [
+              "opposite",
+              "without",
+              "full of",
+              "able to be"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"Precious\" contains the suffix \"-cious\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Which silent letter is in \"psychology\"? _____",
+            answer: "p",
+            accept: [
+              "p",
+              "P"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "In which word is the letter \"k\" silent?",
+            options: [
+              "kitchen",
+              "knight",
+              "kindness",
+              "knowledge"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The word \"knight\" has a silent \"k\" and \"gh\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The building is quite _____ after the earthquake.\"",
+            answer: "destroyed",
+            accept: [
+              "destroyed"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which word has a silent letter?",
+            options: [
+              "table",
+              "knife",
+              "happy",
+              "quickly"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The prefix \"un-\" changes a word to its opposite.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The letter \"b\" is silent in the word _____",
+            answer: "doubt",
+            accept: [
+              "doubt",
+              "dumb"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does the prefix \"dis-\" mean?",
+            options: [
+              "again",
+              "opposite",
+              "before",
+              "after"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Cautious\" ends with the suffix \"-tious\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"His answer was _____ wrong.\"",
+            answer: "absolutely",
+            accept: [
+              "absolutely"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which word contains a silent \"g\"?",
+            options: [
+              "great",
+              "reign",
+              "growth",
+              "green"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-english-6",
+        description: "Prefixes & Suffixes Advanced"
       },
       {
-        id: 'y5-english-7',
-        name: 'Formal & Informal Language',
-        description: 'Register, audience, tone',
+        title: "Formal & Informal",
         questions: [
-          { type: 'multiple', q: 'What is register in writing?', options: ['The level of formality in language', 'A list of names', 'The way words are arranged', 'A type of punctuation'], answer: 'The level of formality in language' },
-          { type: 'fillBlank', q: 'Formal: "Good morning." Informal: "___"', answer: 'Hi', accept: ['Hi', 'Hey', 'Hello'] },
-          { type: 'trueFalse', q: 'You should use formal language when writing a friendly letter', answer: false },
-          { type: 'multiple', q: 'Which is formal language?', options: ['I regret to inform you', 'Sorry, but no', 'Can\'t help', 'My bad'], answer: 'I regret to inform you' },
-          { type: 'fillBlank', q: 'Formal: "Thank you for your assistance." Informal: "Thanks for the ___"', answer: 'help', accept: ['help'] },
-          { type: 'trueFalse', q: 'Tone means the attitude shown in writing', answer: true },
-          { type: 'multiple', q: 'Which piece of writing should use formal language?', options: ['A formal letter to a company', 'A text message to a friend', 'A chat with your teacher', 'A note to your parents'], answer: 'A formal letter to a company' },
-          { type: 'fillBlank', q: 'The audience for a job application is ___', answer: 'formal', accept: ['formal', 'an employer', 'a professional'] },
-          { type: 'trueFalse', q: 'Contractions like "don\'t" are more informal than "do not"', answer: true },
-          { type: 'multiple', q: 'Formal or informal? "We are unable to proceed"', options: ['Formal', 'Informal', 'Both', 'Neither'], answer: 'Formal' },
-          { type: 'fillBlank', q: 'Informal: "It was brilliant!" Formal: "It was ___"', answer: 'excellent', accept: ['excellent', 'wonderful', 'outstanding'] },
-          { type: 'trueFalse', q: 'Using slang is appropriate in formal academic writing', answer: false },
-          { type: 'multiple', q: 'Which sentence is more informal?', options: ['Yo, check it out!', 'Observe this, if you would', 'I must draw your attention to', 'Could you please observe'], answer: 'Yo, check it out!' },
-          { type: 'fillBlank', q: 'When writing a school report, you should use ___ language', answer: 'formal', accept: ['formal'] },
-          { type: 'trueFalse', q: 'Exclamation marks are less formal than full stops', answer: true },
-          { type: 'multiple', q: 'Which phrase is formal?', options: ['With regard to', 'About', 'Regarding', 'Concerning'], answer: 'With regard to' },
-          { type: 'fillBlank', q: 'Informal: "loads of" Formal: "a ___ amount of"', answer: 'considerable', accept: ['considerable', 'large', 'great'] },
-          { type: 'trueFalse', q: 'Audience determines the register you should use', answer: true },
-          { type: 'multiple', q: 'Which is least formal?', options: ['Hi mate!', 'Greetings', 'Hello there', 'Good morning'], answer: 'Hi mate!' },
-          { type: 'fillBlank', q: 'A letter to a company should start with ___ (formal) or Hi (informal)', answer: 'Dear', accept: ['Dear', 'Greetings'] }
-        ]
+          {
+            type: "multiple",
+            q: "Which is formal language?",
+            options: [
+              "\"Hi, how are ya?\"",
+              "\"Good morning, how are you?\"",
+              "\"Sup?\"",
+              "\"You alright?\""
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Formal language is appropriate for friendly texts.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Rewrite informally: \"I would like to attend.\"",
+            answer: "like",
+            accept: [
+              "like"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is a formal phrase?",
+            options: [
+              "\"Gonna go\"",
+              "\"I am going to go\"",
+              "\"Gotta go\"",
+              "\"Will go soon\""
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The subjunctive mood is formal and expresses possibilities.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete formally: \"If I _____ the money, I would buy a car.\"",
+            answer: "were",
+            accept: [
+              "were"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which sentence uses passive voice?",
+            options: [
+              "I wrote the letter.",
+              "The letter was written by me.",
+              "I wrote it quickly.",
+              "Writing letters is fun."
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Passive voice is often more formal than active voice.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Rewrite as passive: \"The chef prepared the meal.\"",
+            answer: "was prepared",
+            accept: [
+              "was prepared"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which contraction is formal?",
+            options: [
+              "\"don't\"",
+              "\"cannot\"",
+              "\"won't\"",
+              "\"shouldn't\""
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Contractions are avoided in formal writing.\"",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete formally: \"It is essential that she _____ attendance at the meeting.\"",
+            answer: "attend",
+            accept: [
+              "attend"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is informal?",
+            options: [
+              "\"Subsequently\"",
+              "\"Later on\"",
+              "\"After that\"",
+              "\"Following this\""
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Formal language uses varied sentence structures.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Rewrite formally: \"The kids played in the park.\"",
+            answer: "played",
+            accept: [
+              "played"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which shows the subjunctive mood correctly?",
+            options: [
+              "\"If I am rich...\"",
+              "\"If I was rich...\"",
+              "\"If I were rich...\"",
+              "\"If I will be rich...\""
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Informal language includes slang and colloquialisms.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete formally: \"I propose that the decision _____ postponed.\"",
+            answer: "be",
+            accept: [
+              "be"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which uses active voice?",
+            options: [
+              "\"The homework was completed.\"",
+              "\"Homework was done.\"",
+              "\"The students completed their homework.\"",
+              "\"Homework got done.\""
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Passive voice removes the agent who performed the action.",
+            answer: true
+          }
+        ],
+        id: "y5-english-7",
+        description: "Formal & Informal"
       },
       {
-        id: 'y5-english-8',
-        name: 'Spelling Patterns',
-        description: 'Silent letters, -ough words, homophones, common misspellings',
+        title: "Spelling Challenges",
         questions: [
-          { type: 'fillBlank', q: 'Knot, knife, know - the silent letter is ___', answer: 'k', accept: ['k', 'K'] },
-          { type: 'multiple', q: 'Which word has a silent letter?', options: ['Wreck', 'Green', 'Float', 'Magic'], answer: 'Wreck' },
-          { type: 'trueFalse', q: 'The word "psychology" has a silent "p"', answer: true },
-          { type: 'fillBlank', q: 'The -ough combination in "through" sounds like ___', answer: 'oo', accept: ['oo', 'ew'] },
-          { type: 'multiple', q: 'Which pair are homophones (sound the same)?', options: ['Right and write', 'Cut and cute', 'Best and beast', 'Plate and plant'], answer: 'Right and write' },
-          { type: 'trueFalse', q: '"Their" and "there" sound the same but have different meanings', answer: true },
-          { type: 'fillBlank', q: 'Spell the -ough word: the route through the mountains is very rough. Spelling: ___', answer: 'rough', accept: ['rough'] },
-          { type: 'multiple', q: 'Which word is commonly misspelled?', options: ['Occassion (should be occasion)', 'Celebration', 'Dictionary', 'Beautiful'], answer: 'Occassion (should be occasion)' },
-          { type: 'trueFalse', q: '"Weather" and "whether" are homophones', answer: false },
-          { type: 'fillBlank', q: 'The silent letter in "debt" is ___', answer: 'b', accept: ['b', 'B'] },
-          { type: 'multiple', q: 'Which -ough word rhymes with "go"?', options: ['Through', 'Rough', 'Dough', 'Cough'], answer: 'Through' },
-          { type: 'trueFalse', q: '"Piece" and "peace" are homophones', answer: true },
-          { type: 'fillBlank', q: 'The silent letter in "castle" is ___', answer: 't', accept: ['t', 'T'] },
-          { type: 'multiple', q: 'Which word contains a silent "gh"?', options: ['Night', 'Light', 'Weight', 'All of these'], answer: 'All of these' },
-          { type: 'trueFalse', q: '"Alright" and "all right" are both acceptable spellings', answer: true },
-          { type: 'fillBlank', q: 'Common misspelling: "definite" is often misspelled as "definitly". Correct spelling: ___', answer: 'definite', accept: ['definite'] },
-          { type: 'multiple', q: 'Which is a common misspelling?', options: ['Occurrance (should be occurrence)', 'Definitely', 'Separate', 'Beginning'], answer: 'Occurrance (should be occurrence)' },
-          { type: 'trueFalse', q: 'The silent letter in "honest" is "h"', answer: true },
-          { type: 'fillBlank', q: 'Homophones: "one" sounds like ___', answer: 'won', accept: ['won'] },
-          { type: 'multiple', q: 'Which -ough word means "finished"?', options: ['Though', 'Through', 'Thorough', 'Thought'], answer: 'Thorough' }
-        ]
+          {
+            type: "fillBlank",
+            q: "Spell the word meaning \"in great quantity\": aB_____",
+            answer: "undance",
+            accept: [
+              "undance",
+              "abundance"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which spelling is correct?",
+            options: [
+              "recieve",
+              "receive",
+              "receieve",
+              "recive"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The word \"accommodation\" has two \"m\"s and two \"c\"s.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete the spelling: \"ach_____ve\"",
+            answer: "ieve",
+            accept: [
+              "ieve",
+              "achieve"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which word is spelled correctly?",
+            options: [
+              "occured",
+              "occurred",
+              "ocurred",
+              "occureed"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The word \"separate\" contains \"separate\" not \"seperate\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Spell: \"The ocean is very b_____.\"",
+            answer: "eautiful",
+            accept: [
+              "eautiful",
+              "beautiful"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How do you spell the word meaning \"to be able to\"?",
+            options: [
+              "could of",
+              "could have",
+              "could av",
+              "coud have"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The word \"necessary\" has one \"c\" and two \"s\"s.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The b_____ of the book was interesting.\"",
+            answer: "eginning",
+            accept: [
+              "eginning",
+              "beginning"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is the correct spelling?",
+            options: [
+              "mischief",
+              "mischif",
+              "mischief",
+              "mischef"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "The word \"privilege\" is spelled with an \"i\" after \"privil\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Spell the word meaning \"having many colors\": r_____",
+            answer: "ainbow",
+            accept: [
+              "ainbow",
+              "rainbow"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which spelling is incorrect?",
+            options: [
+              "because",
+              "believe",
+              "science",
+              "releive"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "The word \"rhythm\" contains no vowels except for \"y\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"The d_____ was wet and muddy.\"",
+            answer: "airy",
+            accept: [
+              "airy",
+              "dairy"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How is \"argument\" spelled?",
+            options: [
+              "arguement",
+              "argument",
+              "arument",
+              "arguemnt"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Yacht\" is spelled with silent letters \"c\", \"h\", and \"t\".",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Spell: \"The book is v_____.\"",
+            answer: "aluable",
+            accept: [
+              "aluable",
+              "valuable"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which word is spelled correctly?",
+            options: [
+              "ocassion",
+              "ocasion",
+              "occasion",
+              "occassion"
+            ],
+            answer: 2
+          }
+        ],
+        id: "y5-english-8",
+        description: "Spelling Challenges"
       }
     ]
   },
   science: {
-    name: 'Science',
-    icon: '🔬',
-    color: '#9C27B0',
+    name: "Science",
+    icon: "🔬",
+    color: "#FF9800",
     lessons: [
       {
-        id: 'y5-science-1',
-        name: 'Living Things & Life Cycles',
-        description: 'Sexual and asexual reproduction, life cycles',
+        title: "Earth & Space",
         questions: [
-          { type: 'multiple', q: 'Which plants reproduce asexually?', options: ['Strawberries (runners)', 'Roses (seeds)', 'Tulips (bulbs)', 'All of these'], answer: 'All of these' },
-          { type: 'fillBlank', q: 'The life cycle of a butterfly has ___ stages', answer: '4', accept: ['4', 'four'] },
-          { type: 'trueFalse', q: 'Sexual reproduction requires two parents', answer: true },
-          { type: 'multiple', q: 'What are the four stages of a butterfly life cycle?', options: ['Egg, larva, pupa, adult', 'Egg, caterpillar, chrysalis, butterfly', 'Both A and B', 'Nymph, larva, pupa, adult'], answer: 'Both A and B' },
-          { type: 'fillBlank', q: 'A frog starts as an ___ before becoming a tadpole', answer: 'egg', accept: ['egg'] },
-          { type: 'trueFalse', q: 'Asexual reproduction requires two parents', answer: false },
-          { type: 'multiple', q: 'Which animal has a metamorphosis life cycle?', options: ['Frog', 'Insect', 'Bird', 'Both A and B'], answer: 'Both A and B' },
-          { type: 'trueFalse', q: 'Seeds are produced by sexual reproduction in plants', answer: true },
-          { type: 'fillBlank', q: 'Strawberry plants reproduce asexually using ___', answer: 'runners', accept: ['runners', 'stolons'] },
-          { type: 'multiple', q: 'What does a tadpole become?', options: ['A frog', 'A newt', 'A fish', 'A lizard'], answer: 'A frog' },
-          { type: 'trueFalse', q: 'Flowers produce seeds for reproduction', answer: true },
-          { type: 'fillBlank', q: 'In the insect life cycle, the ___ is the resting stage', answer: 'pupa', accept: ['pupa', 'pupae'] },
-          { type: 'multiple', q: 'Which shows complete metamorphosis?', options: ['Butterfly', 'Grasshopper', 'Dragonfly', 'All have incomplete metamorphosis'], answer: 'Butterfly' },
-          { type: 'trueFalse', q: 'Potatoes reproduce asexually by growing new plants from tubers', answer: true },
-          { type: 'fillBlank', q: 'The eggs of an insect hatch into ___', answer: 'larvae', accept: ['larvae', 'larva'] },
-          { type: 'multiple', q: 'Which plant reproduces asexually from bulbs?', options: ['Daffodils', 'Tulips', 'Onions', 'All of these'], answer: 'All of these' },
-          { type: 'trueFalse', q: 'A bird\'s life cycle includes eggs and chicks', answer: true },
-          { type: 'fillBlank', q: 'Asexual reproduction creates offspring with ___ genes as the parent', answer: 'identical', accept: ['identical', 'same'] },
-          { type: 'multiple', q: 'What stage follows the pupa in a butterfly?', options: ['Adult butterfly', 'Egg', 'Larva', 'Chrysalis'], answer: 'Adult butterfly' },
-          { type: 'trueFalse', q: 'Ferns reproduce asexually using spores', answer: true }
-        ]
+          {
+            type: "multiple",
+            q: "How many planets are in our solar system?",
+            options: [
+              "7",
+              "8",
+              "9",
+              "10"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The Sun is at the centre of our solar system.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The planet closest to the Sun is _____",
+            answer: "Mercury",
+            accept: [
+              "Mercury",
+              "mercury"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What causes day and night on Earth?",
+            options: [
+              "orbit around Sun",
+              "rotation on axis",
+              "Moon's movement",
+              "Solar flares"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Earth rotates on its axis approximately once every 24 hours.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The largest planet in our solar system is _____",
+            answer: "Jupiter",
+            accept: [
+              "Jupiter",
+              "jupiter"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How long does Earth take to orbit the Sun?",
+            options: [
+              "28 days",
+              "365 days",
+              "100 days",
+              "1000 days"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The Moon orbits around Earth.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phase of the Moon when it is completely dark is called a _____ moon.",
+            answer: "new",
+            accept: [
+              "new"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which planet is known as the \"Red Planet\"?",
+            options: [
+              "Venus",
+              "Mars",
+              "Saturn",
+              "Mercury"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Venus is the hottest planet in our solar system.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The Moon completes one orbit around Earth in approximately _____ days.",
+            answer: "28",
+            accept: [
+              "28",
+              "29",
+              "29.5"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is a lunar eclipse?",
+            options: [
+              "Earth's shadow falls on Moon",
+              "Moon's shadow falls on Earth",
+              "Moon moves away from Earth",
+              "Sun blocks the Moon"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "A solar eclipse occurs when the Moon passes between the Earth and Sun.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Saturn is famous for its _____",
+            answer: "rings",
+            accept: [
+              "rings"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which planet is closest to Earth?",
+            options: [
+              "Mars",
+              "Venus",
+              "Mercury",
+              "Moon"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "All planets orbit the Sun in elliptical paths.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A year on Mars is approximately _____ Earth days.",
+            answer: "687",
+            accept: [
+              "687",
+              "700"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Why does the Moon have different phases?",
+            options: [
+              "it rotates",
+              "different amounts of its lit side face Earth",
+              "it moves away from Earth",
+              "clouds cover it"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The full moon is when the entire face of the Moon visible from Earth is illuminated.",
+            answer: true
+          }
+        ],
+        id: "y5-science-1",
+        description: "Earth & Space"
       },
       {
-        id: 'y5-science-2',
-        name: 'Animals & Humans',
-        description: 'Growth, development, changes in old age, gestation',
+        title: "Forces",
         questions: [
-          { type: 'multiple', q: 'How long is the human gestation period?', options: ['About 9 months', 'About 6 months', 'About 12 months', 'About 3 months'], answer: 'About 9 months' },
-          { type: 'fillBlank', q: 'A newborn baby is called an ___', answer: 'infant', accept: ['infant', 'baby'] },
-          { type: 'trueFalse', q: 'Humans grow continuously throughout their entire life', answer: false },
-          { type: 'multiple', q: 'What is the developmental stage after infancy?', options: ['Childhood', 'Adulthood', 'Adolescence', 'Toddlerhood'], answer: 'Childhood' },
-          { type: 'fillBlank', q: 'During puberty, the body goes through physical ___', answer: 'changes', accept: ['changes'] },
-          { type: 'trueFalse', q: 'A mammal develops inside the mother\'s womb', answer: true },
-          { type: 'multiple', q: 'Which gestation period is longest?', options: ['Elephant: 22 months', 'Cow: 9 months', 'Dog: 2 months', 'Human: 9 months'], answer: 'Elephant: 22 months' },
-          { type: 'trueFalse', q: 'Growth and development are the same thing', answer: false },
-          { type: 'fillBlank', q: 'The ___ is where the baby develops in the mother', answer: 'womb', accept: ['womb', 'uterus', 'uterine'] },
-          { type: 'multiple', q: 'What happens in old age?', options: ['Hair turns grey', 'Skin becomes wrinkled', 'Bones become weaker', 'All of these'], answer: 'All of these' },
-          { type: 'trueFalse', q: 'The gestation period for humans is the same for all species', answer: false },
-          { type: 'fillBlank', q: 'Children lose their milk teeth and grow ___ teeth', answer: 'permanent', accept: ['permanent', 'adult'] },
-          { type: 'multiple', q: 'At what age do most humans reach full growth?', options: ['Late teens/early 20s', '12 years old', '30 years old', 'Never stop growing'], answer: 'Late teens/early 20s' },
-          { type: 'trueFalse', q: 'A cat\'s gestation period is longer than a human\'s', answer: false },
-          { type: 'fillBlank', q: 'The ___ umbilical cord connects the baby to the mother during pregnancy', answer: 'umbilical', accept: ['umbilical'] },
-          { type: 'multiple', q: 'Which animal has the shortest gestation period?', options: ['Hamster: 16 days', 'Rabbit: 31 days', 'Mouse: 19 days', 'Hamster'], answer: 'Hamster: 16 days' },
-          { type: 'trueFalse', q: 'Muscles and bones weaken with age', answer: true },
-          { type: 'fillBlank', q: 'A ___ is a young animal after it is born', answer: 'offspring', accept: ['offspring', 'baby'] },
-          { type: 'multiple', q: 'What supports the baby before birth?', options: ['The umbilical cord', 'The placenta', 'The womb', 'All of these'], answer: 'All of these' },
-          { type: 'trueFalse', q: 'Infants can support their own head immediately after birth', answer: false }
-        ]
+          {
+            type: "multiple",
+            q: "What is the SI unit of force?",
+            options: [
+              "kilogram",
+              "newton",
+              "joule",
+              "watt"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Gravity pulls objects toward the center of Earth.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A simple machine with a bar and pivot point is called a _____",
+            answer: "lever",
+            accept: [
+              "lever"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What effect do opposing forces have on motion?",
+            options: [
+              "increase speed",
+              "decrease speed",
+              "depend on magnitude difference",
+              "no effect"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Air resistance is negligible for a falling feather.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "The force that opposes movement through air is _____",
+            answer: "air resistance",
+            accept: [
+              "air resistance",
+              "drag"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does friction do?",
+            options: [
+              "increases motion",
+              "creates motion",
+              "opposes motion",
+              "is invisible"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A pulley is a simple machine that changes the direction of force.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The force that resists motion between two surfaces is _____",
+            answer: "friction",
+            accept: [
+              "friction"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which has more air resistance?",
+            options: [
+              "smooth ball",
+              "textured ball",
+              "they are equal",
+              "depends on color"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Water resistance is similar to air resistance but in water.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A simple machine with a wheel and axle is called a _____",
+            answer: "pulley",
+            accept: [
+              "pulley",
+              "wheel"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What happens when balanced forces act on an object?",
+            options: [
+              "it accelerates",
+              "it remains at rest or constant motion",
+              "it decelerates",
+              "it floats"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Unbalanced forces cause objects to change their motion.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A simple machine with slanted plane is called an _____",
+            answer: "incline",
+            accept: [
+              "incline"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How many simple machines are there?",
+            options: [
+              "4",
+              "5",
+              "6",
+              "8"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Gears are used to transfer and change force.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The resistance force that slows falling objects is called _____",
+            answer: "terminal velocity",
+            accept: [
+              "terminal velocity",
+              "air resistance"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which reduces friction?",
+            options: [
+              "increasing roughness",
+              "adding oil",
+              "adding weight",
+              "adding water"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A lever can change both the direction and magnitude of force.",
+            answer: true
+          }
+        ],
+        id: "y5-science-2",
+        description: "Forces"
       },
       {
-        id: 'y5-science-3',
-        name: 'Properties of Materials',
-        description: 'Dissolving, reversible/irreversible changes, thermal conductors',
+        title: "Properties of Materials",
         questions: [
-          { type: 'multiple', q: 'What is dissolving?', options: ['When a solid mixes completely in a liquid', 'When a liquid evaporates', 'When a solid breaks apart', 'When a liquid freezes'], answer: 'When a solid mixes completely in a liquid' },
-          { type: 'fillBlank', q: 'Sugar in water is a ___ change (can be reversed)', answer: 'reversible', accept: ['reversible'] },
-          { type: 'trueFalse', q: 'A reversible change can be undone', answer: true },
-          { type: 'multiple', q: 'Which is an irreversible change?', options: ['Cooking an egg', 'Freezing water', 'Melting ice', 'Dissolving salt'], answer: 'Cooking an egg' },
-          { type: 'fillBlank', q: 'When a liquid turns into a gas, it ___', answer: 'evaporates', accept: ['evaporates'] },
-          { type: 'trueFalse', q: 'Burning paper is a reversible change', answer: false },
-          { type: 'multiple', q: 'What does a thermal conductor do?', options: ['Conducts heat easily', 'Blocks heat', 'Absorbs heat', 'Reflects heat'], answer: 'Conducts heat easily' },
-          { type: 'fillBlank', q: 'A thermal insulator ___', answer: 'prevents heat transfer', accept: ['prevents heat transfer', 'blocks heat', 'stops heat'] },
-          { type: 'trueFalse', q: 'Metal is a good thermal conductor', answer: true },
-          { type: 'multiple', q: 'Which material is a good insulator?', options: ['Wool', 'Metal', 'Water', 'Glass'], answer: 'Wool' },
-          { type: 'trueFalse', q: 'All irreversible changes involve heat', answer: false },
-          { type: 'fillBlank', q: 'When water freezes, it becomes ___', answer: 'ice', accept: ['ice'] },
-          { type: 'multiple', q: 'What is the opposite of freezing?', options: ['Melting', 'Evaporating', 'Condensing', 'Boiling'], answer: 'Melting' },
-          { type: 'trueFalse', q: 'Dissolving and melting are the same process', answer: false },
-          { type: 'fillBlank', q: 'Water changes from liquid to solid at ___°C', answer: '0', accept: ['0', 'zero'] },
-          { type: 'multiple', q: 'Which is an electrical conductor?', options: ['Copper', 'Rubber', 'Plastic', 'Wood'], answer: 'Copper' },
-          { type: 'trueFalse', q: 'An electrical insulator prevents current from flowing', answer: true },
-          { type: 'fillBlank', q: 'Mixing oil and water demonstrates a ___ mixture', answer: 'immiscible', accept: ['immiscible'] },
-          { type: 'multiple', q: 'What happens when salt dissolves in water?', options: ['It disappears completely in the liquid', 'It still exists but cannot be seen', 'Crystals form', 'Both A and B'], answer: 'Both A and B' },
-          { type: 'trueFalse', q: 'Cooling water until it freezes is a reversible change', answer: true }
-        ]
+          {
+            type: "multiple",
+            q: "What is dissolving?",
+            options: [
+              "breaking into pieces",
+              "mixing into a liquid",
+              "melting",
+              "freezing"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Dissolving is an irreversible change.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Salt _____ in water to form a solution.",
+            answer: "dissolves",
+            accept: [
+              "dissolves",
+              "dissolved"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which method separates a mixture by particle size?",
+            options: [
+              "filtering",
+              "sieving",
+              "evaporation",
+              "distillation"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Filtering is used to separate solids from liquids.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The process of liquid turning to vapor is called _____",
+            answer: "evaporation",
+            accept: [
+              "evaporation"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is a reversible change?",
+            options: [
+              "burning",
+              "rusting",
+              "melting",
+              "decaying"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "An irreversible change cannot be undone.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "When iron combines with oxygen, it forms _____",
+            answer: "rust",
+            accept: [
+              "rust"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is a mixture?",
+            options: [
+              "a combination of substances not chemically joined",
+              "a new substance created",
+              "a liquid only",
+              "always reversible"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "Sieving separates particles by size using a mesh.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A solution is a type of _____ where one substance dissolves in another.",
+            answer: "mixture",
+            accept: [
+              "mixture"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is an irreversible change?",
+            options: [
+              "freezing water",
+              "melting ice",
+              "burning wood",
+              "dissolving sugar"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Evaporation is a reversible change (condensation reverses it).",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The process of vapor turning to liquid is called _____",
+            answer: "condensation",
+            accept: [
+              "condensation"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What happens when you heat a mixture containing water and salt?",
+            options: [
+              "water freezes",
+              "salt dissolves more",
+              "water evaporates, salt remains",
+              "nothing"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Burning is a reversible change.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "A _____ is a new substance created by a chemical change.",
+            answer: "compound",
+            accept: [
+              "compound"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which tool is best for separating sand from stones?",
+            options: [
+              "filter paper",
+              "sieve",
+              "funnel",
+              "evaporating dish"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Mixing sand and water creates a reversible change.",
+            answer: true
+          }
+        ],
+        id: "y5-science-3",
+        description: "Properties of Materials"
       },
       {
-        id: 'y5-science-4',
-        name: 'Earth & Space',
-        description: 'Solar system, planets, Sun, Earth rotation, Moon phases',
+        title: "Life Cycles",
         questions: [
-          { type: 'multiple', q: 'What is at the centre of our solar system?', options: ['The Sun', 'Earth', 'The Moon', 'Jupiter'], answer: 'The Sun' },
-          { type: 'fillBlank', q: 'Earth rotates on its axis every ___ hours', answer: '24', accept: ['24', 'twenty-four'] },
-          { type: 'trueFalse', q: 'The Sun is a star', answer: true },
-          { type: 'multiple', q: 'What causes day and night?', options: ['Earth\'s rotation', 'Earth\'s orbit', 'The Moon', 'Atmosphere'], answer: 'Earth\'s rotation' },
-          { type: 'fillBlank', q: 'There are ___ planets in our solar system', answer: '8', accept: ['8', 'eight'] },
-          { type: 'trueFalse', q: 'Mercury is the closest planet to the Sun', answer: true },
-          { type: 'multiple', q: 'What are the phases of the Moon?', options: ['Different amounts of Moon visible from Earth', 'Changes in the Moon\'s size', 'The Moon\'s orbit stages', 'Answer A (they appear different due to Earth\'s view)'], answer: 'Answer A (they appear different due to Earth\'s view)' },
-          { type: 'fillBlank', q: 'A new moon occurs when the Moon is between the ___ and Earth', answer: 'Sun', accept: ['Sun'] },
-          { type: 'trueFalse', q: 'The Moon orbits Earth', answer: true },
-          { type: 'fillBlank', q: 'Earth orbits the Sun every ___ days', answer: '365', accept: ['365', '365.25'] },
-          { type: 'multiple', q: 'Which planet is known as the "Red Planet"?', options: ['Mars', 'Venus', 'Jupiter', 'Saturn'], answer: 'Mars' },
-          { type: 'trueFalse', q: 'The full moon is the brightest phase', answer: true },
-          { type: 'fillBlank', q: 'The Sun is at the centre of a ___ system', answer: 'solar', accept: ['solar'] },
-          { type: 'multiple', q: 'What causes seasons on Earth?', options: ['The tilt of Earth\'s axis as it orbits the Sun', 'The distance from the Sun', 'The Moon\'s position', 'The Sun\'s rotation'], answer: 'The tilt of Earth\'s axis as it orbits the Sun' },
-          { type: 'trueFalse', q: 'Jupiter is the largest planet in our solar system', answer: true },
-          { type: 'fillBlank', q: 'The Moon takes about ___ days to orbit Earth', answer: '28', accept: ['28', 'twenty-eight'] },
-          { type: 'multiple', q: 'Which planet has rings?', options: ['Saturn', 'Jupiter', 'Uranus', 'All have rings'], answer: 'Saturn' },
-          { type: 'trueFalse', q: 'Venus is the second planet from the Sun', answer: true },
-          { type: 'fillBlank', q: 'Earth is the ___ planet from the Sun', answer: 'third', accept: ['third', '3rd'] },
-          { type: 'multiple', q: 'What is the atmosphere?', options: ['Layer of air around Earth', 'Part of the Sun', 'The space between planets', 'The Moon\'s surface'], answer: 'Layer of air around Earth' }
-        ]
+          {
+            type: "multiple",
+            q: "How many stages does a complete insect life cycle have?",
+            options: [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A caterpillar is the larval stage of a butterfly.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The stage between larva and adult in insect metamorphosis is called a _____",
+            answer: "pupa",
+            accept: [
+              "pupa"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which reproduces by asexual reproduction?",
+            options: [
+              "mammals",
+              "ferns",
+              "insects",
+              "birds"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Plant reproduction can be sexual (seeds) or asexual (runners).",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A _____ is a type of asexual reproduction in plants using stolons.",
+            answer: "runner",
+            accept: [
+              "runner"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which stage comes after tadpole in amphibian life cycle?",
+            options: [
+              "egg",
+              "froglet",
+              "adult frog",
+              "metamorphosis"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Amphibians spend their entire life in water.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "The life cycle stage where an animal resembles a miniature adult is _____",
+            answer: "nymph",
+            accept: [
+              "nymph"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the first stage of complete insect metamorphosis?",
+            options: [
+              "larva",
+              "pupa",
+              "egg",
+              "adult"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Birds lay eggs and are oviparous.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The female reproductive organ of a flower is the _____",
+            answer: "pistil",
+            accept: [
+              "pistil",
+              "carpel"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which animal undergoes incomplete metamorphosis?",
+            options: [
+              "butterfly",
+              "beetle",
+              "grasshopper",
+              "frog"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Mammals give birth to live young.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The male reproductive organ of a flower is the _____",
+            answer: "stamen",
+            accept: [
+              "stamen"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What happens during pollination?",
+            options: [
+              "seeds form",
+              "pollen reaches stigma",
+              "fruit develops",
+              "flower dies"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Insects like bees can pollinate flowers.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "In a flowering plant, sexual reproduction produces _____",
+            answer: "seeds",
+            accept: [
+              "seeds"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the gestation period for humans?",
+            options: [
+              "6 months",
+              "9 months",
+              "12 months",
+              "18 months"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A pupa is where metamorphosis occurs in insects.",
+            answer: true
+          }
+        ],
+        id: "y5-science-4",
+        description: "Life Cycles"
       },
       {
-        id: 'y5-science-5',
-        name: 'Forces',
-        description: 'Gravity, air/water resistance, friction, mechanisms',
+        title: "Changes of Materials",
         questions: [
-          { type: 'multiple', q: 'What is gravity?', options: ['A force that pulls objects towards Earth', 'A force that pushes objects away', 'A type of friction', 'A type of spring'], answer: 'A force that pulls objects towards Earth' },
-          { type: 'fillBlank', q: 'Air resistance opposes ___ motion', answer: 'motion', accept: ['motion', 'moving'] },
-          { type: 'trueFalse', q: 'Friction opposes motion between surfaces', answer: true },
-          { type: 'multiple', q: 'What reduces friction?', options: ['Lubricants like oil', 'Rough surfaces', 'Loose joints', 'Heavy objects'], answer: 'Lubricants like oil' },
-          { type: 'fillBlank', q: 'Water resistance is a force that opposes ___ through water', answer: 'movement', accept: ['movement', 'motion'] },
-          { type: 'trueFalse', q: 'A parachute uses air resistance to slow descent', answer: true },
-          { type: 'multiple', q: 'What is a lever?', options: ['A simple machine with a rigid bar', 'A type of pulley', 'A spring mechanism', 'A type of ramp'], answer: 'A simple machine with a rigid bar' },
-          { type: 'fillBlank', q: 'A ___ is a wheel with a groove that holds a rope', answer: 'pulley', accept: ['pulley'] },
-          { type: 'trueFalse', q: 'A pulley can change the direction of force', answer: true },
-          { type: 'multiple', q: 'What do gears do?', options: ['Transfer motion and change speed/force', 'Create friction', 'Reduce gravity', 'Create resistance'], answer: 'Transfer motion and change speed/force' },
-          { type: 'trueFalse', q: 'Friction always slows things down', answer: false },
-          { type: 'fillBlank', q: 'A ramp reduces the ___ needed to push something uphill', answer: 'force', accept: ['force'] },
-          { type: 'multiple', q: 'What does a wheel and axle do?', options: ['Reduce the force needed to turn something', 'Increase friction', 'Stop motion', 'Create gravity'], answer: 'Reduce the force needed to turn something' },
-          { type: 'trueFalse', q: 'Friction produces heat', answer: true },
-          { type: 'fillBlank', q: 'A skydiver falls due to ___', answer: 'gravity', accept: ['gravity'] },
-          { type: 'multiple', q: 'Which reduces air resistance when cycling?', options: ['Streamlined shapes', 'Large surface area', 'Loose clothing', 'Low speed'], answer: 'Streamlined shapes' },
-          { type: 'trueFalse', q: 'A screw is a simple machine used for holding or fastening', answer: true },
-          { type: 'fillBlank', q: 'Springs store and release ___', answer: 'energy', accept: ['energy'] },
-          { type: 'multiple', q: 'What is the fulcrum of a lever?', options: ['The pivot point', 'The load', 'The effort', 'The resistance'], answer: 'The pivot point' },
-          { type: 'trueFalse', q: 'A wedge is used to split or separate objects', answer: true }
-        ]
+          {
+            type: "multiple",
+            q: "What is burning?",
+            options: [
+              "physical change",
+              "reversible change",
+              "chemical change",
+              "temperature drop"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Rusting is a chemical change that cannot be reversed.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "When substances combine with oxygen, this is called _____",
+            answer: "oxidation",
+            accept: [
+              "oxidation"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is a new material created by chemical change?",
+            options: [
+              "melted ice",
+              "dissolved salt",
+              "ash from burning",
+              "boiled water"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Melting is a reversible physical change.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "When a metal burns in oxygen, it forms a _____",
+            answer: "oxide",
+            accept: [
+              "oxide"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is a physical change?",
+            options: [
+              "creates new substance",
+              "changes appearance only",
+              "irreversible",
+              "releases energy"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Breaking glass is an irreversible physical change.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Freezing water is a _____ change (reversible).",
+            answer: "physical",
+            accept: [
+              "physical"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does combustion require?",
+            options: [
+              "heat and air",
+              "fuel, oxygen, and heat",
+              "water",
+              "light"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Burning creates ash, which is a new material.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Rusting requires _____ and water.",
+            answer: "oxygen",
+            accept: [
+              "oxygen"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which change is reversible?",
+            options: [
+              "burning paper",
+              "cooking an egg",
+              "freezing water",
+              "decaying leaves"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A chemical change produces one or more new substances.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The combination of a fuel, oxygen, and heat creates a _____",
+            answer: "fire",
+            accept: [
+              "fire",
+              "combustion"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Can rusting be prevented?",
+            options: [
+              "never",
+              "by keeping iron dry and protected",
+              "only with heat",
+              "by painting only"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Burning is often irreversible.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The process of a substance breaking down over time is _____",
+            answer: "decomposition",
+            accept: [
+              "decomposition",
+              "decay"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which indicates a chemical change?",
+            options: [
+              "shape change",
+              "color change",
+              "temperature drop",
+              "size change"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Melting ice and evaporating water are both physical changes.",
+            answer: true
+          }
+        ],
+        id: "y5-science-5",
+        description: "Changes of Materials"
       },
       {
-        id: 'y5-science-6',
-        name: 'Working Scientifically',
-        description: 'Planning investigations, variables, accurate measurement, data',
+        title: "Living Things & Habitats",
         questions: [
-          { type: 'multiple', q: 'What is a fair test?', options: ['An experiment where only one variable changes', 'An experiment everyone enjoys', 'An experiment with many variables', 'An experiment with no results'], answer: 'An experiment where only one variable changes' },
-          { type: 'fillBlank', q: 'The variable you change is the ___ variable', answer: 'independent', accept: ['independent'] },
-          { type: 'trueFalse', q: 'You should keep all other conditions the same except the independent variable', answer: true },
-          { type: 'multiple', q: 'What is a control variable?', options: ['A variable that stays the same', 'The variable you measure', 'The variable you change', 'A variable you ignore'], answer: 'A variable that stays the same' },
-          { type: 'fillBlank', q: 'The variable you measure is the ___ variable', answer: 'dependent', accept: ['dependent'] },
-          { type: 'trueFalse', q: 'A hypothesis is an educated guess based on knowledge', answer: true },
-          { type: 'fillBlank', q: 'To measure accurately, you should use ___ equipment', answer: 'appropriate', accept: ['appropriate', 'precise'] },
-          { type: 'multiple', q: 'What should you do with results?', options: ['Record them immediately', 'Ignore them if unexpected', 'Change them to match the hypothesis', 'Discard unreliable data carefully'], answer: 'Record them immediately' },
-          { type: 'trueFalse', q: 'Repeating an experiment improves reliability', answer: true },
-          { type: 'fillBlank', q: 'Data can be presented using tables, graphs, or ___', answer: 'charts', accept: ['charts', 'diagrams'] },
-          { type: 'multiple', q: 'What is the first step in a fair test?', options: ['Make a prediction', 'Plan the experiment', 'Collect equipment', 'Analyze results'], answer: 'Plan the experiment' },
-          { type: 'trueFalse', q: 'Precise measurements use appropriate equipment', answer: true },
-          { type: 'fillBlank', q: 'A ___ is a diagram showing the relationship between variables', answer: 'graph', accept: ['graph', 'chart'] },
-          { type: 'multiple', q: 'What conclusion should you draw?', options: ['Based on evidence from your results', 'Whatever supports your hypothesis', 'Whatever is interesting', 'Before you do the experiment'], answer: 'Based on evidence from your results' },
-          { type: 'trueFalse', q: 'It is important to identify anomalies (unusual results)', answer: true },
-          { type: 'fillBlank', q: 'Variables that might affect results must be ___', answer: 'controlled', accept: ['controlled'] },
-          { type: 'multiple', q: 'How should you record measurements?', options: ['To the nearest appropriate unit', 'To the nearest whole number', 'As roughly as possible', 'Only if they confirm your hypothesis'], answer: 'To the nearest appropriate unit' },
-          { type: 'trueFalse', q: 'A line graph shows how one variable changes with another', answer: true },
-          { type: 'fillBlank', q: 'Carrying out an experiment multiple times checks for ___ and errors', answer: 'anomalies', accept: ['anomalies', 'errors'] },
-          { type: 'multiple', q: 'What makes evidence reliable?', options: ['Careful measurement and repeated trials', 'Having unexpected results', 'Quick data collection', 'No control variables'], answer: 'Careful measurement and repeated trials' }
-        ]
+          {
+            type: "multiple",
+            q: "What is a habitat?",
+            options: [
+              "a type of food",
+              "a place where organisms live",
+              "a predator",
+              "a season"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "All organisms need a suitable habitat to survive.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A forest is an example of a _____",
+            answer: "habitat",
+            accept: [
+              "habitat"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is a food chain?",
+            options: [
+              "a restaurant",
+              "sequence of feeding relationships",
+              "hunting animals",
+              "plant growth"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Green plants are producers in a food chain.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "An animal that eats other animals is a _____",
+            answer: "predator",
+            accept: [
+              "predator"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What eats herbivores?",
+            options: [
+              "decomposers",
+              "primary consumers",
+              "secondary consumers",
+              "producers"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Decomposers are bacteria and fungi that break down dead matter.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "An organism that eats plants is a _____",
+            answer: "herbivore",
+            accept: [
+              "herbivore"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is an adaptation?",
+            options: [
+              "a color change",
+              "a feature helping survival",
+              "a temporary change",
+              "a food preference"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Camouflage is an adaptation that helps animals hide.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A polar bear's thick fur is an _____ for surviving in cold.",
+            answer: "adaptation",
+            accept: [
+              "adaptation"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the environment's carrying capacity?",
+            options: [
+              "size of habitat",
+              "number of species",
+              "maximum population size",
+              "food availability"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Different species compete for the same resources in a habitat.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The role an organism plays in its habitat is called its _____",
+            answer: "niche",
+            accept: [
+              "niche"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What can disrupt a food chain?",
+            options: [
+              "rain",
+              "habitat loss",
+              "sunlight",
+              "seasons"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A food web shows multiple interconnected food chains.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "An animal that hunts other animals is a _____",
+            answer: "carnivore",
+            accept: [
+              "carnivore"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which organism has no natural predators?",
+            options: [
+              "rabbit",
+              "eagle",
+              "mouse",
+              "varies by ecosystem"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "Ecosystems are in constant balance.",
+            answer: false
+          }
+        ],
+        id: "y5-science-6",
+        description: "Living Things & Habitats"
+      },
+      {
+        title: "Animals Including Humans",
+        questions: [
+          {
+            type: "multiple",
+            q: "How many bones does a human skeleton have?",
+            options: [
+              "186",
+              "206",
+              "226",
+              "306"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Muscles work in pairs to move joints.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The tube that carries food to the stomach is the _____",
+            answer: "esophagus",
+            accept: [
+              "esophagus"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the function of the heart?",
+            options: [
+              "digest food",
+              "pump blood",
+              "store energy",
+              "control balance"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "The human gestation period is approximately 9 months.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Oxygen enters the blood through the _____",
+            answer: "lungs",
+            accept: [
+              "lungs"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How many chambers does a human heart have?",
+            options: [
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "The brain controls all body functions.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The organ that filters waste from blood is the _____",
+            answer: "kidney",
+            accept: [
+              "kidney"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the human life span from birth to adulthood?",
+            options: [
+              "10 years",
+              "15 years",
+              "18-21 years",
+              "30 years"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "Tendons connect muscles to bones.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The largest organ in the human body is the _____",
+            answer: "skin",
+            accept: [
+              "skin"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is adolescence?",
+            options: [
+              "early childhood",
+              "teenage years",
+              "early adulthood",
+              "old age"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Puberty is a stage of rapid physical and emotional change.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The voice box in humans is called the _____",
+            answer: "larynx",
+            accept: [
+              "larynx"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Which is a primary sense organ?",
+            options: [
+              "stomach",
+              "eye",
+              "bone",
+              "hair"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Human babies are born helpless and dependent.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The structure that allows sound vibrations to travel is the _____",
+            answer: "eardrum",
+            accept: [
+              "eardrum"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does the immune system do?",
+            options: [
+              "digest food",
+              "fight infections",
+              "pump blood",
+              "store energy"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Childhood is a stage of rapid growth and development.",
+            answer: true
+          }
+        ],
+        id: "y5-science-7",
+        description: "Animals Including Humans"
+      },
+      {
+        title: "Scientific Enquiry",
+        questions: [
+          {
+            type: "multiple",
+            q: "What is a hypothesis?",
+            options: [
+              "a fact",
+              "a test",
+              "a prediction based on knowledge",
+              "an observation"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "A fair test changes only one variable.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The variable you change in an experiment is the _____ variable.",
+            answer: "independent",
+            accept: [
+              "independent"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What must be kept the same in a fair test?",
+            options: [
+              "all conditions",
+              "the results",
+              "the hypothesis",
+              "the observer"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "Observations are made using the five senses.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The variable you measure is called the _____ variable.",
+            answer: "dependent",
+            accept: [
+              "dependent"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "Why do scientists repeat experiments?",
+            options: [
+              "to confirm results",
+              "to waste time",
+              "to change variables",
+              "to prove others wrong"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "Recording data accurately is important in science.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A _____ is a table or diagram used to display results.",
+            answer: "graph",
+            accept: [
+              "graph",
+              "table"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is a control variable?",
+            options: [
+              "the result",
+              "a factor kept the same",
+              "the hypothesis",
+              "the observation"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "A conclusion should summarize what was learned.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The process of testing ideas scientifically is called a _____",
+            answer: "investigation",
+            accept: [
+              "investigation"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How should data be presented?",
+            options: [
+              "written only",
+              "spoken only",
+              "in tables, graphs, or charts",
+              "in sentences only"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "An anomaly is a data point that differs from others.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "A prediction about the outcome of an investigation is a _____",
+            answer: "hypothesis",
+            accept: [
+              "hypothesis"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What should a fair test prevent?",
+            options: [
+              "learning",
+              "bias",
+              "results",
+              "questions"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "Scientists must be honest about their results.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The arrangement of equipment in an experiment is a _____",
+            answer: "setup",
+            accept: [
+              "setup"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "How many times should an experiment typically be repeated?",
+            options: [
+              "once",
+              "twice",
+              "three times",
+              "many times"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "Analyzing data helps scientists understand results.",
+            answer: true
+          }
+        ],
+        id: "y5-science-8",
+        description: "Scientific Enquiry"
       }
     ]
   },
   french: {
-    name: 'French',
-    icon: '🇫🇷',
-    color: '#FF5722',
+    name: "French",
+    icon: "🇫🇷",
+    color: "#E91E63",
     lessons: [
       {
-        id: 'y5-french-1',
-        name: 'Hobbies & Sports',
-        description: 'Je joue au football, Je fais de la natation, J\'aime lire',
+        title: "School Subjects",
         questions: [
-          { type: 'fillBlank', q: '"I play football" in French is: Je joue au ___', answer: 'football', accept: ['football'] },
-          { type: 'multiple', q: 'What does "Je fais de la natation" mean?', options: ['I do swimming', 'I do football', 'I like swimming', 'I want to swim'], answer: 'I do swimming' },
-          { type: 'trueFalse', q: '"J\'aime lire" means "I like to read"', answer: true },
-          { type: 'fillBlank', q: '"I play tennis" is: Je joue au ___', answer: 'tennis', accept: ['tennis'] },
-          { type: 'multiple', q: 'How do you say "I like basketball" in French?', options: ['J\'aime le basketball', 'Je joue au basketball', 'Je fais du basketball', 'Both B and C'], answer: 'Both B and C' },
-          { type: 'trueFalse', q: '"Je joue du piano" means "I play the piano"', answer: true },
-          { type: 'fillBlank', q: '"I do gymnastics" is: Je fais de la ___', answer: 'gymnastique', accept: ['gymnastique', 'gym'] },
-          { type: 'multiple', q: 'What sport uses "le cyclisme"?', options: ['Cycling', 'Swimming', 'Tennis', 'Football'], answer: 'Cycling' },
-          { type: 'trueFalse', q: '"J\'adore jouer au rugby" means "I love playing rugby"', answer: true },
-          { type: 'fillBlank', q: '"I like dancing" is: J\'aime ___', answer: 'danser', accept: ['danser'] },
-          { type: 'multiple', q: 'Which hobby uses "je dessine"?', options: ['I draw', 'I listen', 'I read', 'I sing'], answer: 'I draw' },
-          { type: 'trueFalse', q: '"Je joue au hockey" means "I play hockey"', answer: true },
-          { type: 'fillBlank', q: '"I love swimming" is: J\'adore ___', answer: 'la natation', accept: ['nager', 'la natation'] },
-          { type: 'multiple', q: 'What is "la musculation"?', options: ['Weight training/gym', 'Basketball', 'Volleyball', 'Badminton'], answer: 'Weight training/gym' },
-          { type: 'trueFalse', q: '"J\'aime faire du skateboard" means "I like skateboarding"', answer: true },
-          { type: 'fillBlank', q: '"I play volleyball" is: Je joue au ___', answer: 'volley', accept: ['volley', 'volleyball'] },
-          { type: 'multiple', q: 'Which phrase means "I like singing"?', options: ['J\'aime chanter', 'Je chante bien', 'Je fais du chant', 'Both A and C'], answer: 'Both A and C' },
-          { type: 'trueFalse', q: '"Je fais du ski" means "I do skiing"', answer: true },
-          { type: 'fillBlank', q: '"I play cricket" is: Je joue au ___', answer: 'cricket', accept: ['cricket'] },
-          { type: 'multiple', q: 'What does "Je joue de la guitare" mean?', options: ['I play the guitar', 'I play guitar sport', 'I like guitar', 'I listen to guitar'], answer: 'I play the guitar' }
-        ]
+          {
+            type: "fillBlank",
+            q: "The word for \"maths\" in French is _____",
+            answer: "les maths",
+            accept: [
+              "les maths",
+              "les mathématiques"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"le français\" mean?",
+            options: [
+              "France",
+              "French",
+              "a French person",
+              "French language"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "\"La science\" means \"science\" in French.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The subject of art in French is \"_____\"",
+            answer: "l'art",
+            accept: [
+              "l'art",
+              "l'Art"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"la musique\"?",
+            options: [
+              "a musician",
+              "music",
+              "a musical instrument",
+              "a song"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"L'anglais\" means \"English\" (the language).",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"physical education\" in French is \"l'éducation _____ ou l'EPS\"",
+            answer: "physique",
+            accept: [
+              "physique"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"l'histoire\" refer to?",
+            options: [
+              "a story",
+              "history",
+              "a historical event",
+              "geography"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"La géographie\" is French for \"geography\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"chemistry\" in French is \"la _____\"",
+            answer: "chimie",
+            accept: [
+              "chimie"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"l'informatique\"?",
+            options: [
+              "computer science",
+              "computers",
+              "information",
+              "technology"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"La biologie\" means \"biology\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"literature\" in French is \"la _____\"",
+            answer: "littérature",
+            accept: [
+              "littérature"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"l'éducation civique\" mean?",
+            options: [
+              "civic education",
+              "civil rights",
+              "citizenship",
+              "civil law"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le dessin\" refers to drawing or art class.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"PE lessons\" (short form) is \"_____\"",
+            answer: "EPS",
+            accept: [
+              "EPS",
+              "éducation physique"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"la technologie\"?",
+            options: [
+              "technology lessons",
+              "computers",
+              "gadgets",
+              "devices"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"Les sciences\" is the plural for \"sciences\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"drama\" or \"theatre\" in French is \"l'art _____ ou le théâtre\"",
+            answer: "dramatique",
+            accept: [
+              "dramatique",
+              "drama"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"le sport\" mean?",
+            options: [
+              "a sporting event",
+              "sport or physical activity",
+              "a sports team",
+              "athletic equipment"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-french-1",
+        description: "School Subjects"
       },
       {
-        id: 'y5-french-2',
-        name: 'Telling the Time',
-        description: 'Quelle heure est-il?, Il est trois heures, et demie, et quart, moins le quart',
+        title: "Describing School Day",
         questions: [
-          { type: 'fillBlank', q: '"What time is it?" in French is: ___ heure est-il?', answer: 'Quelle', accept: ['Quelle'] },
-          { type: 'multiple', q: 'How do you say 3 o\'clock in French?', options: ['Il est trois heures', 'Il est trois', 'Il est 3h', 'C\'est trois heures'], answer: 'Il est trois heures' },
-          { type: 'trueFalse', q: '"Et demie" means "and half"', answer: true },
-          { type: 'fillBlank', q: '"3:30" is expressed as: Il est trois heures et ___', answer: 'demie', accept: ['demie'] },
-          { type: 'multiple', q: 'What does "et quart" mean?', options: ['Quarter past (add 15 minutes)', 'Half past', 'Quarter to', 'Twenty past'], answer: 'Quarter past (add 15 minutes)' },
-          { type: 'trueFalse', q: '"Il est neuf heures et quart" means 9:15', answer: true },
-          { type: 'fillBlank', q: '"4:45" is: Il est ___ moins le quart', answer: 'cinq', accept: ['cinq'] },
-          { type: 'multiple', q: 'How do you say 12 o\'clock noon in French?', options: ['Il est midi', 'Il est minuit', 'Il est douze heures', 'Il est demi-jour'], answer: 'Il est midi' },
-          { type: 'trueFalse', q: '"Moins le quart" means "quarter to"', answer: true },
-          { type: 'fillBlank', q: '"6:00" in French is: Il est ___ heures', answer: 'six', accept: ['six'] },
-          { type: 'multiple', q: '"Il est deux heures moins dix" means what time?', options: ['1:50', '2:10', '2:50', '2:00'], answer: '1:50' },
-          { type: 'trueFalse', q: '"Minuit" means midnight', answer: true },
-          { type: 'fillBlank', q: '"8:20" is: Il est huit heures et ___', answer: 'vingt', accept: ['vingt'] },
-          { type: 'multiple', q: 'How do you ask "What time is it?"', options: ['Quelle heure est-il?', 'Quel heure est-ce?', 'C\'est quelle heure?', 'Both A and C'], answer: 'Both A and C' },
-          { type: 'trueFalse', q: '"Il est midi et quart" means 12:15', answer: true },
-          { type: 'fillBlank', q: '"10:30" is: Il est dix heures et ___', answer: 'demie', accept: ['demie'] },
-          { type: 'multiple', q: '"Il est une heure" is what time?', options: ['1 o\'clock', '11 o\'clock', '1:00 PM', 'Both A and C'], answer: 'Both A and C' },
-          { type: 'trueFalse', q: '"Et" means "and" when telling time', answer: true },
-          { type: 'fillBlank', q: '"7:45" is: Il est ___ heures moins le quart', answer: 'huit', accept: ['huit'] },
-          { type: 'multiple', q: 'How is "minus" expressed when telling time?', options: ['Moins', 'Sauf', 'Pas', 'Non'], answer: 'Moins' }
-        ]
+          {
+            type: "fillBlank",
+            q: "Complete: \"Je commence à _____ heures.\"",
+            answer: "huit",
+            accept: [
+              "huit"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"la récréation\" mean?",
+            options: [
+              "recreation",
+              "school break or playtime",
+              "exercise",
+              "sports"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le déjeuner\" means \"dinner\" in French.",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"a lesson\" or \"a class\" in French is \"_____\"",
+            answer: "un cours",
+            accept: [
+              "un cours"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"J'ai cours à\" mean?",
+            options: [
+              "I have break at",
+              "I am in class at",
+              "I have a lesson at",
+              "I study at"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"La cantine\" is the school cafeteria.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"La récréation finit à _____ heures.\"",
+            answer: "dix",
+            accept: [
+              "dix"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"j'ai sport\" mean?",
+            options: [
+              "I play sport",
+              "I have PE",
+              "I like sport",
+              "I exercise"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le matin\" means \"in the afternoon\".",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"homework\" in French is \"_____\"",
+            answer: "les devoirs",
+            accept: [
+              "les devoirs"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"l'après-midi\" mean?",
+            options: [
+              "after noon",
+              "the afternoon",
+              "the evening",
+              "the next day"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"L'école finit à\" means \"School finishes at\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Je vais à l'école le _____.\"",
+            answer: "lundi",
+            accept: [
+              "lundi"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What time phrase means \"at half past\"?",
+            options: [
+              "et quart",
+              "et demie",
+              "et trois quarts",
+              "moins le quart"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Les vacances\" means \"holidays\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Je quitte l'école à _____ heures.\"",
+            answer: "seize",
+            accept: [
+              "seize"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"le soir\"?",
+            options: [
+              "the morning",
+              "the afternoon",
+              "the evening",
+              "the night"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"Je fais mes devoirs\" means \"I do my homework\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase for \"I have a break\" is \"J'ai une _____\"",
+            answer: "récréation",
+            accept: [
+              "récréation"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Je vais à la cantine\" mean?",
+            options: [
+              "I go to the library",
+              "I go to the cafeteria",
+              "I go outside",
+              "I go to the sports field"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-french-2",
+        description: "Describing School Day"
       },
       {
-        id: 'y5-french-3',
-        name: 'Places in Town',
-        description: 'la boulangerie, la bibliothèque, le parc, le supermarché, l\'école, l\'hôpital',
+        title: "House & Home",
         questions: [
-          { type: 'fillBlank', q: '"The bakery" is: la ___', answer: 'boulangerie', accept: ['boulangerie'] },
-          { type: 'multiple', q: 'Where would you borrow books?', options: ['La bibliothèque', 'La boulangerie', 'Le supermarché', 'L\'hôpital'], answer: 'La bibliothèque' },
-          { type: 'trueFalse', q: '"Le parc" means "the park"', answer: true },
-          { type: 'fillBlank', q: '"The supermarket" is: le ___', answer: 'supermarché', accept: ['supermarché'] },
-          { type: 'multiple', q: 'Where do you go to school?', options: ['À l\'école', 'À la boulangerie', 'Au supermarché', 'À l\'hôpital'], answer: 'À l\'école' },
-          { type: 'trueFalse', q: '"L\'hôpital" means "the hospital"', answer: true },
-          { type: 'fillBlank', q: '"The library" is: la ___', answer: 'bibliothèque', accept: ['bibliothèque'] },
-          { type: 'multiple', q: 'Where would you buy bread?', options: ['À la boulangerie', 'À la bibliothèque', 'Au supermarché', 'À l\'école'], answer: 'À la boulangerie' },
-          { type: 'trueFalse', q: '"Le restaurant" is a place where you eat', answer: true },
-          { type: 'fillBlank', q: '"The park" is: le ___', answer: 'parc', accept: ['parc'] },
-          { type: 'multiple', q: 'What do you do at "la piscine"?', options: ['Swim', 'Shop', 'Read books', 'Go to school'], answer: 'Swim' },
-          { type: 'trueFalse', q: '"La gare" means "the train station"', answer: true },
-          { type: 'fillBlank', q: '"The church" is: l\'___', answer: 'église', accept: ['église'] },
-          { type: 'multiple', q: 'Where would you see a doctor?', options: ['À l\'hôpital', 'À l\'école', 'À la bibliothèque', 'Au cinéma'], answer: 'À l\'hôpital' },
-          { type: 'trueFalse', q: '"Le cinéma" is where you watch films', answer: true },
-          { type: 'fillBlank', q: '"The school" is: l\'___', answer: 'école', accept: ['école'] },
-          { type: 'multiple', q: 'Which place sells groceries?', options: ['Le supermarché', 'La boulangerie', 'La gare', 'Le cinéma'], answer: 'Le supermarché' },
-          { type: 'trueFalse', q: '"Le musée" is the museum', answer: true },
-          { type: 'fillBlank', q: '"The hospital" is: l\'___', answer: 'hôpital', accept: ['hôpital'] },
-          { type: 'multiple', q: 'Where would you play sports?', options: ['Au stade/Au parc', 'À la bibliothèque', 'À la boulangerie', 'Au cinéma'], answer: 'Au stade/Au parc' }
-        ]
+          {
+            type: "fillBlank",
+            q: "The word for \"house\" in French is \"_____\"",
+            answer: "la maison",
+            accept: [
+              "la maison"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"la chambre\" mean?",
+            options: [
+              "the kitchen",
+              "the bedroom",
+              "the lounge",
+              "the bathroom"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"La cuisine\" is the kitchen.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"the living room\" in French is \"le _____\"",
+            answer: "salon",
+            accept: [
+              "salon"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"la salle à manger\"?",
+            options: [
+              "the kitchen",
+              "the dining room",
+              "the bedroom",
+              "the living room"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"La salle de bains\" is the bathroom.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"garden\" in French is \"le _____\"",
+            answer: "jardin",
+            accept: [
+              "jardin"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"l'escalier\" mean?",
+            options: [
+              "a staircase",
+              "a door",
+              "a window",
+              "a wall"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le garage\" is the garage.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"ground floor\" in French is \"le _____\"",
+            answer: "rez-de-chaussée",
+            accept: [
+              "rez-de-chaussée"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"un étage\"?",
+            options: [
+              "a door",
+              "a floor or storey",
+              "a room",
+              "a window"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le grenier\" is the attic.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"bedroom\" in French is \"la _____\"",
+            answer: "chambre",
+            accept: [
+              "chambre"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"la terrasse\" mean?",
+            options: [
+              "a terrace or patio",
+              "a garden",
+              "a balcony",
+              "a room"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le balcon\" is a balcony.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"window\" in French is \"la _____\"",
+            answer: "fenêtre",
+            accept: [
+              "fenêtre"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"la porte\"?",
+            options: [
+              "a window",
+              "a door",
+              "a wall",
+              "a gate"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le mur\" means \"the wall\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"roof\" in French is \"le _____\"",
+            answer: "toit",
+            accept: [
+              "toit"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"le sous-sol\" mean?",
+            options: [
+              "ground floor",
+              "basement",
+              "first floor",
+              "attic"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-french-3",
+        description: "House & Home"
       },
       {
-        id: 'y5-french-4',
-        name: 'Clothes',
-        description: 'un pantalon, une jupe, un t-shirt, des chaussures, un manteau, une robe',
+        title: "Directions",
         questions: [
-          { type: 'fillBlank', q: '"Trousers" in French is: un ___', answer: 'pantalon', accept: ['pantalon'] },
-          { type: 'multiple', q: 'What is "une jupe"?', options: ['A skirt', 'A dress', 'Trousers', 'A coat'], answer: 'A skirt' },
-          { type: 'trueFalse', q: '"Un t-shirt" is a t-shirt', answer: true },
-          { type: 'fillBlank', q: '"Shoes" are: des ___', answer: 'chaussures', accept: ['chaussures'] },
-          { type: 'multiple', q: 'What is "un manteau"?', options: ['A coat', 'A hat', 'Gloves', 'A sweater'], answer: 'A coat' },
-          { type: 'trueFalse', q: '"Une robe" means "a dress"', answer: true },
-          { type: 'fillBlank', q: '"A hat" is: un ___', answer: 'chapeau', accept: ['chapeau'] },
-          { type: 'multiple', q: 'What clothing do you wear on your feet?', options: ['Des chaussures', 'Un pantalon', 'Un manteau', 'Une ceinture'], answer: 'Des chaussures' },
-          { type: 'trueFalse', q: '"Des gants" means "gloves"', answer: true },
-          { type: 'fillBlank', q: '"A jumper/sweater" is: un ___', answer: 'pull', accept: ['pull', 'pullover'] },
-          { type: 'multiple', q: 'What is "une ceinture"?', options: ['A belt', 'A scarf', 'Socks', 'A shirt'], answer: 'A belt' },
-          { type: 'trueFalse', q: '"Un chemise" is a shirt', answer: false },
-          { type: 'fillBlank', q: '"Socks" are: des ___', answer: 'chaussettes', accept: ['chaussettes'] },
-          { type: 'multiple', q: 'What is "une écharpe"?', options: ['A scarf', 'A skirt', 'A coat', 'Gloves'], answer: 'A scarf' },
-          { type: 'trueFalse', q: '"Un veston" is a jacket', answer: true },
-          { type: 'fillBlank', q: '"Trousers" (plural) in French: un ___', answer: 'pantalon', accept: ['pantalon'] },
-          { type: 'multiple', q: 'What is "un short"?', options: ['Shorts', 'A shirt', 'A skirt', 'A coat'], answer: 'Shorts' },
-          { type: 'trueFalse', q: '"Une blouse" is a blouse', answer: true },
-          { type: 'fillBlank', q: '"A tie" is: une ___', answer: 'cravate', accept: ['cravate'] },
-          { type: 'multiple', q: 'What would you wear in winter to stay warm?', options: ['Un manteau', 'Un t-shirt', 'Des chaussures', 'Une ceinture'], answer: 'Un manteau' }
-        ]
+          {
+            type: "fillBlank",
+            q: "The word for \"left\" in French is \"_____\"",
+            answer: "à gauche",
+            accept: [
+              "à gauche"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"à droite\" mean?",
+            options: [
+              "left",
+              "right",
+              "straight on",
+              "back"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Tout droit\" means \"straight on\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase for \"turn left\" is \"Tournez à _____\"",
+            answer: "gauche",
+            accept: [
+              "gauche"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"tournez à droite\" mean?",
+            options: [
+              "turn left",
+              "turn right",
+              "go straight",
+              "go forward"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Traversez\" means \"cross\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"near\" in French is \"_____\"",
+            answer: "près de",
+            accept: [
+              "près de"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"loin de\"?",
+            options: [
+              "near",
+              "far from",
+              "next to",
+              "between"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Entre\" means \"between\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"behind\" in French is \"_____\"",
+            answer: "derrière",
+            accept: [
+              "derrière"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"devant\" mean?",
+            options: [
+              "behind",
+              "in front of",
+              "opposite",
+              "near"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"À côté de\" means \"next to\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase for \"go up\" is \"Montez _____\"",
+            answer: "jusqu'à",
+            accept: [
+              "jusqu'à"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"descendez\" mean?",
+            options: [
+              "go up",
+              "go down",
+              "turn",
+              "cross"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"En haut\" means \"upstairs\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"downstairs\" in French is \"_____ bas\"",
+            answer: "en",
+            accept: [
+              "en"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"en face de\"?",
+            options: [
+              "next to",
+              "opposite",
+              "near",
+              "behind"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Continuez\" means \"continue\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase for \"How do I get to...?\" is \"Comment allez-vous à...?\"",
+            answer: "",
+            accept: [
+              ""
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"prendre\" mean in directions?",
+            options: [
+              "to give",
+              "to take",
+              "to turn",
+              "to cross"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-french-4",
+        description: "Directions"
       },
       {
-        id: 'y5-french-5',
-        name: 'Numbers 50-100 & Prices',
-        description: 'combien ça coûte?, ça coûte ... euros',
+        title: "Shopping",
         questions: [
-          { type: 'fillBlank', q: '"How much does it cost?" is: ___ ça coûte?', answer: 'Combien', accept: ['Combien'] },
-          { type: 'multiple', q: 'What is the French number for 50?', options: ['Cinquante', 'Soixante', 'Quarante', 'Trente'], answer: 'Cinquante' },
-          { type: 'trueFalse', q: '"Soixante" is 60', answer: true },
-          { type: 'fillBlank', q: '70 in French is: soixante-___', answer: 'dix', accept: ['dix'] },
-          { type: 'multiple', q: 'What is 80 in French?', options: ['Quatre-vingts', 'Huitante', 'Octante', 'Octante'], answer: 'Quatre-vingts' },
-          { type: 'trueFalse', q: '"Quatre-vingt-dix" is 90', answer: true },
-          { type: 'fillBlank', q: '100 in French is: ___', answer: 'cent', accept: ['cent'] },
-          { type: 'multiple', q: '"Ça coûte cinq euros" means what?', options: ['It costs five euros', 'It costs fifty euros', 'That is five euros', 'It is worth euros'], answer: 'It costs five euros' },
-          { type: 'trueFalse', q: '"Combien ça coûte?" is a question about price', answer: true },
-          { type: 'fillBlank', q: 'How do you say 55? Cinquante-___', answer: 'cinq', accept: ['cinq'] },
-          { type: 'multiple', q: 'What is 65 in French?', options: ['Soixante-cinq', 'Soixante-dix', 'Septante-cinq', 'Cinquante-cinq'], answer: 'Soixante-cinq' },
-          { type: 'trueFalse', q: '"Quatre-vingts" has an "s" at the end when followed by another number', answer: false },
-          { type: 'fillBlank', q: '75 in French is: soixante-quinze or ___-quinze', answer: 'septante', accept: ['septante'] },
-          { type: 'multiple', q: '"Ça coûte quinze euros" means', options: ['It costs fifteen euros', 'That is fifty euros', 'It will cost euros', 'It is worth euros'], answer: 'It costs fifteen euros' },
-          { type: 'trueFalse', q: '95 is "quatre-vingt-quinze"', answer: true },
-          { type: 'fillBlank', q: '"It costs 20 euros" is: Ça coûte vingt ___', answer: 'euros', accept: ['euros'] },
-          { type: 'multiple', q: 'What is 51 in French?', options: ['Cinquante-et-un', 'Cinquante-un', 'Cinquantième', 'Cinquantunum'], answer: 'Cinquante-et-un' },
-          { type: 'trueFalse', q: '"Soixante-dix" means 70', answer: true },
-          { type: 'fillBlank', q: 'To ask "How much?", say: ___?', answer: 'Combien', accept: ['Combien', 'Combien ça coûte'] },
-          { type: 'multiple', q: 'What is 86 in French?', options: ['Quatre-vingt-six', 'Huitante-six', 'Octante-six', 'Quatre-vinetage-six'], answer: 'Quatre-vingt-six' }
-        ]
+          {
+            type: "fillBlank",
+            q: "The phrase \"I would like\" in French is \"Je _____\"",
+            answer: "voudrais",
+            accept: [
+              "voudrais"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Combien ça coûte?\" mean?",
+            options: [
+              "Where is it?",
+              "How much does it cost?",
+              "Do you have...?",
+              "Can I have...?"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"C'est cher\" means \"it is expensive\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase for \"it is cheap\" in French is \"C'est _____\"",
+            answer: "bon marché",
+            accept: [
+              "bon marché"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"un magasin\"?",
+            options: [
+              "a market",
+              "a shop",
+              "a supermarket",
+              "a store"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Une boulangerie\" is a bakery.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"a butcher's\" in French is \"une _____\"",
+            answer: "boucherie",
+            accept: [
+              "boucherie"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"une pharmacie\" mean?",
+            options: [
+              "a bookshop",
+              "a chemist or pharmacy",
+              "a greengrocer",
+              "a fishmonger"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"L'argent\" means \"money\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"a pound\" (currency) is \"une _____\"",
+            answer: "livre",
+            accept: [
+              "livre"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"un centime\"?",
+            options: [
+              "a cent",
+              "a euro",
+              "one hundredth of a euro",
+              "a pound"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"Payez à la caisse\" means \"Pay at the till\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase \"Do you have...?\" in French is \"Avez-vous _____?\"",
+            answer: "de",
+            accept: [
+              "de"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Je peux payer par carte\" mean?",
+            options: [
+              "I can pay by cheque",
+              "I can pay by card",
+              "I can pay in cash",
+              "I need money"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Un prix\" means \"a price\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"discount\" in French is \"une _____\"",
+            answer: "remise",
+            accept: [
+              "remise"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"soldes\"?",
+            options: [
+              "sales (discount event)",
+              "sales assistant",
+              "products",
+              "stores"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"J'achète\" means \"I buy\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase \"Anything else?\" in French is \"Autre _____?\"",
+            answer: "chose",
+            accept: [
+              "chose"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"gratuit\" mean?",
+            options: [
+              "great",
+              "free of charge",
+              "free space",
+              "gratis"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-french-5",
+        description: "Shopping"
+      },
+      {
+        title: "Comparisons",
+        questions: [
+          {
+            type: "fillBlank",
+            q: "The word for \"bigger than\" in French is \"plus grand _____\"",
+            answer: "que",
+            accept: [
+              "que"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"moins petit que\" mean?",
+            options: [
+              "not small than",
+              "less small than",
+              "smaller than",
+              "bigger than"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "\"Aussi...que\" means \"as...as\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Cette maison est plus grande _____ celle-ci.\"",
+            answer: "que",
+            accept: [
+              "que"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the comparative form of \"bon\" (good)?",
+            options: [
+              "meilleur",
+              "plus bon",
+              "bon plus",
+              "bonner"
+            ],
+            answer: 0
+          },
+          {
+            type: "trueFalse",
+            q: "\"Mauvais\" means \"bad\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The comparative for \"bad\" is \"_____\"",
+            answer: "plus mauvais",
+            accept: [
+              "plus mauvais",
+              "pire"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Il est aussi intelligent que son frère\" mean?",
+            options: [
+              "He is smarter than his brother",
+              "He is less intelligent than his brother",
+              "He is as intelligent as his brother",
+              "He is more intelligent than his brother"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"Supérieur\" means \"superior\" or \"better\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"smaller than\" in French is \"moins grand _____\"",
+            answer: "que",
+            accept: [
+              "que"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"le plus grand\" mean?",
+            options: [
+              "more big",
+              "the biggest",
+              "as big",
+              "very big"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Le moins cher\" means \"the cheapest\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Elle est _____ heureuse que moi.\"",
+            answer: "aussi",
+            accept: [
+              "aussi"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the superlative form of \"bon\"?",
+            options: [
+              "meilleur",
+              "le meilleur",
+              "la meilleure",
+              "both b and c"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "\"Pire\" is the comparative form of \"mauvais\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Mon frère est moins fort _____moi.\"",
+            answer: "que",
+            accept: [
+              "que"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"supérieur à\" mean?",
+            options: [
+              "lower than",
+              "higher than or superior to",
+              "equal to",
+              "different from"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Différent de\" means \"different from\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The superlative form of \"grand\" is \"le plus _____\"",
+            answer: "grand",
+            accept: [
+              "grand"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"pareil à\" mean?",
+            options: [
+              "the same as",
+              "different from",
+              "superior to",
+              "inferior to"
+            ],
+            answer: 0
+          }
+        ],
+        id: "y5-french-6",
+        description: "Comparisons"
+      },
+      {
+        title: "Past Tense Introduction",
+        questions: [
+          {
+            type: "fillBlank",
+            q: "The phrase \"I have eaten\" in French is \"J'ai _____\"",
+            answer: "mangé",
+            accept: [
+              "mangé"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is the passé composé?",
+            options: [
+              "recent past",
+              "simple past",
+              "present perfect",
+              "all of these"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "The passé composé is formed with avoir + past participle.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The past participle of \"jouer\" (to play) is \"_____\"",
+            answer: "joué",
+            accept: [
+              "joué"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"J'ai regardé\" mean?",
+            options: [
+              "I watch",
+              "I have watched",
+              "I will watch",
+              "I watched"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Venir\" uses être as its auxiliary in passé composé.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Nous avons _____.\"",
+            answer: "allé",
+            accept: [
+              "allé"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"J'ai trouvé\"?",
+            options: [
+              "I find",
+              "I have found",
+              "I found",
+              "both b and c"
+            ],
+            answer: 3
+          },
+          {
+            type: "trueFalse",
+            q: "\"Habiter\" means \"to live\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The past participle of \"habiter\" is \"_____\"",
+            answer: "habité",
+            accept: [
+              "habité"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Elles ont étudié\" mean?",
+            options: [
+              "They study",
+              "They will study",
+              "They have studied",
+              "They are studying"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "\"Arriver\" uses être as its auxiliary.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Ils sont _____.\"",
+            answer: "arrivés",
+            accept: [
+              "arrivés"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"J'ai rencontré\"?",
+            options: [
+              "I meet",
+              "I will meet",
+              "I have met",
+              "I am meeting"
+            ],
+            answer: 2
+          },
+          {
+            type: "trueFalse",
+            q: "With être verbs, the past participle must agree with the subject.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase \"We have watched\" is \"Nous avons _____\"",
+            answer: "regardé",
+            accept: [
+              "regardé"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Elle est descendue\" mean?",
+            options: [
+              "She goes down",
+              "She has gone down",
+              "She will go down",
+              "She goes"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Partir\" (to leave) uses être in passé composé.",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The past participle of \"partir\" is \"_____\"",
+            answer: "parti",
+            accept: [
+              "parti"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What is \"Ils ont vu\"?",
+            options: [
+              "They see",
+              "They have seen",
+              "They will see",
+              "They are seeing"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-french-7",
+        description: "Past Tense Introduction"
+      },
+      {
+        title: "Future Plans",
+        questions: [
+          {
+            type: "fillBlank",
+            q: "The phrase \"I am going to\" in French is \"Je _____\"",
+            answer: "vais",
+            accept: [
+              "vais"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Je vais jouer\" mean?",
+            options: [
+              "I play",
+              "I am going to play",
+              "I played",
+              "I will play"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Demain\" means \"tomorrow\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase \"next weekend\" in French is \"le _____ prochain\"",
+            answer: "weekend",
+            accept: [
+              "weekend"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Il va voyager\" mean?",
+            options: [
+              "He travels",
+              "He is going to travel",
+              "He traveled",
+              "He will be traveling"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Samedi prochain\" means \"last Saturday\".",
+            answer: false
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Nous allons _____.\"",
+            answer: "nager",
+            accept: [
+              "nager"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Elle va étudier\" mean?",
+            options: [
+              "She studies",
+              "She is going to study",
+              "She studied",
+              "She will study"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Très bientôt\" means \"very soon\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The word for \"night\" is \"_____\"",
+            answer: "la nuit",
+            accept: [
+              "la nuit"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Vous allez manger\" mean?",
+            options: [
+              "You eat",
+              "You are going to eat",
+              "You ate",
+              "You will eat"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"La semaine prochaine\" means \"next week\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase \"I am going to have fun\" is \"Je vais m'_____\"",
+            answer: "amuser",
+            accept: [
+              "amuser"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Demain matin\" mean?",
+            options: [
+              "tomorrow evening",
+              "tomorrow morning",
+              "tomorrow night",
+              "this morning"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"Aller\" means \"to go\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "Complete: \"Ils vont _____.\"",
+            answer: "travailler",
+            accept: [
+              "travailler"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Je vais aller à la plage\" mean?",
+            options: [
+              "I go to the beach",
+              "I am going to go to the beach",
+              "I went to the beach",
+              "I will go to the beach"
+            ],
+            answer: 1
+          },
+          {
+            type: "trueFalse",
+            q: "\"L'été prochain\" means \"next summer\".",
+            answer: true
+          },
+          {
+            type: "fillBlank",
+            q: "The phrase \"tonight\" in French is \"ce _____\"",
+            answer: "soir",
+            accept: [
+              "soir"
+            ]
+          },
+          {
+            type: "multiple",
+            q: "What does \"Elle va téléphoner à son ami\" mean?",
+            options: [
+              "She calls her friend",
+              "She is going to call her friend",
+              "She called her friend",
+              "She will call her friend"
+            ],
+            answer: 1
+          }
+        ],
+        id: "y5-french-8",
+        description: "Future Plans"
       }
     ]
   }
